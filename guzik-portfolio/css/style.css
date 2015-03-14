@@ -1,0 +1,16 @@
+section{
+    padding-top: 10vh;
+    height: 100vh;
+}
+
+#section1{
+    background-image: url(../resources/main_background_middle.png);
+}
+
+#section1:after{
+    background-image: url(../resources/main_button_scroll.png);
+}
+
+#lion{
+    height: 75vh;
+}
