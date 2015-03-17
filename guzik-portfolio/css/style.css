@@ -14,3 +14,39 @@ section{
 #lion{
     height: 75vh;
 }
+/*Jaskoks CSS*/
+#section7
+{
+    background-image:url(../resources/backgroundKontakt.png);
+    height:100vh;
+    padding-top: 5vh;
+    background-color: grey;
+    text-align: center;
+}
+#button
+{
+    width:100%;
+    background-color: black;
+    text-align: center;
+    color:#ffffff;
+    height:7vh
+}
+.number
+{
+    font-size:40px;
+}
+#tmail
+{
+    font-size: 50px;
+
+}
+.border
+{
+  border: 5px solid black;
+}
+.padding
+{
+    padding-top:10px;
+}
+/*Jaskoks CSS END*/
+
