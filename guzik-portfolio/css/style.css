@@ -14,6 +14,36 @@ section{
 #lion{
     height: 75vh;
 }
+
+/*O mnie - by Tomek CSS*/
+#section3{
+    background-image:url(../resources/omnie_background.png);
+    height: 100vh;
+    padding-top: 5vh;
+    text-align: center;
+}
+.white_font{
+    color: #fff;
+}
+.omnie_padding{
+    padding-top: 2em;
+}
+.p_margin{
+    margin-bottom: 1px;
+}
+#signature{
+    font-size: 20px;
+    padding-top: 15px;
+
+    color: #D8D8D8;
+}
+
+
+
+
+/*END Tomek CSS*/
+
+
 /*Jaskoks CSS*/
 #section7
 {
