@@ -25,11 +25,15 @@ section{
 }
 #button
 {
+    border-radius: 0px;
     width:100%;
     background-color: black;
     text-align: center;
     color:#ffffff;
-    height:7vh
+    height:5vh
+
+
+
 }
 .number
 {
@@ -37,16 +41,36 @@ section{
 }
 #tmail
 {
-    font-size: 50px;
+
+    font-size: 40px;
+    font-family: "Comic Sans", Comic Sans MS, cursive;
+    font-weight: bold;
 
 }
 .border
 {
   border: 5px solid black;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 2%;
 }
 .padding
 {
     padding-top:10px;
 }
+.padding2
+{
+    padding-top:15vh;
+}
+.formcontroling
+{
+    border-radius: 0px;
+    background: transparent;
+}
+#footer
+{
+    font-weight: bold;
+}
+
 /*Jaskoks CSS END*/
 
