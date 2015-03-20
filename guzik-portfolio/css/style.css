@@ -23,7 +23,7 @@ h1{
 /*O mnie - by Tomek CSS*/
 #section3{
     background-image:url(../resources/omnie_background.png);
-    height: 100vh;
+    height: 115vh;
     padding-top: 5vh;
     text-align: center;
 }
@@ -56,6 +56,24 @@ h1{
 
 /*END Tomek CSS*/
 
+/*Kuba CSS*/
+
+#section4{
+	background-image:url(../resources/praca_background_timeline.png);
+	height: 100vh;
+    padding-top: 5vh;
+    text-align: center;
+	background-position:center;
+	
+}
+#section5{
+	background-image:url(../resources/referencje_background.png);
+	height: 100vh;
+    padding-top: 5vh;
+    text-align: center;
+}
+
+/*END Kuba CSS*/
 
 /*Jaskoks CSS*/
 #section7
