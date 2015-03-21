@@ -80,7 +80,7 @@ h1{
 {
     background-image:url(../resources/backgroundKontakt.png);
     height:100vh;
-    padding-top: 5vh;
+    padding-top: 8vh;
     background-color: grey;
     text-align: center;
 }
@@ -96,14 +96,14 @@ h1{
 .number
 {
     font-size:40px;
+    font-family: 'Open Sans', sans-serif;
 }
 #tmail
 {
-
     font-size: 40px;
-    font-family: "Comic Sans", Comic Sans MS, cursive;
-    font-weight: bold;
-
+    font-family:'Exo 2', sans-serif , 700";
+    font-weight: 700;
+    
 }
 .border
 {
@@ -118,12 +118,14 @@ h1{
 }
 .padding2
 {
-    padding-top:15vh;
+    padding-top:10vh;
 }
 .formcontroling
 {
     border-radius: 0px;
     background: transparent;
+    font-family:'Exo 2', sans-serif , 700;"
+    font-weight: 400;
 }
 #footer
 {
