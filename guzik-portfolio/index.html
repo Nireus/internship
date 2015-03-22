@@ -27,9 +27,10 @@
     <div class="navbar-header">
 
     </div>
-    <div style="left:30%; position: absolute;">
+    <div style="left:33%; position: absolute;">
         <ul class="nav navbar-nav center-block">
             <li><a href="#section1">Home</a></li>
+            <li><a href="#startsection">Start</a></li>
             <li><a href="#section2">Realizacja</a></li>
             <li><a href="#section3">O mnie</a></li>
             <li><a href="#section4">Praca</a></li>
@@ -48,6 +49,51 @@
                 <img id="lion" src="resources/main_lion.png">
             </div>
         </div>
+    </div>
+</section>
+
+<section id="startsection">
+    <div class="container">
+        <div class="col-lg-12 text-center">
+            <a href="#section1"><img src="./resources/arrowup.png" height="7%" width="7%"></a>
+            <h1 id="header">START</h1>
+            <p><p><img src="./resources/dots_black.png""></p></p>
+            <p>W niniejszej oprawie graficznej chciałem zaprezentować mój dorobek graficzny jeśli rzecz idzie o projekty i realizacje w jakich dane było mi wziąć udział.</p>
+            <p>Wszystkie one zostały podzielone na sekcje w celu optymalnej prezentacji i wglądu przez wszystkich zainteresowanych współpracą ze mną.</p>
+            <div class="col-sm-3 padding">
+                <p><img src="./resources/home_button_1.png" height="30%"width="30%"></p>
+                <h1 class="startsectionheader">
+                    GRAFIKA REKLAMOWA
+                </h1>
+                <p class="startsectionparagraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam.</p>
+            </div>
+            <div class="col-sm-3 padding">
+                <p><img src="./resources/home_button_2.png" height="30%"width="30%"></p>
+                <h1 class="startsectionheader">GRAFIKA UŻYTKOWA</h1>
+                <p class="startsectionparagraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam.</p>
+            </div>
+            <div class="col-sm-3  padding">
+                <p><img src="./resources/home_button_3.png" height="30%"width="30%"></p>
+                <h1 class="startsectionheader">DTP</h1>
+                <p class="startsectionparagraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam.</p>
+            </div>
+            <div class="col-sm-3  padding">
+                <p><img src="./resources/home_button_4.png" height="30%"width="30%"></p>
+                <h1 class="startsectionheader">SOCIAL MEDIA BRANDING</h1>
+                <p class="startsectionparagraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam.</p>
+            </div>
+            <div class="col-lg-3 col-lg-offset-3  padding">
+                <p><img src="./resources/home_button_5.png" height="30%"width="30%"></p>
+                <h1 class="startsectionheader">STRONY WWW</h1>
+                <p class="startsectionparagraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam.</p>
+            </div>
+            <div class="col-lg-3  padding">
+                <p><img src="./resources/home_button_6.png" height="30%"width="30%"></p>
+                <h1 class="startsectionheader">WIZUALIZACJE FIRMOWE</h1>
+                <p class="startsectionparagraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam.</p>
+            </div>
+        </div>
+            <center><a href="#section2"><img src="./resources/arrowdown.png" height="7%" width="7%"></a></center>
     </div>
 </section>
 
@@ -180,5 +226,22 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
+<!--Skrypt SMOOTH SCROLL-->
+<script>
+$(function() {
+    $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+                $('html,body').animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+                return false;
+            }
+        }
+    });
+});
+</script>
 </body>
 </html>

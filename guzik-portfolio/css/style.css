@@ -131,6 +131,24 @@ h1{
 {
     font-weight: bold;
 }
+.color
+{
+    background-color: pink;
+}
+.startsectionheader
+{
+    font-size:25px;
+}
+.startsectionparagraph
+{
+    color: #afafaf;
+    text-align: center;
+}
+#startsection
+{
+    padding-top: 7vh;
+    background-image:url(../resources/backgroundKontakt.png);
+}
 
 /*Jaskoks CSS END*/
 
