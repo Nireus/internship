@@ -9,7 +9,9 @@ h1{
 }
 
 #section1{
+	height: 1080px;
     background-image: url(../resources/main_background_middle.png);
+	background-repeat:no-repeat;
 }
 
 #section1:after{
@@ -19,13 +21,18 @@ h1{
 #lion{
     height: 75vh;
 }
+#section2{
+	height: 1080px;
+	background-repeat:no-repeat;
+}
 
 /*O mnie - by Tomek CSS*/
 #section3{
     background-image:url(../resources/omnie_background.png);
-    height: 115vh;
+    height: 1080px;
     padding-top: 5vh;
     text-align: center;
+	background-repeat:no-repeat;
 }
 .white_font{
     color: #fff;
@@ -60,17 +67,19 @@ h1{
 
 #section4{
 	background-image:url(../resources/praca_background_timeline.png);
-	height: 100vh;
+	height: 1080px;
     padding-top: 5vh;
     text-align: center;
 	background-position:center;
+	background-repeat:no-repeat;
 	
 }
 #section5{
 	background-image:url(../resources/referencje_background.png);
-	height: 100vh;
+	height: 1080px;
     padding-top: 5vh;
     text-align: center;
+	background-repeat:no-repeat;
 }
 
 /*END Kuba CSS*/
@@ -79,10 +88,11 @@ h1{
 #section7
 {
     background-image:url(../resources/backgroundKontakt.png);
-    height:100vh;
+    height: 1080px;
     padding-top: 8vh;
     background-color: grey;
     text-align: center;
+	background-repeat:no-repeat;
 }
 #button
 {
@@ -148,6 +158,8 @@ h1{
 {
     padding-top: 8vh;
     background-image:url(../resources/backgroundKontakt.png);
+	background-repeat:no-repeat;
+	height:1080px;
 }
 
 /*Jaskoks CSS END*/
