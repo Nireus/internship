@@ -71,8 +71,12 @@ h1{
     padding-top: 5vh;
     text-align: center;
 	background-position:center;
-	background-repeat:no-repeat;
-	
+	background-repeat:no-repeat;	
+}
+#section5 p{
+    color:#fff;
+	text-align:center;
+	margin: 250px 150px 100px 150px;	
 }
 #section5{
 	background-image:url(../resources/referencje_background.png);
@@ -80,6 +84,11 @@ h1{
     padding-top: 5vh;
     text-align: center;
 	background-repeat:no-repeat;
+}
+#arrowdown{
+	position:relative;
+	top:-75px;
+	text-align:center;
 }
 
 /*END Kuba CSS*/
