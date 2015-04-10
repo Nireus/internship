@@ -1,6 +1,6 @@
 section{
     padding-top: 10vh;
-    height: 100vh;
+    height: 1080px;
 }
 h1{
     font-family: 'Exo 2', sans-serif;
@@ -57,6 +57,33 @@ h1{
 .open_sans{
    font-family: 'Open Sans', sans-serif; 
 }
+
+
+.open_sans_normal{
+   font-family: 'Open Sans', sans-serif; 
+   font-weight: 400;
+}
+.open_sans_light{
+    font-family: 'Open Sans', sans-serif; 
+    font-weight: 300;
+}
+
+.margin_auto{
+    margin: 0 auto;
+}
+#section6{
+    background-image:url(../resources/backgroundKontakt.png);
+    height: 1080px;
+    padding-top: 0vh;
+
+    text-align: center;
+}
+h2{
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 900;
+    font-size: 19px;
+}
+
 
 
 
@@ -120,7 +147,7 @@ h1{
 #tmail
 {
     font-size: 40px;
-    font-family:'Exo 2', sans-serif , 700";
+    font-family:'Exo 2', sans-serif , 700;
     font-weight: 700;
     
 }
