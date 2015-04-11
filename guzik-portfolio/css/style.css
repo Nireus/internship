@@ -1,6 +1,7 @@
 section{
     padding-top: 10vh;
     height: 1080px;
+	background-repeat:no-repeat;
 }
 h1{
     font-family: 'Exo 2', sans-serif;
@@ -9,9 +10,7 @@ h1{
 }
 
 #section1{
-	height: 1080px;
     background-image: url(../resources/main_background_middle.png);
-	background-repeat:no-repeat;
 }
 
 #section1:after{
@@ -22,17 +21,13 @@ h1{
     height: 75vh;
 }
 #section2{
-	height: 1080px;
-	background-repeat:no-repeat;
 }
 
 /*O mnie - by Tomek CSS*/
 #section3{
     background-image:url(../resources/omnie_background.png);
-    height: 1080px;
     padding-top: 5vh;
     text-align: center;
-	background-repeat:no-repeat;
 }
 .white_font{
     color: #fff;
@@ -73,9 +68,7 @@ h1{
 }
 #section6{
     background-image:url(../resources/backgroundKontakt.png);
-    height: 1080px;
     padding-top: 0vh;
-
     text-align: center;
 }
 h2{
@@ -94,11 +87,14 @@ h2{
 
 #section4{
 	background-image:url(../resources/praca_background_timeline.png);
-	height: 1080px;
     padding-top: 5vh;
     text-align: center;
-	background-position:center;
-	background-repeat:no-repeat;	
+	background-position:center;	
+}
+#section4 p{
+    color:#fff;
+	text-align:center;
+	margin: 250px 150px 100px 150px;	
 }
 #section5 p{
     color:#fff;
@@ -107,15 +103,19 @@ h2{
 }
 #section5{
 	background-image:url(../resources/referencje_background.png);
-	height: 1080px;
     padding-top: 5vh;
     text-align: center;
-	background-repeat:no-repeat;
 }
 #arrowdown{
 	position:relative;
 	top:-75px;
 	text-align:center;
+}
+.size14{
+	font-size:14px;
+}
+.size24{
+	font-size:24px;
 }
 
 /*END Kuba CSS*/
@@ -124,11 +124,9 @@ h2{
 #section7
 {
     background-image:url(../resources/backgroundKontakt.png);
-    height: 1080px;
     padding-top: 8vh;
     background-color: grey;
     text-align: center;
-	background-repeat:no-repeat;
 }
 #button
 {
@@ -194,8 +192,6 @@ h2{
 {
     padding-top: 8vh;
     background-image:url(../resources/backgroundKontakt.png);
-	background-repeat:no-repeat;
-	height:1080px;
 }
 
 /*Jaskoks CSS END*/
