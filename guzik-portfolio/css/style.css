@@ -1,5 +1,5 @@
 section{
-    padding-top: 10vh;
+    padding-top: 100px;
     height: 1080px;
 	background-repeat:no-repeat;
 }
@@ -26,7 +26,7 @@ h1{
 /*O mnie - by Tomek CSS*/
 #section3{
     background-image:url(../resources/omnie_background.png);
-    padding-top: 5vh;
+    padding-top: 50px;
     text-align: center;
 }
 .white_font{
@@ -68,7 +68,7 @@ h1{
 }
 #section6{
     background-image:url(../resources/backgroundKontakt.png);
-    padding-top: 0vh;
+    padding-top: 0;
     text-align: center;
 }
 h2{
@@ -87,7 +87,7 @@ h2{
 
 #section4{
 	background-image:url(../resources/praca_background_timeline.png);
-    padding-top: 5vh;
+    padding-top:50px
     text-align: center;
 	background-position:center;	
 }
@@ -103,7 +103,7 @@ h2{
 }
 #section5{
 	background-image:url(../resources/referencje_background.png);
-    padding-top: 5vh;
+    padding-top: 50px;
     text-align: center;
 }
 #arrowdown{
@@ -124,7 +124,7 @@ h2{
 #section7
 {
     background-image:url(../resources/backgroundKontakt.png);
-    padding-top: 8vh;
+    padding-top: 80px;
     background-color: grey;
     text-align: center;
 }
@@ -135,7 +135,7 @@ h2{
     background-color: black;
     text-align: center;
     color:#ffffff;
-    height:5vh
+    height:50px
 }
 .number
 {
@@ -162,7 +162,7 @@ h2{
 }
 .padding2
 {
-    padding-top:10vh;
+    padding-top:100px;
 }
 .formcontroling
 {
@@ -190,7 +190,7 @@ h2{
 }
 #startsection
 {
-    padding-top: 8vh;
+    padding-top: 80px;
     background-image:url(../resources/backgroundKontakt.png);
 }
 
