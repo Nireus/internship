@@ -23,6 +23,10 @@ h1{
 #section2{
 }
 
+.clickable{
+    cursor: pointer;
+}
+
 /*O mnie - by Tomek CSS*/
 #section3{
     background-image:url(../resources/omnie_background.png);
