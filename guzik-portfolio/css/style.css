@@ -116,9 +116,11 @@ h2{
 #section7
 {
     background-image:url(../resources/backgroundKontakt.png);
-    padding-top: 80px;
+    background-repeat: repeat;
+    padding-top: 30px;
     background-color: grey;
     text-align: center;
+    height:400px;
 }
 #button
 {
