@@ -1,6 +1,6 @@
 section{
     padding-top: 100px;
-    height: 1080px;
+    height: 1000px;
 	background-repeat:no-repeat;
 }
 h1{
@@ -74,6 +74,7 @@ h1{
     background-image:url(../resources/backgroundKontakt.png);
     padding-top: 0;
     text-align: center;
+    background-repeat: repeat;
 }
 h2{
     font-family: 'Exo 2', sans-serif;
@@ -90,7 +91,7 @@ h2{
 /*Kuba CSS*/
 
 #section4{
-	background-image:url(../resources/praca_background_timeline.png);
+	background-image:url(../resources/praca_background.png);
     padding-top:50px
     text-align: center;
 	background-position:center;	
@@ -103,7 +104,7 @@ h2{
 #section5 p{
     color:#fff;
 	text-align:center;
-	margin: 250px 150px 100px 150px;	
+	margin: 250px 150px 100px 150px;
 }
 #section5{
 	background-image:url(../resources/referencje_background.png);
