@@ -8,25 +8,20 @@ h1{
     font-weight: 900;
     /*Odrazu wrzuciłem czcionke na całe h1 mozliwe grubosci 400, 700 i 900 by: Tomek*/
 }
-
 #section1{
     background-image: url(../resources/main_background_middle.png);
 }
-
 #section1:after{
     background-image: url(../resources/main_button_scroll.png);
 }
-
 #lion{
     height: 75vh;
 }
 #section2{
 }
-
 .clickable{
     cursor: pointer;
 }
-
 /*O mnie - by Tomek CSS*/
 #section3{
     background-image:url(../resources/omnie_background.png);
@@ -56,8 +51,6 @@ h1{
 .open_sans{
    font-family: 'Open Sans', sans-serif; 
 }
-
-
 .open_sans_normal{
    font-family: 'Open Sans', sans-serif; 
    font-weight: 400;
@@ -66,7 +59,6 @@ h1{
     font-family: 'Open Sans', sans-serif; 
     font-weight: 300;
 }
-
 .margin_auto{
     margin: 0 auto;
 }
@@ -81,11 +73,6 @@ h2{
     font-weight: 900;
     font-size: 19px;
 }
-
-
-
-
-
 /*END Tomek CSS*/
 
 /*Kuba CSS*/
@@ -186,12 +173,16 @@ h2{
 }
 .startsectionheader
 {
+    font-family:'Exo 2', sans-serif;
+    font-weight: 900;
     font-size:25px;
 }
 .startsectionparagraph
 {
     color: #afafaf;
     text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size:14px;
 }
 #startsection
 {
