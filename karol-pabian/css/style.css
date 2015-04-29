@@ -1,5 +1,31 @@
+@font-face { font-family: BebasNeue; src: url('../fonts/BebasNeue/BebasNeue_Regular.otf'); }
+@font-face { font-family: BebasNeue; font-weight:bold; src: url('../fonts/BebasNeue/BebasNeue_Bold.otf'); }
+/*@font-face { font-family: BebasNeue; font-weight:; src: url('fonts/BebasNeue/BebasNeue_Light.oft'); }
+@font-face { font-family: BebasNeue; font-weight: ; src: url('fonts/BebasNeue/BebasNeue_Thin.oft'); }
+@font-face { font-family: BebasNeue; font-weight: ; src: url('fonts/BebasNeue/BebasNeue_Book.oft'); }
+*/
+
+
 section{
     padding-top: 100px;
     height: 1080px;
-	background-repeat:no-repeat;
+    background-repeat:no-repeat;
+}
+
+/*kod by Tomek*/
+
+header{
+    height: 500px;
+    background-image: url('../resources/images/background_top.png');
+}
+
+#navstyle {
+    height: 100px
+}
+
+#menu_tag {
+    margin-top: 25px;
+    font-family: BebasNeue, sans-serif;
+    font-size: 3em;
+    font-weight: bold;
 }
