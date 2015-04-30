@@ -9,7 +9,9 @@
 section{
     padding-top: 100px;
     height: 1080px;
+    background-image: url(../resources/images/background.png);
     background-repeat:no-repeat;
+    background-size: cover;
 }
 
 /*kod by Tomek*/
@@ -20,7 +22,8 @@ header{
 }
 
 #navstyle {
-    height: 100px
+    height: 100px;
+    margin:0px;
 }
 
 #menu_tag {
@@ -29,3 +32,54 @@ header{
     font-size: 3em;
     font-weight: bold;
 }
+
+/*Jarcin CSS*/
+.box
+{
+    margin:auto;
+    height:8vh;
+    width:32vw;
+    border: 4px solid black;
+}
+#section4
+{
+    text-align: center;
+    padding-top: 50px;
+    font-family: BebasNeue, sans-serif;
+    background-image: url(../resources/images/background.png);
+    background-size:cover;
+    maring:auto;
+}
+#footer {
+    font-weight: bold;
+    font-size:14px;
+}
+.paddingKontakt
+{
+    padding-top:550px;
+}
+.thumbnailGalery
+{
+    margin:auto;
+    float: left;
+}
+.paddingGalerry
+{
+    padding:0px;
+}
+#section2
+{
+    padding-top: 50px;
+    font-family: BebasNeue, sans-serif;
+    text-align:center;
+}
+#section2 p
+{
+    font-family: "Open Sans", sans-serif;
+}
+#section1
+{
+    text-align: center;
+    padding-top:50px;
+}
+/*Jarcin CSS END*/
