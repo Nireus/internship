@@ -218,18 +218,18 @@ h2 {
     background-image: none !important;
 }
 
-.glyphicon-chevron-left:before {
+.realizations .glyphicon-chevron-left:before {
     color: #000000;
 }
 
-.glyphicon-chevron-right:before {
+.realizations .glyphicon-chevron-right:before {
     color: #000000;
 }
 
-.carousel-indicators li {
+.realizations .carousel-indicators li {
     border: 1px solid #555;
 }
 
-.carousel-indicators .active{
+.realizations .carousel-indicators .active{
     background-color: #555;
 }
