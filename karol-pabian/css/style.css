@@ -8,7 +8,7 @@
 
 section{
     padding-top: 100px;
-    height: 1080px;
+    height: 1180px; /* zwiekszylem o 100px bo na moim lapku 1600x900 wjezdza tekst z poprzedniej sekcji Kuba */
     background-image: url(../resources/images/background.png);
     background-repeat:no-repeat;
     background-size: cover;
@@ -31,6 +31,15 @@ header{
     font-family: BebasNeue, sans-serif;
     font-size: 3em;
     font-weight: bold;
+}
+
+/* Kuba CSS */
+
+#section3
+{
+    padding-top: 50px;
+    font-family: BebasNeue, sans-serif;
+    text-align:center;
 }
 
 /*Jarcin CSS*/
