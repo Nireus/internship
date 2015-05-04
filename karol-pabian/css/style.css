@@ -76,10 +76,103 @@ header{
 #section2 p
 {
     font-family: "Open Sans", sans-serif;
+    font-size:14px;
 }
 #section1
 {
     text-align: center;
     padding-top:50px;
 }
+#section1 h1
+{
+    font-family: BebasNeue, sans-serif;
+    font-size:48px;
+}
+#section1 h2
+{
+    font-family: BebasNeue, sans-serif;
+    font-size:24px;
+}
+#section1 p
+{
+    font-family: "Open Sans", sans-serif;
+    font-size:14px;
+}
+#section1 h3
+{
+    font-size:18px;
+    font-family: BebasNeue, sans-serif;
+}
+#section3
+{
+    padding-top: 20px;
+    text-align: center;
+}
+#section3 h1
+{
+    font-family: BebasNeue, sans-serif;
+    font-size:48px;
+}
+#section3 h2
+{
+    font-family: BebasNeue, sans-serif;
+    font-size:24px;
+}
+.body
+{
+    font-family: BebasNeue, sans-serif;
+    font-size:36px;
+}
+.signature
+{
+    font-family: BebasNeue, sans-serif;
+    font-size:24px;
+    padding-top: 60px;
+
+}
+.paddings3
+{
+    padding-top: 50px;
+}
+.paddings2
+{
+    padding-top:10px;
+}
+.aligns1
+{
+    text-align:left;
+}
 /*Jarcin CSS END*/
+
+/*Carousel*/
+
+.carousel-control {
+    background-image: none !important;
+    color:black;
+}
+.carousel-caption{
+    color: black;
+    font-size: 20px;
+    padding-bottom: 70px;
+}
+
+.carousel-caption p{
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 10px ;
+    padding: 5px;
+}
+.realizations .glyphicon-chevron-left:before {
+    color: #000000;
+}
+
+.realizations .glyphicon-chevron-right:before {
+    color: #000000;
+}
+
+.realizations .carousel-indicators li {
+    border: 1px solid #555;
+}
+
+.realizations .carousel-indicators .active{
+    background-color: #555;
+}
