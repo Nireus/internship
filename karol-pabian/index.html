@@ -4,11 +4,19 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Karol Pabian - portfolio</title>
+    <title>Paweł Gorzelec - portfolio</title>
 
     <!--JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <!--Angular js-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular-animate.js"></script>
+    <script src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.12.1.js"></script>
+
+    <!--App js-->
+    <script src="js/app.js"></script>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -20,7 +28,8 @@
     <!-- Open sans font-->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'>
 </head>
-<body>
+
+<body ng-app="pabian">
 <header>
     <div id="logo">
         <div><img src="./resources/images/ziomek.png" style="margin-top:19px; margin-left: 55%;"></div>
@@ -49,27 +58,27 @@
     <div class="container">
     <h1>AKCJA</h1>
     <h2>Czy jesteś w pełni świadomy kim chcesz się stać i gdzie idziesz ?</h2>
-    <div style="float:left">
-    <div class="col-md-6" style="float: left" ><img src="./resources/images/ziomek.png"width="100%" height="100%"</div>
-    <div class="col-md-6" style="float: left">
-        <h3>MIEJ ŚWIADOMOŚĆ - GŁÓWNE ZAŁOŻENIA</h3>
+    <div style="float:left" class="paddings3">
+    <div class="col-md-6"><img src="./resources/images/ziomek.png"width="100%" height="100%"></div>
+    <div class="col-md-6 aligns1">
+        <p><b>MIEJ ŚWIADOMOŚĆ - GŁÓWNE ZAŁOŻENIA</b></p>
         <p>Sprawdzona i poparta wiedza na temat dietetyki i sportu.
         Jeżeli szukasz informacji, ciekawostek oraz porad, które
         od zaraz możesz wprowadzić, aby:</p>
         <p>
-            -uzyskać lepszą sylwetkę.
-            -przestać borykać się z problemami zdrowotnymi.
-            -polepszyć swoje samopoczucie.
-            -mieć spokojne sumienie, że robisz dobrze dla Twojego organizmu.
+            <p>-uzyskać lepszą sylwetkę.</p>
+            <p>-przestać borykać się z problemami zdrowotnymi.</p>
+            <p>-polepszyć swoje samopoczucie.</p>
+            <p>-mieć spokojne sumienie, że robisz dobrze dla Twojego organizmu.</p>
         </p>
-        <h3>TO TA AKCJA JEST DLA CIEBIE!</h3>
+        <p><b>TO TA AKCJA JEST DLA CIEBIE!</b></p>
         <p>
             Już nie musisz być zdany na mase informacji, z których ciężko
             wyciągnąc wnioski. Dowiesz się co, jak, kiedy i dlaczego warto robić,
             aby osiągnąć swój wymarzony cel.
         </p>
-        <h3>TO TAKIE PROSTE</h3><p>-wystarczy że się zainteresujesz i poświęcisz czas.</p>
-        <h3>GWARANTUJĘ CI</h3><p>, że to nie będzie czas stracony!</p>
+        <p><b>TO TAKIE PROSTE</b>-wystarczy że się zainteresujesz i poświęcisz czas.</p>
+        <p><b>GWARANTUJĘ CI</b>, że to nie będzie czas stracony!</p>
     </div>
     </div>
     </div>
@@ -90,27 +99,31 @@
         <div class="col-lg-6 paddingGalerry clickable"><a class="fancybox" rel="group" href="./resources/images/photo_7_original.jpg"><img src="./resources/images/photo_7.png"width="100%" height="100%" alt="" /></a></div>
         <div class="col-lg-6 paddingGalerry clickable"><a class="fancybox" rel="group" href="./resources/images/photo_8_original.jpg"><img src="./resources/images/photo_8.png"width="100%" height="100%" alt="" /></a></div>
         </div>
-
-    <p>Zainteresowanie rodzi pasję. Pasja rodzi zainteresowanie oraz chęć pomagania innym i propagowania własnych, sprawdzonych poglądów
+    <div class="paddings2"><p class="paddings2">Zainteresowanie rodzi pasję. Pasja rodzi zainteresowanie oraz chęć pomagania innym i propagowania własnych, sprawdzonych poglądów
     i wiedzy. Wszystko zaczęło się od sportu, zainteresowany kulturystyką i mozolnym brnięciem do celu, uświadomiłem sobie że sam sport nie wystarczy
     do osiągnięcia szczupłej, wysportowanej sylwetki. Tak oto zacząłem się powoli wgłębiać w tajniki dietetytki. Zajęcie to nie było proste
     gdyż bazując na internetowym skarbcu wiedzy można znaleźć wiele ciekawych i sprawdzonych informacji. jak i takich które są mniej rzetelne.
     Wtedy zdecydowałem że warto byłoby zacząc szkolić się jako doradca żywieniowy. Jak możecie zobaczyć w sekcji kwalifikacje na jednym szkoleniu się nie skończyło
     Dodatkowo miłość do sportu spowodowała uzyskanie kwalifikacji trenerskich i instruktorskich, przez co mimo doradzania ludziom jak prawidłowo
     zmieniać swoje nawyki żywieniowe, mogę z nimi także trenować!...
-    </p>
+    </p></div>
     </div>
 </section>
 
 <section id="section3">
-<div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center">
-                <h1 style="font-size:48px;">Referencje</h1>
-				<h2>Wiem oraz jem świadomie. Skąd się to wzięło</h2><br><br>
-				<h2> "Bardzo świadoma siebie postać. Poznając Karola wiedziałem, że to osoba silnie zorientowana na odniesienie sukcesu"</h2>
-				<p> Paweł Gorzelec </p>
-				<img src="./resources/images/tag_icon.png">
+    <div class="container">
+    <h1>REFERENCJE</h1>
+    <h2>WIEM ORAZ JEM ŚWIADOMIE. SKĄD TO SIĘ WZIĘŁO</h2>
+    <div class="realizations text text-center paddings3" ng-controller="ReferenceCaruzel">
+        <carousel interval="myInterval" style="height: 400px; align-content: center;">
+            <slide ng-repeat="reference in references" active="reference.active">
+                <p class="body">{{reference.body}}</p>
+
+                <p class="signature">{{reference.signature}}</p>
+            </slide>
+        </carousel>
+    </div>
+    </div>
 </section>
 
 <!--SEKCJA BY JASKOKS-->
