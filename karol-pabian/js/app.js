@@ -29,9 +29,17 @@ angular.module('pabian', ['ui.bootstrap'])
 
         ];
     }).controller('GalleryControl', function($scope){
-
-
-
-    })
+        path1 = './resources/images/photo_';
+        path2 = '_original.jpg';
+        $scope.imageSource = '';
+        $scope.imageShown = false;
+        $scope.showImage = function (imageID){
+            $scope.imageSource = path1 + imageID + path2;
+            $scope.imageShown = true;
+        }
+        $scope.closeGallery = function(){
+            $scope.imageShown = false;
+        }
+    });
 
 
