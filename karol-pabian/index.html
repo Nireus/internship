@@ -48,7 +48,7 @@
             </ul>
 
             <ul style="margin: 15px auto !important; padding-left: 100px;" class="nav navbar-nav center-block4">
-                <li><a href=""><img src="./resources/images/facebook_icon.png"></a></li>
+                <li><a href="http://www.facebook.com/wiedzijedz" target="_blank"><img src="./resources/images/facebook_icon.png"></a></li>
                 <li><a href=""><img src="./resources/images/yt_icon.png"></a></li>
             </ul>
         </div>
@@ -57,10 +57,11 @@
 
 <section id="section1">
     <div class="container">
+        <div class="row">
     <h1>AKCJA</h1>
     <h2>Czy jesteś w pełni świadomy kim chcesz się stać i gdzie idziesz ?</h2>
     <div style="float:left" class="paddings3">
-    <div class="col-md-6"><img src="./resources/images/ziomek.png"width="100%" height="100%"></div>
+    <div class="col-md-6"><img src="./resources/images/face.png"width="50%" height="50%"></div>
     <div class="col-md-6 aligns1">
         <p><b>MIEJ ŚWIADOMOŚĆ - GŁÓWNE ZAŁOŻENIA</b></p>
         <p>Sprawdzona i poparta wiedza na temat dietetyki i sportu.
@@ -82,49 +83,112 @@
         <p><b>GWARANTUJĘ CI</b>, że to nie będzie czas stracony!</p>
     </div>
     </div>
+            </div>
     </div>
 </section>
 
 <!--SEKCJA BY JASKOKS-->
-<section id="section2">
+<section id="section2" style="position: relative" ng-controller="GalleryControl">
     <div class="container">
-    <h1>JA KAROL</h1>
-    <h2>KIM JESTEM? SKĄD SIĘ WZIĄŁEM? DLACZEGO WARTO MI ZAUFAĆ?</h2>
+        <div class="row">
+        <h1>JA KAROL</h1>
+        <h2>KIM JESTEM? SKĄD SIĘ WZIĄŁEM? DLACZEGO WARTO MI ZAUFAĆ?</h2>
         <div class="thumbnailGalery">
-        <div class="col-lg-2 paddingGalerry clickable"><a class="fancybox" rel="group" href="./resources/images/photo_1_original.jpg"><img src="./resources/images/photo_1.png"width="100%" height="100%" alt="" /></a></div>
-        <div class="col-lg-2 paddingGalerry clickable"><a class="fancybox" rel="group" href="./resources/images/photo_2_original.jpg"><img src="./resources/images/photo_2.png"width="100%" height="100%" alt="" /></a></div>
-        <div class="col-lg-2 paddingGalerry clickable"><a class="fancybox" rel="group" href="./resources/images/photo_3_original.jpg"><img src="./resources/images/photo_3.png"width="100%" height="100%" alt="" /></a></div>
-        <div class="col-lg-2 paddingGalerry clickable"><a class="fancybox" rel="group" href="./resources/images/photo_4_original.jpg"><img src="./resources/images/photo_4.png"width="100%" height="100%" alt="" /></a></div>
-        <div class="col-lg-2 paddingGalerry clickable"><a class="fancybox" rel="group" href="./resources/images/photo_5_original.jpg"><img src="./resources/images/photo_5.png"width="100%" height="100%" alt="" /></a></div>
-        <div class="col-lg-2 paddingGalerry clickable"><a class="fancybox" rel="group" href="./resources/images/photo_6_original.jpg"><img src="./resources/images/photo_6.png"width="100%" height="100%" alt="" /></a></div>
-        <div class="col-lg-6 paddingGalerry clickable"><a class="fancybox" rel="group" href="./resources/images/photo_7_original.jpg"><img src="./resources/images/photo_7.png"width="100%" height="100%" alt="" /></a></div>
-        <div class="col-lg-6 paddingGalerry clickable"><a class="fancybox" rel="group" href="./resources/images/photo_8_original.jpg"><img src="./resources/images/photo_8.png"width="100%" height="100%" alt="" /></a></div>
+            <div class="col-lg-2 paddingGalerry clickable"><img src="./resources/images/photo_1.png"width="100%" height="100%" alt="" ng-click="ShowImage(1)"/></div>
+            <div class="col-lg-2 paddingGalerry clickable"><img src="./resources/images/photo_2.png"width="100%" height="100%" alt="" ng-click="ShowImage(2)"/></div>
+            <div class="col-lg-2 paddingGalerry clickable"><img src="./resources/images/photo_3.png"width="100%" height="100%" alt="" ng-click="ShowImage(3)"/></div>
+            <div class="col-lg-2 paddingGalerry clickable"><img src="./resources/images/photo_4.png"width="100%" height="100%" alt="" ng-click="ShowImage(4)"/></div>
+            <div class="col-lg-2 paddingGalerry clickable"><img src="./resources/images/photo_5.png"width="100%" height="100%" alt="" ng-click="ShowImage(5)"/></div>
+            <div class="col-lg-2 paddingGalerry clickable"><img src="./resources/images/photo_6.png"width="100%" height="100%" alt="" ng-click="ShowImage(6)"/></div>
+            <div class="col-lg-6 paddingGalerry clickable"><img src="./resources/images/photo_7.png"width="100%" height="100%" alt="" ng-click="ShowImage(7)"/></div>
+            <div class="col-lg-6 paddingGalerry clickable"><img src="./resources/images/photo_8.png"width="100%" height="100%" alt="" ng-click="ShowImage(8)"/></div>
         </div>
-    <div class="paddings2"><p class="paddings2">Zainteresowanie rodzi pasję. Pasja rodzi zainteresowanie oraz chęć pomagania innym i propagowania własnych, sprawdzonych poglądów
-    i wiedzy. Wszystko zaczęło się od sportu, zainteresowany kulturystyką i mozolnym brnięciem do celu, uświadomiłem sobie że sam sport nie wystarczy
-    do osiągnięcia szczupłej, wysportowanej sylwetki. Tak oto zacząłem się powoli wgłębiać w tajniki dietetytki. Zajęcie to nie było proste
-    gdyż bazując na internetowym skarbcu wiedzy można znaleźć wiele ciekawych i sprawdzonych informacji. jak i takich które są mniej rzetelne.
-    Wtedy zdecydowałem że warto byłoby zacząc szkolić się jako doradca żywieniowy. Jak możecie zobaczyć w sekcji kwalifikacje na jednym szkoleniu się nie skończyło
-    Dodatkowo miłość do sportu spowodowała uzyskanie kwalifikacji trenerskich i instruktorskich, przez co mimo doradzania ludziom jak prawidłowo
-    zmieniać swoje nawyki żywieniowe, mogę z nimi także trenować!...
+        <div class="paddings2"><p class="paddings2 textpabian">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam. Quisque semper justo at risus. Donec venenatis, turpis vel hendrerit interdum, dui ligula ultricies purus, sed posuere libero dui id orci. Nam congue, pede vitae dapibus aliquet, elit magna vulputate arcu, vel tempus metus leo non est. Etiam sit amet lectus quis est congue mollis. Phasellus congue lacus eget neque. Phasellus ornare, ante vitae consectetuer consequat, purus sapien ultricies dolor, et mollis pede metus eget nisi. Praesent sodales velit quis augue. Cras suscipit, urna at aliquam rhoncus, urna quam viverra nisi, in interdum massa nibh nec erat.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam. Quisque semper justo at risus. Donec venenatis, turpis vel hendrerit interdum, dui ligula ultricies purus, sed posuere libero dui id orci. Nam congue, pede vitae dapibus aliquet, elit magna vulputate arcu, vel tempus metus leo non est. Etiam sit amet lectus quis est congue mollis. Phasellus congue lacus eget neque. Phasellus ornare, ante vitae consectetuer consequat, purus sapien ultricies dolor, et mollis pede metus eget nisi. Praesent sodales velit quis augue. Cras suscipit, urna at aliquam rhoncus, urna quam viverra nisi, in interdum massa nibh nec erat.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam. Quisque semper justo at risus. Donec venenatis, turpis vel hendrerit interdum, dui ligula ultricies purus, sed posuere libero dui id orci. Nam congue, pede vitae dapibus aliquet, elit magna vulputate arcu, vel tempus metus leo non est. Etiam sit amet lectus quis est congue mollis. Phasellus congue lacus eget neque. Phasellus ornare, ante vitae consectetuer consequat, purus sapien ultricies dolor, et mollis pede metus eget nisi. Praesent sodales velit quis augue. Cras suscipit, urna at aliquam rhoncus, urna quam viverra nisi, in interdum massa nibh nec erat.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam. Quisque semper justo at risus. Donec venenatis, turpis vel hendrerit interdum, dui ligula ultricies purus, sed posuere libero dui id orci. Nam congue, pede vitae dapibus aliquet, elit magna vulputate arcu, vel tempus metus leo non est. Etiam sit amet lectus quis est congue mollis. Phasellus congue lacus eget neque. Phasellus ornare, ante vitae consectetuer consequat, purus sapien ultricies dolor, et mollis pede metus eget nisi. Praesent sodales velit quis augue. Cras suscipit, urna at aliquam rhoncus, urna quam viverra nisi, in interdum massa nibh nec erat.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam. Quisque semper justo at risus. Donec venenatis, turpis vel hendrerit interdum, dui ligula ultricies purus, sed posuere libero dui id orci. Nam congue, pede vitae dapibus aliquet, elit magna vulputate arcu, vel tempus metus leo non est. Etiam sit amet lectus quis est congue mollis. Phasellus congue lacus eget neque. Phasellus ornare, ante vitae consectetuer consequat, purus sapien ultricies dolor, et mollis pede metus eget nisi. Praesent sodales velit quis augue. Cras suscipit, urna at aliquam rhoncus, urna quam viverra nisi, in interdum massa nibh nec erat.
     </p></div>
     </div>
+<div>
+    <div style="position:absolute;background-color: rgba(0,0,0,0.5);height:1050px;width:100vw; top:0;" ng-show="GaleryShown">
+        <div class="container">
+            <div class="clickable glyphicon glyphicon-remove" style="top:80px;left:645px;color:black;"ng-click="closeGallery"></div>
+            <div style="padding-top:80px;position: relative;">
+                <img ng-src="{{"./resources/images/photo_"+ImageID+"_orginal.png"}}"/>
+            </div>
+
+        </div>
+        </div>
+</div>
+        </div>
 </section>
 
 <section id="section3">
     <div class="container">
-    <h1>REFERENCJE</h1>
-    <h2>WIEM ORAZ JEM ŚWIADOMIE. SKĄD TO SIĘ WZIĘŁO</h2>
-    <div class="realizations text text-center paddings3" ng-controller="ReferenceCaruzel">
-        <carousel interval="myInterval" style="height: 400px; align-content: center;">
+        <div class="row">
+        <h1>REFERENCJE</h1>
+        <h2>WIEM ORAZ JEM ŚWIADOMIE. SKĄD TO SIĘ WZIĘŁO</h2>
+        <div class="realizations text text-center paddings3" ng-controller="ReferenceCaruzel">
+            <carousel interval="myInterval" style="height: 400px; align-content: center;">
             <slide ng-repeat="reference in references" active="reference.active">
                 <p class="body">{{reference.body}}</p>
 
                 <p class="signature">{{reference.signature}}</p>
             </slide>
         </carousel>
+            </div>
     </div>
     </div>
+</section>
+
+<section id="bonussection">
+<div class="container">
+    <div class="row">
+    <div class="col-md-6">
+    <h3>Certyfikat będący wyniekiem ukończeznia kursu XYZ</h3>
+    <img/>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam. Quisque semper justo at risus. Donec venenatis, turpis vel hendrerit interdum, dui ligula ultricies purus, sed posuere libero dui id orci. Nam congue, pede vitae dapibus aliquet, elit magna vulputate arcu, vel tempus metus leo non est. Etiam sit amet lectus quis est congue mollis. Phasellus congue lacus eget neque. Phasellus ornare, ante vitae consectetuer consequat, purus sapien ultricies dolor, et mollis pede metus eget nisi. Praesent sodales velit quis augue. Cras suscipit, urna at aliquam rhoncus, urna quam viverra nisi, in interdum massa nibh nec erat.</p>
+    </div>
+    <div class="col-md-6">
+        <h3 style="text-align: left;">Zdobyte Uprawnienia</h3>
+        <div style=" margin: auto auto; text-align: center;" class="clickable">
+            <div class="certyfikaty-button" ng-click="setCategory(0)">
+                <p style="padding-top:10px;"><b>KURSY</b></p>
+            </div>
+            <div class="certyfikaty-button" ng-click="setCategory(1)">
+                <p style="padding-top:10px;"><b>CERTYFIKATY</b></p>
+            </div>
+            <div class="certyfikaty-button" ng-click="setCategory(2)">
+                <p style="padding-top:10px;"><b>DYPLOMY</b></p>
+            </div>
+            <div  class="certyfikaty-button" ng-click="setCategory(4)">
+                <p style="padding-top:10px;"><b>SZKOLENIA</b></p>
+            </div>
+            <div  class="certyfikaty-button" ng-click="setCategory(5)">
+                <p style="padding-top:10px;"><b>INNE</b></p>
+            </div>
+        </div>
+
+        <div class="row">
+            <!--TODO: ustawic css -->
+            <div class="realizations">
+                <carousel interval="" style="height: 800px">
+                    <slide ng-repeat="" active="">
+                        <img ng-src="{{slide.image}}" style="margin:auto;">
+                        <div class="carousel-caption">
+                            <p>{{slide.description}}</p>
+                        </div>
+                    </slide>
+                </carousel>
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+</div>
+
 </section>
 
 <!--SEKCJA BY JASKOKS-->
@@ -135,20 +199,20 @@
                 <h1 style="font-size:48px;">Kontakt</h1>
                 <p style="font-size:24px;">Jeśli ciekawi cię co dalej pozostaw po sobie ślad</p>
 
-                <div class="paddingKontakt">
+
 
                 <p style="font-size:56px;">+48 730 705 096</p>
 
                 <p>
-                <div class="box">
-                <div style="font-size:56px; font-family: BebasNeue, sans-serif;">WIEDZIJEDZ.PABIAN@GMAIL.COM</div>
-                <div>
+                <div class=" box" style="font-size:56px; font-family: BebasNeue, sans-serif;">WIEDZIJEDZ.PABIAN@GMAIL.COM</div>
+
                 </p>
 
-                <p style="font-size:30px; font-family: BebasNeue, sans-serif;"><a href="#">WWW.FACEBOOK.COM/WIEDZIJEDZ</a> </p>
+                <p style="font-size:30px; font-family: BebasNeue, sans-serif;"><a href="http://www.facebook.com/wiedzijedz" target="_blank">WWW.FACEBOOK.COM/WIEDZIJEDZ</a> </p>
 
                 <div id="footer"> &copy Copyright 2015 The PawełGorzelec, All Rights Reserved.</div>
-                <div>
+
+
             </div>
         </div>
     </div>

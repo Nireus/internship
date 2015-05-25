@@ -28,5 +28,10 @@ angular.module('pabian', ['ui.bootstrap'])
             }
 
         ];
+    }).controller('GalleryControl', function($scope){
+
+
 
     })
+
+
