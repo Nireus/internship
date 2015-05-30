@@ -191,7 +191,7 @@
                 <div class="realization-button" ng-click="setCategory(2)">
                     <h3>DESIGN SIECIOWY</h3>
                 </div>
-                <div  class="realization-button" ng-click="setCategory(3)">
+                <div class="realization-button" ng-click="setCategory(3)">
                     <h3>BRANDING</h3>
                 </div>
             </div>
@@ -201,10 +201,11 @@
 
         <div class="row">
             <!--TODO: ustawic css -->
-            <div class="realizations">
+            <div class="realizations" style="padding-top:5px;">
                 <carousel interval="myInterval" style="height: 800px">
                     <slide ng-repeat="slide in slides[currentCategory]" active="slide.active">
                         <img ng-src="{{slide.image}}" style="margin:auto;">
+
                         <div class="carousel-caption">
                             <p>{{slide.description}}</p>
                         </div>

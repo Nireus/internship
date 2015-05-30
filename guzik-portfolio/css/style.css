@@ -23,7 +23,7 @@ h1 {
 }
 
 #section2 {
-    background: url(../resources/backgroundKontakt.png) repeat;
+    background-color:white;
 }
 
 .clickable {
@@ -103,7 +103,8 @@ h3 {
 /*Kuba CSS*/
 
 #section4 {
-    padding-top: 50px text-align : center;
+    padding-top: 50px ;
+    text-align : center;
     background: url(../resources/praca_background.png) center;
 }
 
