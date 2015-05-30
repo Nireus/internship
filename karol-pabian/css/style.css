@@ -128,7 +128,7 @@ header{
 }
 #section3
 {
-    height:700px;
+    height:1200px;
     padding-top: 20px;
     text-align: center;
 }
@@ -145,13 +145,13 @@ header{
 .body
 {
     font-family: BebasNeue, sans-serif;
-    font-size:36px;
+    font-size:20px;
 }
 .signature
 {
     font-family: BebasNeue, sans-serif;
     font-size:24px;
-    padding-top: 60px;
+    padding-top: 25px;
 
 }
 .paddings3
@@ -222,24 +222,45 @@ header{
     background-image:none;
     color:black;
 }
-.certyfikaty-button{
-    vertical-align:middle;
-    text-align: center;
-    font-size:20px;
-    padding-bottom: 2px;
-    padding-right: 2px;
-    padding-left:2px;
-    border: 1px solid #000000;
-    display: inline-block;
-    margin: -3;
-    background-color: rgba(0,0,0,0.9);
-    color: #ffffff;
+.certyfikaty_button{
+    background-color: #000000;
+    border:1px solid #000000;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-size:17px;
+    padding:1px 60px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #000000;
+    margin:4px;
 }
-.certyfikaty-button:hover{
+.certyfikaty_button:hover{
     background-color: rgba(255,255,255,0.9);
     color: black;
+}
+.certyfikaty_button:active {
+    position:relative;
+    top:1px;
 }
 #logo
 {
     width:100%;
+}
+.button{
+    border:1px solid #afafaf;
+    background-color: #cccccc;
+    font-size:16px;
+    padding:6px 12px;
+    color:white;
+    margin:4px;
+    float:right;
+    right:18px;
+}
+.button:hover{
+    background-color: #696969;
+
+}
+.button:active{
+    position:relative;
+    top:1px;
 }
