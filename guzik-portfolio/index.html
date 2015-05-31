@@ -228,9 +228,9 @@
                 <img src="resources/dots_white.png">
                 <carousel interval="myInterval" style="height: 800px">
                     <slide ng-repeat="reference in references" active="reference.active">
-                        <p class="p_margin open_sans_light size24">{{references[0].body}}</p>
+                        <p class="p_margin open_sans_light size24">{{reference.body}}</p>
 
-                        <p class="p_margin open_sans_light size14">{{references[0].signature}}</p>
+                        <span class="p_margin open_sans_light size14" style="color:white;">{{reference.signature}}</span>
                     </slide>
                 </carousel>
             </div>
