@@ -3,52 +3,41 @@ section {
     height: 1000px;
     background-repeat: no-repeat;
 }
-
 h1 {
     font-family: 'Exo 2', sans-serif;
     font-weight: 900;
     /*Odrazu wrzuciłem czcionke na całe h1 mozliwe grubosci 400, 700 i 900 by: Tomek*/
 }
-
 #section1 {
     background: url(../resources/main_background_middle.png) center;
 }
-
 #section1:after {
     background-image: url(../resources/main_button_scroll.png);
 }
-
 #lion {
     height: 75vh;
 }
-
 #section2 {
     background-color:white;
 }
-
 .clickable {
     cursor: pointer;
 }
-
 /*O mnie - by Tomek CSS*/
 #section3 {
     background: url(../resources/omnie_background.png) center;
     padding-top: 50px;
     text-align: center;
 }
-
 .white_font {
     color: #fff;
 }
-
 .omnie_padding {
     padding-top: 2em;
 }
-
 .p_margin {
     margin-bottom: 1px;
 }
-
 #signature {
     font-size: 20px;
     padding-top: 15px;
@@ -57,91 +46,72 @@ h1 {
 
     color: #D8D8D8;
 }
-
 #section3 p {
     color: #fff;
 }
-
 .open_sans {
     font-family: 'Open Sans', sans-serif;
 }
-
 .open_sans_normal {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
 }
-
 .open_sans_light {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
 }
-
 .margin_auto {
     margin: 0 auto;
 }
-
 #section6 {
     padding-top: 75px;
     text-align: center;
     background: url(../resources/backgroundKontakt.png) repeat;
 }
-
 h2 {
     font-family: 'Exo 2', sans-serif;
     font-weight: 900;
     font-size: 19px;
 }
-
-
 h3 {
     font-family: 'Exo 2', sans-serif;
     font-weight: 900;
     font-size: 25px;
 }
 /*END Tomek CSS*/
-
 /*Kuba CSS*/
-
 #section4 {
     padding-top: 50px ;
     text-align : center;
     background: url(../resources/praca_background.png) center;
 }
-
 #section4 p {
     color: #fff;
     text-align: center;
     margin: 250px 150px 100px 150px;
 }
-
 #section5 p {
     color: #fff;
     text-align: center;
     margin: 250px 150px 100px 150px;
 }
-
 #section5 {
     background: url(../resources/referencje_background.png) center;
     padding-top: 50px;
     text-align: center;
 }
-
 #arrowdown {
     position: relative;
     top: -75px;
     text-align: center;
 }
-
 .size14 {
     font-size: 14px;
 }
-
 .size24 {
     font-size: 24px;
 }
-
 /*END Kuba CSS*/
-
 /*Jaskoks CSS*/
 #section7 {
     padding-top: 30px;
@@ -149,7 +119,6 @@ h3 {
     text-align: center;
     height: 400px;
 }
-
 #button {
     border-radius: 0px;
     width: 100%;
@@ -158,69 +127,55 @@ h3 {
     color: #ffffff;
     height: 50px
 }
-
 .number {
     font-size: 40px;
     font-family: 'Open Sans', sans-serif;
 }
-
 #tmail {
     font-size: 40px;
     font-family: 'Exo 2', sans-serif, 700;
     font-weight: 700;
-
 }
-
 .border {
     border: 5px solid black;
     padding-left: 5%;
     padding-right: 5%;
     padding-bottom: 2%;
 }
-
 .padding {
     padding-top: 10px;
 }
-
 .padding2 {
     padding-top: 100px;
 }
-
 .formcontroling {
     border-radius: 0px;
     background: transparent;
     font-family: 'Exo 2', sans-serif, 700;
 " font-weight : 400;
 }
-
 #footer {
     font-weight: bold;
 }
-
 .color {
     background-color: pink;
 }
-
 .startsectionheader {
     font-family: 'Exo 2', sans-serif;
     font-weight: 900;
     font-size: 25px;
 }
-
 .startsectionparagraph {
     color: #afafaf;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
 }
-
 #startsection {
     padding-top: 80px;
     background-image: url(../resources/backgroundKontakt.png);
 }
-
 /*Jaskoks CSS END*/
-
 .carousel-control {
     background-image: none !important;
 }
