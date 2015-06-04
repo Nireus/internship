@@ -1,6 +1,64 @@
+#section1{
+    height: 1180px;
 
 
-
-section{
 }
+.greenbar{
+    pull:top;
+    position:absolute;
+    height:30px;
+    width:100%;
+    background-color: #3dc821;
+    color:white;
+    text-align:center;
+    top:0;
+}
+.paddinggreenbar
+{
+    padding-top:5px;
+    margin-left:30px;
+    right:200px;
+}
+.bannerbar
+{
+    height:22vh;
 
+}
+#logo
+{
+    position:absolute;
+    top:-165px;
+}
+.border
+{
+    border-top: 3px solid #cccccc;
+    border-bottom: 3px solid #cccccc;
+}
+.jumbotron{
+    padding:0px;
+    background-color:darkgrey;
+    background-image: url('../resources/images/up_slider.png');
+    background-size:cover;
+    width:100%;
+}
+.navbar
+{
+    width:100%;
+    margin-bottom: 0px;
+}
+.nav>li>a {
+    color:black;
+    top:15px;
+    position: relative;
+    display: initial;
+    padding: 26px 16px;
+    border-top: 2px solid #cccccc;
+    border-bottom: 2px solid #cccccc;
+    font-size: 26px;
+}
+.nav>li>a:hover{
+    border-top: 2px solid #696969;
+    border-bottom: 2px solid #696969;
+    background-color: rgba(209, 209, 209, 0.22);
+    color:lightgreen;
+}
