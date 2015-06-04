@@ -73,11 +73,13 @@ height: 550px;
 }
 #section2
 {
+height: 550px;
 }
 #section3
 {
 	background-color: #f0f0f0;
 	border-top:2px solid #cccccc;
     border-bottom:2px solid #cccccc;
+	height: 550px;
 	
 }
