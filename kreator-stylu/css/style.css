@@ -1,7 +1,5 @@
-#section1{
+section{
     height: 1180px;
-
-
 }
 .greenbar{
     pull:top;
@@ -40,6 +38,9 @@
     background-image: url('../resources/images/up_slider.png');
     background-size:cover;
     width:100%;
+    margin-bottom:1px;
+    margin-top:1px;
+
 }
 .navbar
 {
@@ -61,4 +62,11 @@
     border-bottom: 2px solid #696969;
     background-color: rgba(209, 209, 209, 0.22);
     color:lightgreen;
+}
+#section1
+{
+    background-color: #f0f0f0;
+    border-top:2px solid #cccccc;
+    border-bottom:2px solid #cccccc;
+height: 550px;
 }
