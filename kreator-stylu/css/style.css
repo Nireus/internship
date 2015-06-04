@@ -63,10 +63,21 @@ section{
     background-color: rgba(209, 209, 209, 0.22);
     color:lightgreen;
 }
+
 #section1
 {
     background-color: #f0f0f0;
     border-top:2px solid #cccccc;
     border-bottom:2px solid #cccccc;
 height: 550px;
+}
+#section2
+{
+}
+#section3
+{
+	background-color: #f0f0f0;
+	border-top:2px solid #cccccc;
+    border-bottom:2px solid #cccccc;
+	
 }
