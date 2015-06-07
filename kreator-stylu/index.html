@@ -21,6 +21,9 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- slick -->
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+
     <link href="css/style.css" rel="stylesheet">
 
     <!-- Exo black font -->
@@ -29,7 +32,7 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'>
 </head>
 
-<body >
+<body ng-app="kreatorStylu">
 <header>
 </header>
 
@@ -92,12 +95,45 @@
 </div>
 </section>
 
-<section id="section2">
+<section id="section2" ng-controller="OfferPanelCtrl as offerPanel">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>OFERTA</h2>
+                <img src="resources/images/linie_header.png"/><img src="resources/images/linie_header.png"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <h4 style="color: #9c9c9c">Zapraszamy do zapoznania się z naszą ofertą i skorzystania z
+                    <span style="color: #73b85d"> szerokiego wachlarza naszych usług</span>.</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div id="arrows" style="text-align: right"></div>
+                <div class="multiple-items">
+                    <div ng-repeat="offer in offerPanel.offers">
+                        <img ng-src="{{offer.image}}"/>
 
+                        <div style="background-color: white; width: 274px; height: 170px; text-align:left; padding:1em">
+                            <p style="size: 15 ma">{{offer.title}}</p>
+                            <img src="resources/images/oferta_line.png" style="margin-left: auto; margin-right: auto"/>
+                            <br/>
+
+                            <p style="size: 14; white-space: pre-line">{{offer.description}}</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <br/>
 </section>
 
 <section id="section3">
-<div class="container">
+    <div class="container">
 <div class="row">
     <div class="col-lg-12" style="text-align: center;">
 	<h1 style="font-size:32px;">ZESPÓŁ</h1>
@@ -157,6 +193,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
 <!--Skrypt SMOOTH SCROLL-->
 <script>
     $(function () {
@@ -172,6 +209,20 @@
                 }
             }
         });
+    });
+
+
+</script>
+<script type="text/javascript">
+    $(document).ready(function(){
+      $('.multiple-items').slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        prevArrow: '<input type="submit" value="" class="arrow-prev"/> ',
+        nextArrow: '<input type="submit" value="" class="arrow-next"/> ',
+        appendArrows: $('#arrows')
+      });
     });
 </script>
 </body>

@@ -87,12 +87,15 @@ height: 550px;
 }
 #section2
 {
-height: 550px;
+    background-color: #f0f0f0;
+    border-bottom:2px solid #cccccc;
+	height: 600px;
+	text-align: center;
+	padding: 30px;
 }
 #section3
 {
 	background-color: #f0f0f0;
-	border-top:2px solid #cccccc;
     border-bottom:2px solid #cccccc;
 	height: 550px;
 	padding:0px;
@@ -112,3 +115,17 @@ padding-left:5px;
 padding-top:100px;
 }
 
+.arrow-prev{
+    background: url(../resources/images/button_oferta_back.png) no-repeat;
+    width: 22px;
+    height: 22px;
+    border: 0;
+    margin: 5px 3px;
+}
+.arrow-next{
+    background: url(../resources/images/button_oferta_front.png) no-repeat;
+    width: 22px;
+    height: 22px;
+    border: 0;
+    margin: 5px 3px;
+}
