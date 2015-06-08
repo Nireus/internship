@@ -129,3 +129,18 @@ padding-top:100px;
     border: 0;
     margin: 5px 3px;
 }
+
+#offerTextBox{
+    background-color: white;
+    width: 274px;
+    height: 170px;
+    text-align:left;
+    padding:1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#offerText{
+    size: 14;
+    white-space: pre-line;
+}
