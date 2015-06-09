@@ -148,3 +148,21 @@ padding-top:100px;
     size: 14;
     white-space: pre-line;
 }
+#contact{
+    height: 380px;
+}
+#green_section{
+    height: 60px;
+    background-color: #4eb423;
+}
+#head{
+
+}
+#contact_section{
+    height: 320px;
+
+}
+footer{
+    height: 50px;
+    background-color: #2a2b2c;
+}
