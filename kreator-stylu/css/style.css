@@ -130,6 +130,11 @@ padding-top:100px;
     margin: 5px 3px;
 }
 
+.offerWidget{
+    display: inline-block;
+    text-align: center;
+}
+
 .offerTextBox{
     background-color: white;
     width: 274px;

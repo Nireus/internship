@@ -113,18 +113,18 @@
             <div class="col-lg-12">
                 <div id="arrows" style="text-align: right"></div>
                 <div class="multiple-items">
-                    <div ng-repeat="offer in offerPanel.offers">
-                        <img ng-src="{{offer.image}}"/>
-
-                        <div class="offerTextBox">
-                            <p style="size: 15 ma">{{offer.title}}</p>
-                            <img src="resources/images/oferta_line.png"/>
-                            <br/>
-                            <p class="offerText">{{offer.description}}</p>
+                    <div ng-repeat="offer in offerPanel.offers" >
+                        <div class="offerWidget">
+                            <img ng-src="{{offer.image}}"/>
+                            <div class="offerTextBox">
+                                <p style="size: 15 ma">{{offer.title}}</p>
+                                <img src="resources/images/oferta_line.png"/>
+                                <br/>
+                                <p class="offerText">{{offer.description}}</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
@@ -151,7 +151,7 @@
 	<p id="zespol_icon_2"><img  src="resources/images/zespol_icon_2.png"/></p>
 </div>
 	<div  class="col-lg-5" >
-		
+
 		<h3 id="opisy" style="font-size:14px;">Paweł Żelazo</h3>
 			<p id="opisy" style="font-size:12px;">Początkowo fryzjerstwo było moim zawodem, obecnie jest moją pasją i stylem bycia.
 			Poprzez to co robię, chce dawać radość innym. Każda nowa stylizacja, każdy nowy
@@ -166,19 +166,19 @@
 			Utwierdza mnie to w przekonaniu, że wybrałem właściwy zawód, który powoli
 			staje się częścią mojego 'ja'.
 			</p>
-			
+
 </div>
-<div id="sabina" class="col-lg-5" style="float:right" >	
-			
+<div id="sabina" class="col-lg-5" style="float:right" >
+
 			<h3 style="font-size:14px;">Sabina Bryła</h3>
 			<p style="font-size:12px;">Fryzjerstwo jest dla mnie spełnieniem marzeń, gdyż od dziecka chciałam
-			pracować w tym zawodzie. Spośród wszystkich usług najbardziej lubię koloryzację, ponieważ cieszy 
-			mnie zmiana wizerunku klienta. Podczas wykonywania pasemek, refleksów oraz masażu skóry głowy 
+			pracować w tym zawodzie. Spośród wszystkich usług najbardziej lubię koloryzację, ponieważ cieszy
+			mnie zmiana wizerunku klienta. Podczas wykonywania pasemek, refleksów oraz masażu skóry głowy
 			wyciszam się. Do każdego klienta podchodzę indywidualnie oraz staram się przekazać mu swoją wiedzę
 			na temat codziennej pielengnacji i stylizacji włosów. Cieszy mnnie kązdy zadowolony klient,
 			a najbardziej ten, który wraca.
 			</p>
-			
+
 </div>
 <div id="zespol_icon_3" class="col-lg-1" style="float:right" >
 	<p><img src="resources/images/zespol_icon_3.png"/></p>
@@ -216,11 +216,28 @@
     $(document).ready(function(){
       $('.multiple-items').slick({
         infinite: true,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        speed: 700,
         slidesToShow: 4,
         slidesToScroll: 1,
         prevArrow: '<input type="submit" value="" class="arrow-prev"/> ',
         nextArrow: '<input type="submit" value="" class="arrow-next"/> ',
-        appendArrows: $('#arrows')
+        appendArrows: $('#arrows'),
+        responsive:[
+            {
+                breakpoint: 1200,
+                settings:{
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 990,
+                settings:{
+                    slidesToShow: 2
+                }
+            }
+        ]
       });
     });
 </script>
