@@ -98,8 +98,15 @@ height: 550px;
 	background-color: #f0f0f0;
     border-bottom:2px solid #cccccc;
 	height: 550px;
-	padding:0px;
-	
+	padding:30px;
+}
+#section4
+{
+	background-color: #f0f0f0;
+    border-bottom:2px solid #cccccc;
+	height: 550px;
+	text-align: center;
+	padding:30px;
 }
 #section5
 {
@@ -115,10 +122,10 @@ padding-top:100px;
 #opisy{
 padding-left:10px;
 }
-#zespol_icon_2{
+#team_icon_2{
 padding-top:70px;
 }
-#zespol_icon_3{
+#team_icon_3{
 padding-left:5px;
 padding-top:100px;
 }
