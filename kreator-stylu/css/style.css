@@ -104,7 +104,7 @@ height: 550px;
 {
 	background-color: #f0f0f0;
     border-bottom:2px solid #cccccc;
-	height: 550px;
+	height: 450px;
 	text-align: center;
 	padding:30px;
 }
@@ -143,6 +143,9 @@ padding-top:100px;
     height: 22px;
     border: 0;
     margin: 5px 3px;
+}
+.gallery-slider{
+padding-top: 30px;
 }
 
 .offerWidget{
