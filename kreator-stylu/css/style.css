@@ -167,20 +167,29 @@ padding-top: 30px;
     white-space: pre-line;
 }
 #contact{
-    height: 380px;
+    height: 400px;
+    background-color: #f0f0f0;
 }
 #green_section{
-    height: 60px;
+
+    height: 66px;
     background-color: #4eb423;
 }
 #head{
 
 }
 #contact_section{
-    height: 320px;
+    height: 340px;
+
 
 }
 footer{
     height: 50px;
     background-color: #2a2b2c;
+}
+.PT_SANS{
+    font-family: 'PT Sans', sans-serif;
+}
+.margin-bottom{
+    margin-bottom: auto;
 }
