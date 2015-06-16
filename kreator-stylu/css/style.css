@@ -148,6 +148,26 @@ padding-top:100px;
 padding-top: 30px;
 position: relative;
 }
+.gallery-green{
+position:absolute;
+top:30px;
+left: 40px;
+width: 100px;
+height: 25px;
+background-color:rgba(0,150,0,0.7);
+}
+.gallery-icon{
+position: absolute;
+top:6px;
+left:10px;
+}
+.gallery-date{
+position: absolute;
+top:5px;
+left:25px;
+font-size:10px;
+color: white;
+}
 
 .offerWidget{
     display: inline-block;
