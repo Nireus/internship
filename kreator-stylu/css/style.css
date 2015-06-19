@@ -35,13 +35,13 @@ section{
 }
 .jumbotron{
     padding:0px;
-    background-color:darkgrey;
-    background-image: url('../resources/images/up_slider.png');
-    background-size:cover;
     width:100%;
     margin-bottom:1px;
     margin-top:1px;
 
+}
+.jumbotron-item{
+    width:100px;
 }
 .navstyle{
     height:85px;
