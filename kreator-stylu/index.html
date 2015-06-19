@@ -46,30 +46,25 @@
 </div>
 
 <div class="bannerbar">
-
+    <h2 id="logo" style="padding-left: 450px;"><img src="resources/images/up_logo.png"/></h2>
 </div>
 
-<nav id="navstyle" class="navbar navbar border">
-    <div class="navbar-header">
-        <h2 class="navbar-brand" id="menu_tag" style="padding-left: 450px;"><img src="resources/images/up_logo.png"
-                                                                                 id="logo"/></h2>
-
-        <div style="left:43%; position: absolute;">
-            <ul style="font-family: BebasNeue; font-size: 1.25em; font-weight: bold; margin-top:15px;"
-                class="nav navbar-nav">
-                <li><a href="#section1">Home</a></li>
-                <li><a href="#section2">Oferta</a></li>
-                <li><a href="#section3">Zespół</a></li>
-                <li><a href="#section4">Galeria</a></li>
-                <li><a href="#section5">Współpraca</a></li>
-                <li><a href="#contact">Kontakt</a></li>
-            </ul>
-
+<nav class="navstyle">
+        <div id="navbar">
+            <div id="navbar-content">
+                <ul style="font-family: BebasNeue; font-size: 1.25em; font-weight: bold; margin-top:15px;"
+                    class="nav navbar-nav">
+                    <li><a href="#section1">Home</a></li>
+                    <li><a href="#section2">Oferta</a></li>
+                    <li><a href="#section3">Zespół</a></li>
+                    <li><a href="#section4">Galeria</a></li>
+                    <li><a href="#section5">Współpraca</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
 </nav>
-</ul>
-</nav>
+
 <div class="jumbotron" style="height:50vh;">
 
 </div>
@@ -230,7 +225,7 @@
             <div class="col-lg-12">
                 <h4 style="color: #9c9c9c">Podgląd naszych dotychczasowych realizacji.</br></h4>
 			</div>
-		</div>		
+		</div>
 		<div class="row">
             <div class="col-lg-12" >
 			 <div id="gallery-arrows" style="text-align: right">
@@ -247,7 +242,7 @@
 						</div>
 					</div>
                     <div style="position: relative"><img src="resources/images/galeria_image_3.png"/>
-						<div class="gallery-green" ><img class="gallery-icon" src="resources/images/galeria_icon.png"/> 
+						<div class="gallery-green" ><img class="gallery-icon" src="resources/images/galeria_icon.png"/>
 							<p class="gallery-date">9 grudnia 2014</p>
 						</div>
 					</div>
@@ -262,7 +257,7 @@
 						</div>
 					</div>
                     <div style="position: relative"><img src="resources/images/galeria_image_3.png"/>
-						<div class="gallery-green" ><img class="gallery-icon" src="resources/images/galeria_icon.png"/> 
+						<div class="gallery-green" ><img class="gallery-icon" src="resources/images/galeria_icon.png"/>
 							<p class="gallery-date">9 grudnia 2014</p>
 						</div>
 					</div>
@@ -487,6 +482,27 @@
       });
     });
 
+</script>
+<!--Skrypt NAVBAR ON TOP-->
+<script>
+    $(function() {
+    var stickyNavigationOffsetTop = $('#navbar').offset().top;
+    var stickyNavigation = function(){
+        var scrollTop = $(window).scrollTop();
+        if (scrollTop > stickyNavigationOffsetTop) {
+            $('#navbar').css({ 'position': 'fixed', 'top':0 });
+        } else {
+            $('#navbar').css({ 'position': 'relative' });
+        }
+    };
+
+    stickyNavigation();
+
+    $(window).scroll(function() {
+         stickyNavigation();
+    });
+
+});
 </script>
 </body>
 </html>

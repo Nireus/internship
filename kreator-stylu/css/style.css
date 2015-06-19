@@ -25,7 +25,8 @@ section{
 #logo
 {
     position:absolute;
-    top:-165px;
+    padding-top: 40px;
+    z-index: 3;
 }
 .border
 {
@@ -42,14 +43,25 @@ section{
     margin-top:1px;
 
 }
-.navbar
-{
+.navstyle{
+    height:85px;
+}
+#navbar{
     width:100%;
-    margin-bottom: 0px;
+    height:85px;
+    position: absolute;
+    background-color: rgb(255,255,255);
+    z-index: 2;
+    border-top: 2px solid #cccccc;
+    border-bottom: 2px solid #cccccc;
+}
+#navbar-content{
+    width:720px;
+    margin-left:46%;
 }
 .nav>li>a {
     color:black;
-    top:15px;
+    top:16px;
     position: relative;
     display: initial;
     padding: 26px 16px;
@@ -192,9 +204,9 @@ color: white;
     background-color: #f0f0f0;
 }
 #green_section{
-
     height: 66px;
     background-color: #4eb423;
+    margin: 0px;
 }
 #head{
 
