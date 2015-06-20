@@ -1,3 +1,42 @@
-section{
-    height: 1180px;
+body{
+    background-image: url("../resources/images/Home/background.png");
+    background-size: cover;
+    background-repeat:  no-repeat;
 }
+
+section{
+}
+
+#contact-form{
+    padding-left:2px;
+}
+#newsletter-form input,
+#contact-form input{
+	padding:2px;
+	padding-left:6px;
+	border-radius:6px;
+	border:0px;
+	margin-bottom:15px;
+	width:200px;
+	background-color:#242438;
+}
+#contact-form textarea{
+    padding:2px;
+	padding-left:7px;
+    border-radius:6px;
+    border:0px;
+    margin-bottom:15px;
+    width:270px;
+    height: 100px;
+	background-color:#242438;
+}
+#newsletter-form #newsletter-submit,
+#contact-form-submit #contact-submit{
+    padding:2px;
+    border-radius:6px;
+    border:0px;
+    margin-bottom:0px;
+    width:80px;
+	background-color:#E7E8EA;
+}
+
