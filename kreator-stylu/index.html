@@ -66,7 +66,7 @@
 </nav>
 
 <div class="jumbotron">
-    <div id="jumbotron-slider">
+    <div class="auto-slider">
         <div style="width:100%"><img src="resources/images/up_slider.png" style="width:100%;"/></div>
         <div style="width:100%"><img src="resources/images/up_slider_2.png" style="width:100%;"/></div>
         <div style="width:100%"><img src="resources/images/up_slider_3.png" style="width:100%;"/></div>
@@ -85,7 +85,12 @@
         </div>
         <div class="row">
             <div class="col-md-4" style="float:left">
-                <img src="resources/images/icon_home.png"/>
+                <div class="auto-slider">
+                    <div style="width:100%"><img src="resources/images/icon_home.png" style="width:100%;"/></div>
+                    <div style="width:100%"><img src="resources/images/icon_home_2.png" style="width:100%;"/></div>
+                    <div style="width:100%"><img src="resources/images/icon_home_3.png" style="width:100%;"/></div>
+                    <div style="width:100%"><img src="resources/images/icon_home_4.png" style="width:100%;"/></div>
+                </div>
             </div>
             <div class="col-md-8">
                 <h2>Kreator Stylu</h2>
@@ -400,6 +405,7 @@
         });
     });
 
+
 </script>
 <!--Skrypt SLICK slider-->
 <script type="text/javascript">
@@ -503,7 +509,7 @@
             }
         ]
       });
-      $('#jumbotron-slider').slick({
+      $('.auto-slider').slick({
         infinite: true,
         autoplay: true,
         autoplaySpeed: 4000,
@@ -512,8 +518,6 @@
         fade: true
       });
     });
-
-
 </script>
 <!--Skrypt NAVBAR ON TOP-->
 <script>
@@ -535,6 +539,7 @@
     });
 
 });
+
 
 </script>
 </body>
