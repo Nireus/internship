@@ -27,4 +27,15 @@ angular.module('kreatorStylu',[])
             description: 'Cennik standardowy:\nupięcie ślubne od 90 PLN\nupięcie okolicznościowe od 80 PLN'
         },
     ]
-})
+}).controller('GalleryControl', function($scope){
+        path1 = './resources/images/kontakt_map.png';
+        $scope.imageSource = '';
+        $scope.imageShown = false;
+        $scope.showImage = function(){
+            $scope.imageSource = path1;
+            $scope.imageShown = true;
+        }
+        $scope.closeGallery = function(){
+            $scope.imageShown = false;
+        }
+    })

@@ -226,3 +226,7 @@ footer{
 .margin-bottom{
     margin-bottom: auto;
 }
+.clickable
+{
+    cursor: pointer;
+}

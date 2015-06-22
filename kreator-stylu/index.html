@@ -323,7 +323,7 @@
     <br/>
 </section>
 
-<section id="contact">
+<section id="contact" ng-controller="GalleryControl">
 
     <div id="green_section">
         <div style="margin-top: 10px; margin-left: 20%; width: 45px; float: left">
@@ -338,7 +338,7 @@
     </div>
     <p style="border-top:3px solid #cccccc;"></p>
 
-    <div id="contact_section" class="row" style=" margin-right: auto; margin-left: auto; margin-top:20px">
+    <div id="contact_section" class="row" style=" margin-right: auto; margin-left: auto; margin-top:20px" >
         <div class="col-md-2 col-lg-offset-2">
             <p><img src="resources/images/kreator_stylu_male_logo.png" style="margin-top: 10px"></p>
             <br/>
@@ -355,7 +355,7 @@
             <h3 style="margin-bottom: auto;" class="PT_SANS">Mapa dojazdu</h3>
             <br/>
 
-            <p><img src="resources/images/kontakt_map.png"/></p>
+            <p><img src="resources/images/kontakt_map.png" class="clickable" alt="" ng-click="showImage()"/></p>
 
         </div>
         <div class="col-md-2">
@@ -381,6 +381,15 @@
             <h3 class="PT_SANS" style="margin-bottom: auto;">Dołącz do Newslettera</h3>
         </div>
 
+    </div>
+    <div style="position:absolute;background-color: rgba(0,0,0,0.5);height:700px;width:100vw; top:0;" ng-show="imageShow">
+        <div class="container">
+            <div class="clickable glyphicon glyphicon-remove" style="top:80px;left:645px;color:black;"
+                 ng-click="closeGallery()"></div>
+            <div style="padding-top:80px;position: relative;">
+                <img ng-src="{{imageSource}}"/>
+            </div>
+        </div>
     </div>
 </section>
 
