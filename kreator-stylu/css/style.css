@@ -230,3 +230,10 @@ footer{
 {
     cursor: pointer;
 }
+#popup_galery{
+    margin-top: -40px;
+    width: 100vw;
+    position: fixed;
+    height: 70vh;
+    top: 20vh;
+}

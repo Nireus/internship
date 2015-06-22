@@ -349,7 +349,7 @@
 
             <p class="margin-bottom">w niezwykle łatwy sposob uda nam się</p>
 
-            <p class="margin-bottom">nawiązać współpracę</p>s
+            <p class="margin-bottom">nawiązać współpracę</p>
         </div>
         <div class="col-md-2">
             <h3 style="margin-bottom: auto;" class="PT_SANS">Mapa dojazdu</h3>
@@ -382,10 +382,9 @@
         </div>
 
     </div>
-    <div style="position:absolute;background-color: rgba(0,0,0,0.5);height:700px;width:100vw; top:0;" ng-show="imageShow">
+    <div id="popup_galery" style="background-color: rgba(0,0,0,0.5);" ng-show="imageShown">
         <div class="container">
-            <div class="clickable glyphicon glyphicon-remove" style="top:80px;left:645px;color:black;"
-                 ng-click="closeGallery()"></div>
+            <div  class="clickable glyphicon glyphicon-remove" style="top:80px;left:645px;color:black;" ng-click="closeGallery()"></div>
             <div style="padding-top:80px;position: relative;">
                 <img ng-src="{{imageSource}}"/>
             </div>
