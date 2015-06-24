@@ -1,97 +1,109 @@
-body{
+@font-face { font-family: ChunkFive; src: url('../fonts/chunk-master/Chunk.otf'); }
+
+body {
     background-image: url("../resources/images/Home/background.png");
     background-size: auto;
     background-position: center top;
-    background-repeat:  no-repeat;
+    background-repeat: no-repeat;
 }
 
-section{
+section {
     height: auto;
 }
 
 .row-same-height {
-  display: table;
-  width: 100%;
-  table-layout: fixed;
-}
-.col-full-height {
-  height: 100%;
-  display: table-cell;
-  vertical-align: middle;
-  float:none ;
+    display: table;
+    width: 100%;
+    table-layout: fixed;
 }
 
-.brookers-list{
+.col-full-height {
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    float: none;
+}
+
+.brookers-list {
     list-style-image: url("../resources/images/Home/small_button_home.png");
     line-height: 30px;
     font-size: 15px;
     color: #828181;
 }
-.why-us-title{
-    text-align:center;
-    margin-bottom:0px;
+
+.why-us-title {
+    text-align: center;
+    margin-bottom: 0px;
 }
-#contact{
+
+#contact {
     position: absolute;
     top: 1640px;
     left: 0px;
     right: 0px;
-    margin-left:auto;
-    margin-right:auto;
+    margin-left: auto;
+    margin-right: auto;
 }
-#contact-form{
-    padding-left:2px;
+
+#contact-form {
+    padding-left: 2px;
 }
+
 #newsletter-form input,
-#contact-form input{
-	padding:2px;
-	padding-left:6px;
-	border-radius:6px;
-	border:0px;
-	margin-bottom:15px;
-	width:200px;
-	color:#ABABB1;
-	background-color:#242438;
+#contact-form input {
+    padding: 2px;
+    padding-left: 6px;
+    border-radius: 6px;
+    border: 0px;
+    margin-bottom: 15px;
+    width: 200px;
+    color: #ABABB1;
+    background-color: #242438;
 }
-#contact-form textarea{
-    padding:2px;
-	padding-left:7px;
-    border-radius:6px;
-    border:0px;
-    margin-bottom:15px;
-    width:270px;
+
+#contact-form textarea {
+    padding: 2px;
+    padding-left: 7px;
+    border-radius: 6px;
+    border: 0px;
+    margin-bottom: 15px;
+    width: 270px;
     height: 100px;
-    color:#ABABB1;
-	background-color:#242438;
+    color: #ABABB1;
+    background-color: #242438;
 }
+
 #newsletter-form #newsletter-submit,
-#contact-form-submit #contact-submit{
-    padding:2px;
-    border-radius:6px;
-    border:0px;
-    margin-bottom:0px;
-    width:80px;
-	background-color:#E7E8EA;
+#contact-form-submit #contact-submit {
+    padding: 2px;
+    border-radius: 6px;
+    border: 0px;
+    margin-bottom: 0px;
+    width: 80px;
+    background-color: #E7E8EA;
 }
-#contact-box{
+
+#contact-box {
     background-image: url("../resources/images/Produkty/produkty_box_top.png");
     width: 998px;
     margin: 0 auto;
     height: 101px;
 
 }
-.padding-form{
+
+.padding-form {
     padding-top: 25px;
 }
 
-.contact-input{
+.contact-input {
     width: 19vw;
     height: 40px;
     border-radius: 6px;
     font-size: 21px;
     padding-left: 10px;
 }
-#submit-button{
+
+#submit-button {
     float: right;
     margin-right: 40px;
     width: 125px;
@@ -101,4 +113,12 @@ section{
     font-size: 21px;
     color: white;
 
+}
+
+#contact-image {
+    margin-top: 75px;
+    margin-left: 10px;
+    background-image: url("../resources/images/Kontakt/kontakt_map.png");
+    background-repeat: no-repeat;
+    height: 495px;
 }
