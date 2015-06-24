@@ -11,6 +11,41 @@ section {
     height: auto;
 }
 
+.navstyle{
+    height:70px;
+}
+#navbar{
+    width:100%;
+    height:25px;
+	margin-top:15px;
+}
+#logo_top_menu{
+	margin-left:260px;
+	margin-top:5px;
+}
+#navbar-content{
+    float:right;
+    padding-right:20vw;
+}
+.nav>li>a {
+    color:white;
+    top:16px;
+    position: relative;
+    display: initial;
+    padding: 6px 16px;
+}
+.nav>li>a:hover{
+    background-color: rgba(255,255,255, 0.70);
+    color:black;
+	border-radius: 7px;
+}
+.nav>li>a:focus{
+    background-color: rgba(255,255,255, 0.70);
+    color:black;
+	border-radius: 7px;
+}
+
+
 .row-same-height {
     display: table;
     width: 100%;
