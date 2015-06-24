@@ -6,7 +6,6 @@ body{
 }
 
 section{
-    height: auto;
 }
 
 .row-same-height {
@@ -43,6 +42,7 @@ section{
 	border:0px;
 	margin-bottom:15px;
 	width:200px;
+	color:#ABABB1;
 	background-color:#242438;
 }
 #contact-form textarea{
@@ -53,6 +53,7 @@ section{
     margin-bottom:15px;
     width:270px;
     height: 100px;
+    color:#ABABB1;
 	background-color:#242438;
 }
 #newsletter-form #newsletter-submit,
@@ -63,12 +64,5 @@ section{
     margin-bottom:0px;
     width:80px;
 	background-color:#E7E8EA;
-}
-#contact-box{
-    background-image: url("../resources/images/Produkty/produkty_box_top.png");
-    width: 998px;
-    margin: 0 auto;
-    height: 101px;
-
 }
 
