@@ -122,3 +122,13 @@ section {
     background-repeat: no-repeat;
     height: 495px;
 }
+.arrow-prev{
+    background: url('../resources/images/Home/arrow_left_home.png') no-repeat;
+}
+.arrow-next{
+    background: url('../resources/images/Home/arrow_right_home.png') no-repeat;
+}
+.gallery-slider{
+    padding-top: 30px;
+    position: relative;
+}
