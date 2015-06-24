@@ -35,6 +35,33 @@
 <body>
 
 <!--dodane tylko po to żeby kontakt siedział na swoim tle, do wywalenia-->
+<<<<<<< HEAD
+=======
+<div style="height: 800px"></div>
+<section id="reference-slider">
+    <div style="width: 40vw ; border-bottom: 2px; border-color: #555555; border-top: 2px; margin: 0 auto;">
+        <div class="gallery-slider">
+            <div style="position: relative; text-align: center">
+                <p>Wspolparaca z tak doswiadczonym zepsołem zawsze prowadzi do pełni zadowolenia</p>
+
+                <p>Brokers Communication są na prawdę godni polecenia każdemu.</p>
+            </div>
+            <div>
+                <p></p>
+
+                <p></p>
+            </div>
+            <div>
+                <p></p>
+
+                <p></p>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+>>>>>>> origin/master
 
 
 <section id="header">
@@ -203,8 +230,42 @@
     });
 
 
+    $(document).ready(function () {
 
-
+        $('.gallery-slider').slick({
+            infinite: true,
+            autoplay: true,
+            autoplaySpeed: 4000,
+            speed: 700,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            prevArrow: '<input type="submit" value="" class="arrow-prev"/> ',
+            nextArrow: '<input type="submit" value="" class="arrow-next"/> ',
+            appendArrows: $('#gallery-arrows'),
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 990,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                }
+            ]
+        });
+        $('.auto-slider').slick({
+            infinite: true,
+            autoplay: true,
+            autoplaySpeed: 4000,
+            speed: 700,
+            arrows: false,
+            fade: true
+        });
+    });
 
 </script>
 
