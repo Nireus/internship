@@ -32,7 +32,7 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'>
 </head>
 
-<body>
+<body ng-app="brookers">
 
 <section id="header">
 
@@ -55,7 +55,7 @@
     </nav>
 </section>
 
-<section id="main-slider">
+<section id="main-slider" ng-controller="ProductsSliderCtrl as productSlider">
     <div id="contact-box">
         <div style="float: left; margin-top:30px; line-height:22px; margin-left: 20px;">
             <span style="font-size: 27px; padding-bottom:2px;">Produkty<br></span>
@@ -71,40 +71,13 @@
             </div>
             <div class="col-lg-12 col-full-height">
                 <div id="products-slider">
-                    <div class="product-widget">
-                        <img src="resources/images/Produkty/produkty_product_1.png" style="margin:0 auto;">
+                    <div class="product-widget" ng-repeat="product in productSlider.products">
+                        <img src="" ng-src="{{product.image}}" style="margin:0 auto;">
 
-                        <p>Galaxy Note 4</p>
-
-                        <div class="price-widget">
-                            <div class="price">12345</div>
-                        </div>
-                    </div>
-                    <div class="product-widget">
-                        <img src="resources/images/Produkty/produkty_product_2.png" style="margin:0 auto;">
-
-                        <p>Galaxy S6</p>
+                        <p>{{product.name}}</p>
 
                         <div class="price-widget">
-                            <div class="price">12345</div>
-                        </div>
-                    </div>
-                    <div class="product-widget">
-                        <img src="resources/images/Produkty/produkty_product_3.png" style="margin:0 auto;">
-
-                        <p>Galaxy S5</p>
-
-                        <div class="price-widget">
-                            <div class="price">12345</div>
-                        </div>
-                    </div>
-                    <div class="product-widget">
-                        <img src="resources/images/Produkty/produkty_product_1.png" style="margin:0 auto;">
-
-                        <p>Galaxy Note 4</p>
-
-                        <div class="price-widget">
-                            <div class="price">12345</div>
+                            <div class="price">{{product.price}}</div>
                         </div>
                     </div>
                 </div>

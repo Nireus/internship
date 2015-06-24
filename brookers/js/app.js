@@ -1,5 +1,28 @@
 angular.module('brookers',[])
-.controller('ProductsPanelCtrl', function(){
+.controller('ProductsSliderCtrl', function(){
+    this.products = [
+        {
+            image: './resources/images/Produkty/produkty_product_1.png',
+            name: 'Galaxy Note 4',
+            price: '2125'
+        },
+        {
+            image: './resources/images/Produkty/produkty_product_2.png',
+            name: 'Galaxy S 6',
+            price: '2279'
+        },
+        {
+            image: './resources/images/Produkty/produkty_product_3.png',
+            name: 'Galaxy S5',
+            price: '1490'
+        },
+        {
+            image: './resources/images/Produkty/produkty_product_2.png',
+            name: 'Galaxy S6',
+            price: '2279'
+        }
+    ]
+}).controller('ProductsPanelCtrl', function(){
     this.offers = [
         {
             image: '../resources/images/Produkty/produkty_product_1_small.png',
