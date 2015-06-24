@@ -1,4 +1,7 @@
-@font-face { font-family: ChunkFive; src: url('../fonts/chunk-master/Chunk.otf'); }
+@font-face {
+    font-family: ChunkFive;
+    src: url('../fonts/chunk-master/Chunk.otf');
+}
 
 body {
     background-image: url("../resources/images/Home/background.png");
@@ -11,39 +14,46 @@ section {
     height: auto;
 }
 
-.navstyle{
-    height:70px;
+.navstyle {
+    height: 70px;
 }
-#navbar{
-    width:100%;
-    height:25px;
-	margin-top:15px;
+
+#navbar {
+    width: 100%;
+    height: 25px;
+    margin-top: 15px;
 }
-#logo_top_menu{
-	margin-left:260px;
-	margin-top:5px;
+
+#logo_top_menu {
+    margin-left: 260px;
+    margin-top: 5px;
 }
-#navbar-content{
-    float:right;
-    padding-right:20vw;
+
+#navbar-content {
+    float: right;
+    padding-right: 20vw;
 }
-.nav>li>a {
-    color:white;
-    top:16px;
+
+.nav > li > a {
+    color: white;
+    top: 16px;
     position: relative;
     display: initial;
     padding: 6px 16px;
 }
-.nav>li>a:hover{
-    background-color: rgba(255,255,255, 0.70);
-    color:black;
-	border-radius: 7px;
+
+.nav > li > a:hover {
+    background-color: rgba(255, 255, 255, 0.70);
+    color: black;
+    border-radius: 7px;
 }
-.nav>li>a:focus{
-    background-color: rgba(255,255,255, 0.70);
-    color:black;
-	border-radius: 7px;
+
+.nav > li > a:focus {
+    background-color: rgba(255, 255, 255, 0.70);
+    color: black;
+    border-radius: 7px;
 }
+
 .row-same-height {
     display: table;
     width: 100%;
@@ -155,19 +165,38 @@ section {
     background-repeat: no-repeat;
     height: 495px;
 }
-.rules{
-    color:#828181;
-    font-size:15px;
-    line-height:28px;
+
+.rules {
+    color: #828181;
+    font-size: 15px;
+    line-height: 28px;
 }
 
-.arrow-prev{
+.arrow-prev {
     background: url('../resources/images/Home/arrow_left_home.png') no-repeat;
 }
-.arrow-next{
+
+.arrow-next {
     background: url('../resources/images/Home/arrow_right_home.png') no-repeat;
 }
-.gallery-slider{
+
+.gallery-slider {
     padding-top: 30px;
     position: relative;
+}
+
+.div-slide {
+    position: relative;
+    text-align: center;
+
+}
+
+#slider {
+    width: 40vw;
+    height: 80px;
+    border-bottom: 1px solid #999999;
+    border-top: 1px solid #999999;
+    margin: 0 auto;
+    line-height:17px;
+    margin-bottom: 40px;
 }
