@@ -57,7 +57,7 @@
 
 <section id="main-slider" ng-controller="ProductsSliderCtrl as productSlider">
     <div id="contact-box" >
-        <div style="float: left; margin-top:30px; line-height:22px; margin-left: 20px;">
+        <div style="float: left; margin-top:30px;  margin-left: 20px;">
             <span style="font-size: 27px; padding-bottom:2px;">Produkty<br></span>
             <span style="font-size: 15px; color: #204d74;">
                 Znajdź to czego szukasz.
@@ -90,15 +90,22 @@
 </section>
 
 
-<section ng-controller="CategoryControl" style="margin-top: 40px">
+<section ng-controller="ProductsPanelCtrl as offersCtrl" style="margin-top: 40px">
     <div id="category-select">
-        <div class="clickable" style="height: 39px">
-            <div class="category-class" id="category-tab-samsung" ng-click="setCategory(0)"></div>
-            <div class="category-class" id="category-tab-sony" ng-click="setCategory(1)"></div>
-            <div class="category-class" id="category-tab-htc" ng-click="setCategory(2)"></div>
-            <div class="category-class" id="category-tab-apple" ng-click="setCategory(3)"></div>
+        <div  style="height: 39px; margin-left: 20px">
+            <div class="category-class clickable" id="category-tab-samsung" ng-click="setCategory(0)"></div>
+            <div class="category-class clickable" id="category-tab-sony" ng-click="setCategory(1)"></div>
+            <div class="category-class clickable" id="category-tab-htc" ng-click="setCategory(2)"></div>
+            <div class="category-class clickable" id="category-tab-apple" ng-click="setCategory(3)"></div>
         </div>
-        <div ng-show="" style=" border-top: 1px solid #adadad;">
+        <div style="border-top: 1px solid #adadad;" >
+
+            <div id="product-cont" ng-repeat="offer in offersCtrl.offers" >
+                <div style="float: left"><img src="" ng-src="{{offer.image}}"/></div>
+                <span style="font-size: 23px; margin-left: 5px; margin-top: 30px">{{offer.name}}</span>
+                <div id="price-label" style="line-height:65px;"><span style="font-size: 23px; font-family: ChunkFive; color: whitesmoke">{{offer.price}}</span></div>
+
+            </div>
 
         </div>
     </div>

@@ -2,12 +2,14 @@
     font-family: ChunkFive;
     src: url('../fonts/chunk-master/Chunk.otf');
 }
+
 @font-face {
     font-family: MyriadPro;
     font-style: normal;
     font-weight: normal;
     src: url('../fonts/MyriadPro/MYRIADPRO-REGULAR.woff');
 }
+
 body {
     background-image: url("../resources/images/Home/background.png");
     background-size: auto;
@@ -203,41 +205,45 @@ section {
     border-bottom: 1px solid #999999;
     border-top: 1px solid #999999;
     margin: 0 auto;
-    line-height:17px;
+    line-height: 17px;
     margin-bottom: 40px;
 }
 
-.product-widget{
-    width:330px;
-    height:460px;
-    text-align:center;
-    font-size:27px;
-    color:#505050;
+.product-widget {
+    width: 330px;
+    height: 460px;
+    text-align: center;
+    font-size: 27px;
+    color: #505050;
     margin: auto;
 }
-.price-widget{
-    background-image:url('../resources/images/Produkty/produkty_box_price.png');
-    background-position:center top;
-    background-repeat:no-repeat;
-    margin:auto;
-    width:155px;
-    height:95px;
-    font-size:37px;
-    color:#ffffff;
+
+.price-widget {
+    background-image: url('../resources/images/Produkty/produkty_box_price.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+    margin: auto;
+    width: 155px;
+    height: 95px;
+    font-size: 37px;
+    color: #ffffff;
     display: table;
 }
-.price{
-    display:table-cell;
+
+.price {
+    display: table-cell;
     vertical-align: middle;
 }
-.arrow-prev{
+
+.arrow-prev {
     background: url(../resources/images/Home/arrow_left_top_menu.png) no-repeat;
     width: 40px;
     height: 41px;
     border: 0;
     margin: 5px 3px;
 }
-.arrow-next{
+
+.arrow-next {
     background: url(../resources/images/Home/arrow_right_top_menu.png) no-repeat;
     width: 40px;
     height: 41px;
@@ -245,25 +251,52 @@ section {
     margin: 5px 3px;
 }
 
-.category-class{
+.category-class {
     width: 99px;
     height: 39px;
-    display:inline-block;
+    display: inline-block;
 }
-#category-tab-samsung{
+
+#category-tab-samsung {
     background: url("../resources/images/Produkty/produkty_hover_mark_1.png");
 }
-#category-tab-sony{
+
+#category-tab-sony {
     background: url("../resources/images/Produkty/produkty_hover_mark_2.png");
 }
-#category-tab-htc{
+
+#category-tab-htc {
     background: url("../resources/images/Produkty/produkty_hover_mark_3.png");
 }
-#category-tab-apple{
+
+#category-tab-apple {
     background: url("../resources/images/Produkty/produkty_hover_mark_4.png");
 
 }
-#category-select{
+
+#category-select {
     margin: 0 auto;
-    width: 900px;
+    width: 940px;
+}
+
+.clickable {
+    cursor: pointer;
+}
+#product-cont{
+    margin-left: 20px;
+    margin-top: 30px;
+    width: 250px;
+    height: 155px;
+    display: inline-block;
+    float: left;
+
+}
+#price-label{
+    background: url("../resources/images/Produkty/produkty_box_price_small.png");
+    width: 96px;
+    height: 62px;
+    margin-left: 85px;
+    margin-top: 45px;
+    text-align: center;
+
 }
