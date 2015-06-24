@@ -8,6 +8,29 @@ body{
 section{
 }
 
+.row-same-height {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+.col-full-height {
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  float:none ;
+}
+
+.brookers-list{
+    list-style-image: url("../resources/images/Home/small_button_home.png");
+    line-height: 30px;
+    font-size: 15px;
+    color: #828181;
+}
+.why-us-title{
+    text-align:center;
+    margin-bottom:0px;
+}
+
 #contact-form{
     padding-left:2px;
 }
