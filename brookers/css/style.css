@@ -200,3 +200,41 @@ section {
     line-height:17px;
     margin-bottom: 40px;
 }
+
+.product-widget{
+    width:330px;
+    height:460px;
+    text-align:center;
+    font-size:27px;
+    color:#505050;
+    margin: auto;
+}
+.price-widget{
+    background-image:url('../resources/images/Produkty/produkty_box_price.png');
+    background-position:center top;
+    background-repeat:no-repeat;
+    margin:auto;
+    width:155px;
+    height:95px;
+    font-size:37px;
+    color:#ffffff;
+    display: table;
+}
+.price{
+    display:table-cell;
+    vertical-align: middle;
+}
+.arrow-prev{
+    background: url(../resources/images/Home/arrow_left_top_menu.png) no-repeat;
+    width: 40px;
+    height: 41px;
+    border: 0;
+    margin: 5px 3px;
+}
+.arrow-next{
+    background: url(../resources/images/Home/arrow_right_top_menu.png) no-repeat;
+    width: 40px;
+    height: 41px;
+    border: 0;
+    margin: 5px 3px;
+}

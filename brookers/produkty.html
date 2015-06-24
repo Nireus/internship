@@ -34,6 +34,87 @@
 
 <body>
 
+<section id="header">
+
+    <nav class="navstyle">
+        <div id="navbar">
+            <img id="logo_top_menu"  src="resources/images/Home/logo_top_menu.png">
+            <div id="navbar-content">
+
+                <ul style=" font-size: 17px; margin-top:15px;"
+                    class="nav navbar-nav">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#">O nas</a></li>
+                    <li><a href="#">Produkty</a></li>
+                    <li><a href="regulamin.html">Regulamin</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</section>
+
+<section id="main-slider">
+    <div id="contact-box">
+        <div style="float: left; margin-top:30px; line-height:22px; margin-left: 20px;">
+            <span style="font-size: 27px; padding-bottom:2px;">Produkty<br></span>
+            <span style="font-size: 15px; color: #204d74;">
+                Znajdź to czego szukasz.
+            </span>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row row-same-height" style="margin:auto;">
+            <div class="col-lg-1 col-full-height" >
+                <div id="prev" class="arrow-prev"></div>
+            </div>
+            <div class="col-lg-12 col-full-height">
+                <div id="products-slider">
+                    <div class="product-widget">
+                        <img src="resources/images/Produkty/produkty_product_1.png" style="margin:0 auto;">
+
+                        <p>Galaxy Note 4</p>
+
+                        <div class="price-widget">
+                            <div class="price">12345</div>
+                        </div>
+                    </div>
+                    <div class="product-widget">
+                        <img src="resources/images/Produkty/produkty_product_2.png" style="margin:0 auto;">
+
+                        <p>Galaxy S6</p>
+
+                        <div class="price-widget">
+                            <div class="price">12345</div>
+                        </div>
+                    </div>
+                    <div class="product-widget">
+                        <img src="resources/images/Produkty/produkty_product_3.png" style="margin:0 auto;">
+
+                        <p>Galaxy S5</p>
+
+                        <div class="price-widget">
+                            <div class="price">12345</div>
+                        </div>
+                    </div>
+                    <div class="product-widget">
+                        <img src="resources/images/Produkty/produkty_product_1.png" style="margin:0 auto;">
+
+                        <p>Galaxy Note 4</p>
+
+                        <div class="price-widget">
+                            <div class="price">12345</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1 col-full-height">
+                <div id="next" class="arrow-next"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <section id="contact">
     <div class="container">
         <div class="row">
@@ -132,12 +213,36 @@
             }
         });
     });
-
-
-
-
-
 </script>
 
+<!--Skrypt SLICK SLIDER-->
+<script>
+    $(document).ready(function () {
+        $('#products-slider').slick({
+            infinite: true,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            speed: 900,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            prevArrow: $('#prev'),
+            nextArrow: $('#next'),
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                },
+                {
+                    breakpoint: 990,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+    });
+</script>
 </body>
 </html>
