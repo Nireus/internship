@@ -31,6 +31,14 @@ section{
     margin-bottom:0px;
 }
 
+#contact{
+    position: absolute;
+    top: 1640px;
+    left: 0px;
+    right: 0px;
+    margin-left:auto;
+    margin-right:auto;
+}
 #contact-form{
     padding-left:2px;
 }
