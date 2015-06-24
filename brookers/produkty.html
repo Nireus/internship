@@ -38,7 +38,8 @@
 
     <nav class="navstyle">
         <div id="navbar">
-            <img id="logo_top_menu"  src="resources/images/Home/logo_top_menu.png">
+            <img id="logo_top_menu" src="resources/images/Home/logo_top_menu.png">
+
             <div id="navbar-content">
 
                 <ul style=" font-size: 17px; margin-top:15px;"
@@ -65,7 +66,7 @@
     </div>
     <div class="container">
         <div class="row row-same-height" style="margin:auto;">
-            <div class="col-lg-1 col-full-height" >
+            <div class="col-lg-1 col-full-height">
                 <div id="prev" class="arrow-prev"></div>
             </div>
             <div class="col-lg-12 col-full-height">
@@ -114,6 +115,20 @@
         </div>
     </div>
 </section>
+
+
+<section ng-controller="CategoryControl" id="category-select">
+    <div style=" margin: auto;" class="clickable">
+        <div id="category-tab-samsung" ng-click="setCategory(0)"></div>
+        <div id="category-tab-sony" ng-click="setCategory(1)"></div>
+        <div id="category-tab-htc" ng-click="setCategory(2)"></div>
+        <div id="category-tab-apple" ng-click="setCategory(3)"></div>
+    </div>
+    <div ng-show="">
+
+    </div>
+</section>
+
 
 <section id="contact">
     <div class="container">

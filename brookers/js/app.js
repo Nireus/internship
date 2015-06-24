@@ -25,11 +25,11 @@ angular.module('brookers',[])
             image: '../resources/images/Produkty/produkty_product_5_small.png',
             name: 'Galaxy S4',
             price: '1490'
-        }
+        },
         {
             image: '../resources/images/Produkty/produkty_product_6_small.png',
             name: 'Galaxy S6',
             price: '2279'
         }
     ]
-})
+});
