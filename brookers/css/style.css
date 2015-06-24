@@ -122,6 +122,12 @@ section {
     background-repeat: no-repeat;
     height: 495px;
 }
+.rules{
+    color:#828181;
+    font-size:15px;
+    line-height:28px;
+}
+
 .arrow-prev{
     background: url('../resources/images/Home/arrow_left_home.png') no-repeat;
 }
