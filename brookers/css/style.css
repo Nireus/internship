@@ -121,3 +121,9 @@ section {
     background-repeat: no-repeat;
     height: 495px;
 }
+
+.rules{
+    color:#828181;
+    font-size:15px;
+    line-height:28px;
+}
