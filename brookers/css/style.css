@@ -71,25 +71,25 @@ section{
     height: 101px;
 
 }
-.contact-input{
+.padding-form{
+    padding-top: 25px;
+}
 
-    font-size: 21px;
-    border-radius: 6px;
+.contact-input{
     width: 19vw;
     height: 40px;
-    padding-left: 15px;
-
-}
-.padding-form{
-    margin-top: 30px;
+    border-radius: 6px;
+    font-size: 21px;
+    padding-left: 10px;
 }
 #submit-button{
-    border-radius: 6px;
-    background-color: #204d74;
-    color: #ABABB1;
-    width: 120px;
-    height: 40px;
     float: right;
     margin-right: 40px;
-}
+    width: 125px;
+    height: 40px;
+    border-radius: 6px;
+    background-color: #265a88;
+    font-size: 21px;
+    color: white;
 
+}
