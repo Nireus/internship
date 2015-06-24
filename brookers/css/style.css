@@ -6,6 +6,7 @@ body{
 }
 
 section{
+    height: auto;
 }
 
 #contact-form{
@@ -39,5 +40,12 @@ section{
     margin-bottom:0px;
     width:80px;
 	background-color:#E7E8EA;
+}
+#contact-box{
+    background-image: url("../resources/images/Produkty/produkty_box_top.png");
+    width: 998px;
+    margin: 0 auto;
+    height: 101px;
+
 }
 
