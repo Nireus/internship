@@ -6,6 +6,7 @@ body{
 }
 
 section{
+    height: auto;
 }
 
 .row-same-height {
@@ -31,14 +32,6 @@ section{
     margin-bottom:0px;
 }
 
-#contact{
-    position: absolute;
-    top: 1640px;
-    left: 0px;
-    right: 0px;
-    margin-left:auto;
-    margin-right:auto;
-}
 #contact-form{
     padding-left:2px;
 }
@@ -50,7 +43,6 @@ section{
 	border:0px;
 	margin-bottom:15px;
 	width:200px;
-	color:#ABABB1;
 	background-color:#242438;
 }
 #contact-form textarea{
@@ -61,7 +53,6 @@ section{
     margin-bottom:15px;
     width:270px;
     height: 100px;
-    color:#ABABB1;
 	background-color:#242438;
 }
 #newsletter-form #newsletter-submit,
@@ -73,4 +64,32 @@ section{
     width:80px;
 	background-color:#E7E8EA;
 }
+#contact-box{
+    background-image: url("../resources/images/Produkty/produkty_box_top.png");
+    width: 998px;
+    margin: 0 auto;
+    height: 101px;
 
+}
+.padding-form{
+    padding-top: 25px;
+}
+
+.contact-input{
+    width: 19vw;
+    height: 40px;
+    border-radius: 6px;
+    font-size: 21px;
+    padding-left: 10px;
+}
+#submit-button{
+    float: right;
+    margin-right: 40px;
+    width: 125px;
+    height: 40px;
+    border-radius: 6px;
+    background-color: #265a88;
+    font-size: 21px;
+    color: white;
+
+}
