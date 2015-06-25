@@ -63,9 +63,19 @@ section {
 }
 
 #menu-slider{
-margin-top:70px;
+	margin-top:70px;
 }
 
+#description{
+	margin-top: 32px;
+}
+#icon_top_menu{
+	margin-left:50px;
+	margin-top:5px;
+}
+.description-title{
+	margin-bottom: 0px;
+}
 .row-same-height {
     display: table;
     width: 100%;
