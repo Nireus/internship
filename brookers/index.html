@@ -59,10 +59,12 @@
 
 <section id="reference-slider">
     <div class="gradient-line"></div>
-    <div id="slider" style="background: linear-gradient(to right, rgba(231,232,234,1) 0%,rgba(236,237,239,1) 50%,rgba(231,232,234,1) 100%); ">
+    <div id="slider">
+        <div id="prev" class="arrow-prev"></div>
+        <div id="next" class="arrow-next"></div>
         <div class="gallery-slider">
             <div class="div-slide">
-                <span>Wspolparaca z tak doswiadczonym zepsołem zawsze prowadzi do pełni zadowolenia</span></br>
+                <span>Wspolparaca z tak doswiadczonym zepsołem zawsze prowadzi do pełni zadowolenia</span>
                 <span>Brokers Communication są na prawdę godni polecenia każdemu.</span>
             </div>
             <div class="div-slide">
@@ -235,8 +237,8 @@
             speed: 700,
             slidesToShow: 1,
             slidesToScroll: 1,
-            prevArrow: '<input type="submit" value="" class="arrow-prev"/> ',
-            nextArrow: '<input type="submit" value="" class="arrow-next"/> ',
+            prevArrow: $('#prev'),
+            nextArrow: $('#next'),
             appendArrows: $('#gallery-arrows'),
             responsive: [
                 {
@@ -253,28 +255,7 @@
                 }
             ]
         });
-        $('.auto-slider').slick({
-            infinite: true,
-            autoplay: true,
-            autoplaySpeed: 4000,
-            speed: 700,
-            arrows: false,
-            fade: true
-        });
     });
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 </script>

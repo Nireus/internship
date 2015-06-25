@@ -183,10 +183,22 @@ section {
 
 .arrow-prev {
     background: url('../resources/images/Home/arrow_left_home.png') no-repeat;
+    background-position: center;
+    width: 40px;
+    height: 82px;
+    z-index:1;
+    left:24vw;
+    position:absolute;
 }
 
 .arrow-next {
     background: url('../resources/images/Home/arrow_right_home.png') no-repeat;
+    background-position: center;
+    width: 40px;
+    height: 82px;
+    z-index:1;
+    right:24vw;
+    position:absolute;
 }
 
 .gallery-slider {
@@ -216,7 +228,8 @@ section {
     background: -webkit-gradient(linear, 0 0, 100% 0, from(#E7E8EA), to(#E7E8EA), color-stop(50%, #DCDDDE));
 }
 #slider {
-    width: 40vw;
+    background: linear-gradient(to right, rgba(231,232,234,1) 0%,rgba(236,237,239,1) 50%,rgba(231,232,234,1) 100%);
+    width: 45vw;
     height: 80px;
     margin: 0 auto;
     line-height: 17px;
