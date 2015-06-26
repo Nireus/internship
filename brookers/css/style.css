@@ -258,7 +258,7 @@ section {
     margin: auto;
 }
 
-.price-widget {
+.price-label-big {
     background-image: url('../resources/images/Produkty/produkty_box_price.png');
     background-position: center top;
     background-repeat: no-repeat;
@@ -270,9 +270,15 @@ section {
     display: table;
 }
 
-.price-label-big {
+.price-amount-big {
     display: table-cell;
     vertical-align: middle;
+    font-family: ChunkFive;
+}
+.price-amount-big-dimes{
+    font-size: 20px;
+    vertical-align: super;
+    text-decoration: underline;
 }
 
 .top-menu-arrow-prev {
@@ -344,6 +350,11 @@ section {
     font-family: ChunkFive;
     color:#FFFFFF;
     text-align: center;
+}
+.price-amount-small-dimes{
+    font-size: 15px;
+    vertical-align: super;
+    text-decoration: underline;
 }
 .phone-title{
     display: block;
