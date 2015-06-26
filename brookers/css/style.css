@@ -249,7 +249,7 @@ section {
     line-height: 17px;
 }
 
-.product-widget {
+.product-widget-big {
     width: 330px;
     height: 460px;
     text-align: center;
@@ -270,7 +270,7 @@ section {
     display: table;
 }
 
-.price {
+.price-label-big {
     display: table-cell;
     vertical-align: middle;
 }
@@ -322,21 +322,41 @@ section {
 .clickable {
     cursor: pointer;
 }
-.product-cont{
-    margin-left: 20px;
-    margin-top: 30px;
+.product-widget-small{
+    position: relative;
+    margin: 12px 12px;
     width: 250px;
     height: 155px;
     display: inline-block;
-    float: left;
-
 }
-.price-label{
+.price-label-small{
     background: url("../resources/images/Produkty/produkty_box_price_small.png");
     width: 96px;
     height: 62px;
-    margin-left: 85px;
-    margin-top: 45px;
+    display: block; position:absolute;
+    right:38px;
+    bottom: 15px;
+}
+.price-amount-small{
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 23px;
+    font-family: ChunkFive;
+    color:#FFFFFF;
     text-align: center;
-
+}
+.phone-title{
+    display: block;
+    width: 150px;
+    position:absolute;
+    left:87px;
+    top:12px;
+    font-size: 23px;
+    text-align:center;
+    color:#505050;
+}
+.phone-image{
+    display: block;
+    position:absolute;
+    left:5px;
 }
