@@ -117,13 +117,13 @@
 <section ng-controller="ProductsPanelCtrl as offersCtrl" style="margin-top: 40px">
     <div id="category-select">
         <div  style="height: 39px; margin-left: 20px">
-            <div class="category-class clickable" id="category-tab-samsung" ng-click="showCategory(0)"></div>
-            <div class="category-class clickable" id="category-tab-sony" ng-click="showCategory(1)"></div>
-            <div class="category-class clickable" id="category-tab-htc" ng-click="showCategory(2)"></div>
-            <div class="category-class clickable" id="category-tab-apple" ng-click="showCategory(3)"></div>
+            <div class="category-class clickable" id="category-tab-samsung" ng-click="offersCtrl.setTab(0)"></div>
+            <div class="category-class clickable" id="category-tab-sony" ng-click="offersCtrl.setTab(1)"></div>
+            <div class="category-class clickable" id="category-tab-htc" ng-click="offersCtrl.setTab(2)"></div>
+            <div class="category-class clickable" id="category-tab-apple" ng-click="offersCtrl.setTab(3)"></div>
         </div>
         <div style="border-top: 1px solid #adadad;" >
-            <div class="product-cont" ng-repeat="offer in offersCtrl.offers" >
+            <div class="product-cont" ng-repeat="offer in offersCtrl.offers[offersCtrl.tab]" >
                 <div style="float: left"><img src="" ng-src="{{offer.image}}"/></div>
                 <span style="font-size: 23px; margin-left: 5px; margin-top: 30px">{{offer.name}}</span>
                 <div class="price-label" style="line-height:65px;"><span style="font-size: 23px; font-family: ChunkFive; color: whitesmoke">{{offer.price}}</span></div>

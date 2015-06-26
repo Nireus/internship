@@ -24,6 +24,11 @@ angular.module('brookers', [])
         ]
     }).controller('ProductsPanelCtrl', function () {
 
+        this.tab=0;
+
+        this.setTab = function(newValue){
+            this.tab = newValue;
+        };
 
         this.offers = [
             [
@@ -72,12 +77,12 @@ angular.module('brookers', [])
             ],
             [
                 {
-                    image: './resources/images/Produkty/produkty_product_1_small.png',
+                    image: './resources/images/Produkty/produkty_product_2_small.png',
                     name: 'Galaxy A5',
                     price: '1190'
                 },
                 {
-                    image: './resources/images/Produkty/produkty_product_1_small.png',
+                    image: './resources/images/Produkty/produkty_product_2_small.png',
                     name: 'Galaxy A5',
                     price: '1190'
                 }
@@ -95,12 +100,4 @@ angular.module('brookers', [])
                 }
             ]
         ];
-
-        $scope.currentCategory = $scope.offers[0][0];
-        category = 0;
-        $scope.showCategory = function (categoryID) {
-            category = categoryID;
-            $scope.currentCategory = $scope.offers[category][0];
-            ;
-        }
     });
