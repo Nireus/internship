@@ -216,16 +216,20 @@ section {
 }
 
 .gallery-slider {
-    padding-top: 30px;
+    padding-top: 0;
     position: relative;
 }
 
-
+.reference-text{
+    display:table-cell;
+    vertical-align: middle;
+}
 
 .div-slide {
     position: relative;
     text-align: center;
-
+    display:table !important;
+    height: 82px;
 }
 
 #reference-slider{
