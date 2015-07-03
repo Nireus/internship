@@ -34,7 +34,6 @@
 
 <body>
 
-<!--dodane tylko po to żeby kontakt siedział na swoim tle, do wywalenia-->
 
 <section id="header">
 
@@ -79,42 +78,47 @@
 
 </section>
 
-<section id="main-contact">
+<section id="title-bar">
     <div id="contact-box">
-
-        <div style="float: left; width: 50%; margin-top:35px; line-height:17px; margin-left: 20px;">
-            <span style="font-size: 27px; padding-bottom:2px;">Kontakt<br></span>
-            <span style="font-size: 15px; color: #204d74;">Wypełnij formularz kontaktowy i dowiedz się więcej o naszych promocjach</span>
+        <div style="float: left; margin-top:30px; line-height:22px; margin-left: 20px;">
+            <span style="font-size: 27px; padding-bottom:2px;">Regulamin<br></span>
+            <span style="font-size: 15px; color: #204d74;">
+                Aby poznać wszystkie kwestie prawne dotyczące naszych aukcji zapoznaj się z naszym regulaminem.
+            </span>
         </div>
     </div>
-</section>
-<section style="height: 1000px">
-    <div class="row">
-        <div class="col-md-offset-3 col-md-3 ">
-            <div style="margin-left: 50px; margin-top: 50px ;border-right:1px solid #cccccc; height: 600px">
-                <p class="padding-form"><input class="contact-input" name="name" placeholder="imię"></p>
+    <div class="container">
+        <div class="row" style="margin-top:35px">
+            <div class="col-lg-8 col-lg-offset-1 rules" style="border-right:1px solid #cccccc">
+                <div class="row row-same-height">
+                    <div class="col-lg-3 col-full-height">
+                        <img src="resources/images/Regulamin/regulamin_graphic.png">
+                    </div>
+                    <div class="col-lg-9 col-full-height" style="padding-left:50px; vertical-align:middle">
+                        <p style="font-size:27px; color:#505050">
+                            Skutki odstąpienia od umowy
+                        </p>
 
-                <p class="padding-form"><input class="contact-input" name="email" placeholder="email"></p>
-
-                <p class="padding-form"><input class="contact-input" name="tel-number" placeholder="numer telefonu"></p>
-
-                <p class="padding-form"><input style="height: 100px;" class="contact-input" name="message"
-                                               placeholder="twoja wiadomośc"></p>
-
-                <p class="padding-form"><input id="submit-button" name="submit_contact" type="submit" value="Potwierdź">
-                </p>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div id="contact-image" >
-                <div style="color: #888888; margin-left: 15px; float: left; line-height: 17px; margin-top: 15px;font-size: 17px">
-                    <span style="font-size:21px; font-family: ChunkFive;">Brookers Communication</span></br>
-                    <span>Adres: ul.Rejtana 53a/70</span></br>
-                    <span style="margin-left: 40px">35-256 Rzeszów</span></br>
-                    <span>E-mail: brokers.communication@gmail.com</span></br>
-                    <span>Telefon:(+48) 531 995 668</span></br>
+                        
+                    </div>
                 </div>
-
+                <div style="border-bottom:1px solid #cccccc; width = 100%;margin:25px 0px;"></div>
+                W przypadku odstąpienia od niniejszej umowy zwracamy Państwu wszystkie otrzymane od Państwa płatności, w tym koszty dostarczenia rzeczy 
+				(z wyjątkiem dodatkowych kosztów wynikających z wybranego przez Państwa sposobu dostarczenia innego niż najtańszy zwykły sposób dostarczenia
+				oferowany przez nas), niezwłocznie, a w każdym przypadku nie później niż 14 dni od dnia, w którym zostaliśmy poinformowani o Państwa decyzji
+				o wykonaniu prawa odstąpienia od niniejszej umowy. Zwrotu płatności dokonamy przy użyciu takich samych sposobów płatności, jakie zostały przez
+				Państwa użyte w pierwotnej transakcji, chyba że wyraźnie zgodziliście się Państwo na inne rozwiązanie; w każdym przypadku nie poniosą Państwo
+				żadnych opłat w związku z tym zwrotem. Możemy wstrzymać się ze zwrotem płatności do czasu otrzymania rzeczy lub do czasu dostarczenia nam dowodu
+				jej odesłania, w zależności od tego, które zdarzenie nastąpi wcześniej. Proszę odesłać lub przekazać nam rzecz niezwłocznie, a w każdym razie nie
+				później niż 14 dni od dnia, w którym poinformowali nas Państwo o odstąpieniu od niniejszej umowy. Termin jest zachowany, jeżeli odeślą Państwo
+				rzecz przed upływem terminu 14 dni. Będą Państwo musieli ponieść bezpośrednie koszty zwrotu rzeczy.Odpowiadają Państwo tylko za zmniejszenie 
+				wartości rzeczy wynikające z korzystania z niej w sposób inny niż było to konieczne do stwierdzenia charakteru, cech i funkcjonowania rzeczy.
+            </div>
+            <div class="col-lg-3">
+                <ul class="brookers-list" style="font-size:14px; padding-left:10px; padding-top:40px">
+                    <li><a href="regulamin-prawo.html">Prawo odstąpienia od umowy</a></li>
+                    <li><a href="regulamin-skutki.html">Skutki odstąpienia od umowy</a></li>
+                </ul>
             </div>
         </div>
     </div>
@@ -219,7 +223,6 @@
             }
         });
     });
-	
 
  $(document).ready(function () {
 $('.menu-widget').slick({
@@ -247,6 +250,9 @@ slidesToShow: 1
 ]
 });
 });
+
+
+
 </script>
 
 </body>
