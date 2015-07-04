@@ -35,23 +35,28 @@
 <body ng-app="brookers">
 
 <section id="header">
-
-    <nav class="navstyle">
-        <div id="navbar">
-            <img id="logo_top_menu" src="resources/images/Home/logo_top_menu.png">
-
-            <div id="navbar-content">
-
-                <ul style=" font-size: 17px; margin-top:15px;"
-                    class="nav navbar-nav">
-                    <li><a href="index.html">O nas</a></li>
-                    <li><a href="produkty.html">Produkty</a></li>
-                    <li><a href="regulamin.html">Regulamin</a></li>
-                    <li><a href="kontakt.html">Kontakt</a></li>
-                </ul>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <img id="logo_top_menu" src="resources/images/Home/logo_top_menu.png">
+            </div>
+            <div class="col-lg-9">
+                <nav class="navstyle">
+                    <div id="navbar">
+                        <div id="navbar-content">
+                            <ul style=" font-size: 17px; margin-top:15px;"
+                                class="nav navbar-nav">
+                                <li><a href="index.html">O nas</a></li>
+                                <li><a href="produkty.html">Produkty</a></li>
+                                <li><a href="regulamin.html">Regulamin</a></li>
+                                <li><a href="kontakt.html">Kontakt</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
             </div>
         </div>
-    </nav>
+    </div>
 </section>
 
 <section id="menu-slider">
@@ -168,7 +173,6 @@
     </div>
     <div class="gradient-line"></div>
 </section>
-
 
 <section id="why-us">
     <div class="container">
@@ -292,6 +296,7 @@
         </div>
     </div>
 </section>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
@@ -312,8 +317,9 @@
             }
         });
     });
-
-
+</script>
+<!--Skrypt SLICK SLIDER-->
+<script>
     $(document).ready(function () {
 
         $('.gallery-slider').slick({
@@ -342,33 +348,31 @@
             ]
         });
 		
-$('.menu-widget').slick({
-infinite: true,
-autoplay: true,
-autoplaySpeed: 4000,
-speed: 700,
-slidesToShow: 1,
-slidesToScroll: 1,
-prevArrow: $('#prev2'),
-nextArrow: $('#next2'),
-responsive:[
-{
-breakpoint: 1200,
-settings:{
-slidesToShow: 1
-}
-},
-{
-breakpoint: 990,
-settings:{
-slidesToShow: 1
-}
-}
-]
-});
+    $('.menu-widget').slick({
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        speed: 700,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: $('#prev2'),
+        nextArrow: $('#next2'),
+        responsive:[
+            {
+                breakpoint: 1200,
+                settings:{
+                    slidesToShow: 1
+                }
+            },
+            {
+                breakpoint: 990,
+                settings:{
+                    slidesToShow: 1
+                }
+            }
+        ]
     });
-
-
+});
 
 </script>
 

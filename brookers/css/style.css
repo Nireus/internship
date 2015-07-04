@@ -12,7 +12,7 @@
 
 body {
     background-image: url("../resources/images/Home/background.png");
-    background-size: 1920px 1960px;
+    background-size: 100% 1960px;
     background-position: center top;
     background-repeat: no-repeat;
     font-family: MyriadPro;
@@ -20,6 +20,10 @@ body {
 
 section {
     height: auto;
+}
+
+#header{
+    margin-top:15px;
 }
 
 .navstyle {
@@ -33,13 +37,12 @@ section {
 }
 
 #logo_top_menu {
-    margin-left: 260px;
     margin-top: 5px;
 }
 
 #navbar-content {
     float: right;
-    padding-right: 20vw;
+    padding-right: 20px;
 }
 
 .nav > li > a {
