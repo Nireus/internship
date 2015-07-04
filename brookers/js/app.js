@@ -103,28 +103,28 @@ angular.module('brookers', [])
     }).controller('ReferencesSliderCtrl', function () {
         this.references = [
             {
-                text: 'Bardzo dobry kontakt i wysoka kultura partnera. Brokers Communication jest rzetelnym kontrahentem. Wszystko jak należy. '
+                text: 'Bardzo dobry kontakt i wysoka kultura partnera. Brokers Communication jest rzetelnym kontrahentem. Wszystko jak należy.'
             },
             {
                 text: '100% profesjonalizmu. Brokers Communication jest poważnym przedsięwzięciem. Taka współpraca to przyjemność - szybko i sprawnie. To ogromne szczęście współpracować z takimi ludźmi.'
             },
             {
-                text: 'Ogromny pozytyw - nie może być inaczej!!!! Brokers Communication jest godna polecenia firmą. Zakupiony towar jest dobrym produktem. To ogromna przyjemność współpracować z takimi ludźmi . '
+                text: 'Ogromny pozytyw - nie może być inaczej!!!! Brokers Communication jest godna polecenia firmą. Zakupiony towar jest dobrym produktem. To ogromna przyjemność współpracować z takimi ludźmi.'
             },
             {
-                text: 'Z przyjemnością wystawiam pozytywną opinie. Solidny, uczciwy i słowny partner w interesach godny zaufania. Miły kontrahent. Realizacja przebiegła pomyślnie. Zero problemów.  '
+                text: 'Z przyjemnością wystawiam pozytywną opinie. Solidny, uczciwy i słowny partner w interesach godny zaufania. Miły kontrahent. Realizacja przebiegła pomyślnie. Zero problemów.'
             },
             {
-                text: 'Same plusy. Poważny,  godny rekomendacji.  '
+                text: 'Same plusy. Poważny,  godny rekomendacji.'
             },
             {
-                text: 'Bardzo dziękuję za udaną transakcję! Znakomity partner godny rekomendacji. Zamówiony towar jak najbardziej oryginalny. Nic dodać, nic ująć.  '
+                text: 'Bardzo dziękuję za udaną transakcję! Znakomity partner godny rekomendacji. Zamówiony towar jak najbardziej oryginalny. Nic dodać, nic ująć.'
             },
             {
-                text: 'Wzorowy przykład relacji sprzedający-kupujący. Brokers Communication jest słowną i konkretną inicjatywą . Poważny partner godny polecenia. Błyskawiczna przesyłka, miły kontakt! Towar jak najbardziej oryginalny. W skrócie - wszystko OK. '
+                text: 'Wzorowy przykład relacji sprzedający-kupujący. Brokers Communication jest słowną i konkretną inicjatywą . Poważny partner godny polecenia. Błyskawiczna przesyłka, miły kontakt! Towar jak najbardziej oryginalny. W skrócie - wszystko OK.'
             },
             {
-                text: 'Kontrahent z profesjonalnym podejściem do aukcji. Taka wysyłka to przyjemność - szybko i sprawnie. Towar jak na zdjęciach. Dzięki takim sprzedającym miło cokolwiek kupować.   '
+                text: 'Kontrahent z profesjonalnym podejściem do aukcji. Taka wysyłka to przyjemność - szybko i sprawnie. Towar jak na zdjęciach. Dzięki takim sprzedającym miło cokolwiek kupować.'
             }
         ];
     });
