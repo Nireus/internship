@@ -123,9 +123,12 @@
 
 <section ng-controller="ProductsPanelCtrl as offersCtrl" style="margin-top: 40px">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-10 col-lg-offset-1">
-                <div style="height: 39px; margin-left: 20px" id="category-slider">
+        <div class="row row-same-height">
+            <div class="col-lg-1 col-full-height">
+                <div class="arrow-prev" id="category-slider-arrow-prev" style="float:right;"></div>
+            </div>
+            <div class="col-lg-10 col-full-height">
+                <div style="height: 39px; text-align:center; margin" id="category-slider">
                     <div class="category-class clickable tab-samsung" ng-click="offersCtrl.setTab(0)"></div>
                     <div class="category-class clickable tab-xperia" ng-click="offersCtrl.setTab(1)"></div>
                     <div class="category-class clickable tab-htc" ng-click="offersCtrl.setTab(2)"></div>
@@ -141,9 +144,13 @@
                     <div class="category-class clickable tab-sony" ng-click="offersCtrl.setTab(12)"></div>
                 </div>
             </div>
+            <div class="col-lg-1 col-full-height">
+                <div class="arrow-next" id="category-slider-arrow-next" style="float:left;"></div>
+            </div>
         </div>
-        <div class="row">
-            <div class="col-lg-10 col-lg-offset-1">
+        <div class="row row-same-height">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">
                 <div style="border-top: 1px solid #adadad; text-align:center;">
                     <div ng-repeat="offer in offersCtrl.offers[offersCtrl.tab]" class="product-widget-small">
                         <div class="phone-image"><img src="" ng-src="{{offer.image}}"/></div>
@@ -159,6 +166,7 @@
                     </div>
                 </div>
             </div>
+            <div class="col-lg-1"></div>
         </div>
     </div>
 </section>
@@ -323,8 +331,8 @@
             speed: 700,
             slidesToShow: 8,
             slidesToScroll: 4,
-            prevArrow: $('#prev2'),
-            nextArrow: $('#next2'),
+            prevArrow: $('#category-slider-arrow-prev'),
+            nextArrow: $('#category-slider-arrow-next'),
         });
     });
 

@@ -206,20 +206,16 @@ section {
     background: url('../resources/images/Home/arrow_left_home.png') no-repeat;
     background-position: center;
     width: 40px;
-    height: 82px;
+    height: 30px;
     z-index:1;
-    left:24vw;
-    position:absolute;
 }
 
 .arrow-next {
     background: url('../resources/images/Home/arrow_right_home.png') no-repeat;
     background-position: center;
     width: 40px;
-    height: 82px;
+    height: 30px;
     z-index:1;
-    right:24vw;
-    position:absolute;
 }
 
 .gallery-slider {
@@ -315,6 +311,8 @@ section {
     height: 39px;
     display: inline-block;
     background-repeat:no-repeat !important;
+    background-position:center !important;
+    margin:auto;
 }
 
 .tab-samsung {
@@ -354,7 +352,7 @@ section {
     background: url("../resources/images/Produkty/produkty_hover_mark_12.png");
 }
 .tab-sony {
-    background: url("../resources/images/Produkty/produkty_hover_mark_13ca.png");
+    background: url("../resources/images/Produkty/produkty_hover_mark_13.png");
 }
 
 #category-select {

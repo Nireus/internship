@@ -162,8 +162,8 @@
 <section id="reference-slider" ng-controller="ReferencesSliderCtrl as referenceSlider">
     <div class="gradient-line"></div>
     <div id="slider">
-        <div id="prev" class="arrow-prev"></div>
-        <div id="next" class="arrow-next"></div>
+        <div id="prev" class="arrow-prev" style="left:24vw; height: 82px; position:absolute"></div>
+        <div id="next" class="arrow-next" style="right:24vw; height: 82px; position:absolute"></div>
         <div class="gallery-slider">
             <div class="div-slide" ng-repeat="reference in referenceSlider.references">
                 <div class="reference-text">{{reference.text}}</div>
