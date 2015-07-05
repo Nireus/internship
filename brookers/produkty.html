@@ -122,22 +122,39 @@
 
 
 <section ng-controller="ProductsPanelCtrl as offersCtrl" style="margin-top: 40px">
-    <div id="category-select">
-        <div style="height: 39px; margin-left: 20px">
-            <div class="category-class clickable" id="category-tab-samsung" ng-click="offersCtrl.setTab(0)"></div>
-            <div class="category-class clickable" id="category-tab-sony" ng-click="offersCtrl.setTab(1)"></div>
-            <div class="category-class clickable" id="category-tab-htc" ng-click="offersCtrl.setTab(2)"></div>
-            <div class="category-class clickable" id="category-tab-apple" ng-click="offersCtrl.setTab(3)"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1">
+                <div style="height: 39px; margin-left: 20px" id="category-slider">
+                    <div class="category-class clickable tab-samsung" ng-click="offersCtrl.setTab(0)"></div>
+                    <div class="category-class clickable tab-xperia" ng-click="offersCtrl.setTab(1)"></div>
+                    <div class="category-class clickable tab-htc" ng-click="offersCtrl.setTab(2)"></div>
+                    <div class="category-class clickable tab-apple" ng-click="offersCtrl.setTab(3)"></div>
+                    <div class="category-class clickable tab-zte" ng-click="offersCtrl.setTab(4)"></div>
+                    <div class="category-class clickable tab-blackberry" ng-click="offersCtrl.setTab(5)"></div>
+                    <div class="category-class clickable tab-huawei" ng-click="offersCtrl.setTab(6)"></div>
+                    <div class="category-class clickable tab-lenovo" ng-click="offersCtrl.setTab(7)"></div>
+                    <div class="category-class clickable tab-lg" ng-click="offersCtrl.setTab(8)"></div>
+                    <div class="category-class clickable tab-motorola" ng-click="offersCtrl.setTab(9)"></div>
+                    <div class="category-class clickable tab-microsoft" ng-click="offersCtrl.setTab(10)"></div>
+                    <div class="category-class clickable tab-nokia" ng-click="offersCtrl.setTab(11)"></div>
+                    <div class="category-class clickable tab-sony" ng-click="offersCtrl.setTab(12)"></div>
+                </div>
+            </div>
         </div>
-        <div style="border-top: 1px solid #adadad; text-align:center;">
-            <div ng-repeat="offer in offersCtrl.offers[offersCtrl.tab]" class="product-widget-small">
-                <div class="phone-image"><img src="" ng-src="{{offer.image}}"/></div>
-                <div class="phone-title">{{offer.name}}</div>
-                <div class="price-label-small">
-                    <div style="display:table; width:100%; height:100%;">
-                        <div class="price-amount-small">
-                            {{offer.price}}
-                            <span class="price-amount-small-dimes">00</span>
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1">
+                <div style="border-top: 1px solid #adadad; text-align:center;">
+                    <div ng-repeat="offer in offersCtrl.offers[offersCtrl.tab]" class="product-widget-small">
+                        <div class="phone-image"><img src="" ng-src="{{offer.image}}"/></div>
+                        <div class="phone-title">{{offer.name}}</div>
+                        <div class="price-label-small">
+                            <div style="display:table; width:100%; height:100%;">
+                                <div class="price-amount-small">
+                                    {{offer.price}}
+                                    <span class="price-amount-small-dimes">00</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -276,30 +293,41 @@
         });
 		
 		$('.menu-widget').slick({
-infinite: true,
-autoplay: true,
-autoplaySpeed: 4000,
-speed: 700,
-slidesToShow: 1,
-slidesToScroll: 1,
-prevArrow: $('#prev2'),
-nextArrow: $('#next2'),
-responsive:[
-{
-breakpoint: 1200,
-settings:{
-slidesToShow: 1
-}
-},
-{
-breakpoint: 990,
-settings:{
-slidesToShow: 1
-}
-}
-]
-});
+            infinite: true,
+            autoplay: true,
+            autoplaySpeed: 4000,
+            speed: 700,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            prevArrow: $('#prev2'),
+            nextArrow: $('#next2'),
+            responsive:[
+                {
+                    breakpoint: 1200,
+                    settings:{
+                        slidesToShow: 1
+                    }
+                },
+                {
+                    breakpoint: 990,
+                    settings:{
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+
+        $('#category-slider').slick({
+            infinite: false,
+            autoplay: false,
+            speed: 700,
+            slidesToShow: 8,
+            slidesToScroll: 4,
+            prevArrow: $('#prev2'),
+            nextArrow: $('#next2'),
+        });
     });
+
 </script>
 </body>
 </html>

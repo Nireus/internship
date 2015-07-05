@@ -31,7 +31,7 @@ angular.module('brookers', [])
         };
 
         this.offers = [
-            [
+            [////////////SAMSUNG////////////
                 {
                     image: './resources/images/Produkty/produkty_product_1_small.png',
                     name: 'Galaxy A5',
@@ -63,7 +63,7 @@ angular.module('brookers', [])
                     price: '2279'
                 }
             ],
-            [
+            [////////////XPERIA////////////
                 {
                     image: './resources/images/Produkty/produkty_product_1_small.png',
                     name: 'Galaxy A5',
@@ -75,7 +75,7 @@ angular.module('brookers', [])
                     price: '1190'
                 }
             ],
-            [
+            [////////////HTC////////////
                 {
                     image: './resources/images/Produkty/produkty_product_2_small.png',
                     name: 'Galaxy A5',
@@ -87,7 +87,115 @@ angular.module('brookers', [])
                     price: '1190'
                 }
             ],
-            [
+            [////////////APPLE////////////
+                {
+                    image: './resources/images/Produkty/produkty_product_1_small.png',
+                    name: 'Galaxy A5',
+                    price: '1190'
+                },
+                {
+                    image: './resources/images/Produkty/produkty_product_1_small.png',
+                    name: 'Galaxy A5',
+                    price: '1190'
+                }
+            ],
+            [////////////ZTE////////////
+                {
+                    image: './resources/images/Produkty/produkty_product_1_small.png',
+                    name: 'Galaxy A5',
+                    price: '1190'
+                },
+                {
+                    image: './resources/images/Produkty/produkty_product_1_small.png',
+                    name: 'Galaxy A5',
+                    price: '1190'
+                }
+            ],
+            [////////////BLACKBERRY////////////
+                {
+                    image: './resources/images/Produkty/produkty_product_1_small.png',
+                    name: 'Galaxy A5',
+                    price: '1190'
+                },
+                {
+                    image: './resources/images/Produkty/produkty_product_1_small.png',
+                    name: 'Galaxy A5',
+                    price: '1190'
+                }
+            ],
+            [////////////HUAWEI////////////
+                {
+                    image: './resources/images/Produkty/produkty_product_1_small.png',
+                    name: 'Galaxy A5',
+                    price: '1190'
+                },
+                {
+                    image: './resources/images/Produkty/produkty_product_1_small.png',
+                    name: 'Galaxy A5',
+                    price: '1190'
+                }
+            ],
+            [////////////LENOVO////////////
+                {
+                    image: './resources/images/Produkty/produkty_product_1_small.png',
+                    name: 'Galaxy A5',
+                    price: '1190'
+                },
+                {
+                    image: './resources/images/Produkty/produkty_product_1_small.png',
+                    name: 'Galaxy A5',
+                    price: '1190'
+                }
+            ],
+            [////////////LG////////////
+                {
+                    image: './resources/images/Produkty/produkty_product_1_small.png',
+                    name: 'Galaxy A5',
+                    price: '1190'
+                },
+                {
+                    image: './resources/images/Produkty/produkty_product_1_small.png',
+                    name: 'Galaxy A5',
+                    price: '1190'
+                }
+            ],
+            [////////////MOTOROLA////////////
+                {
+                    image: './resources/images/Produkty/produkty_product_1_small.png',
+                    name: 'Galaxy A5',
+                    price: '1190'
+                },
+                {
+                    image: './resources/images/Produkty/produkty_product_1_small.png',
+                    name: 'Galaxy A5',
+                    price: '1190'
+                }
+            ],
+            [////////////MICROSOFT////////////
+                {
+                    image: './resources/images/Produkty/produkty_product_1_small.png',
+                    name: 'Galaxy A5',
+                    price: '1190'
+                },
+                {
+                    image: './resources/images/Produkty/produkty_product_1_small.png',
+                    name: 'Galaxy A5',
+                    price: '1190'
+                }
+            ],
+            [////////////NOKIA////////////
+                {
+                    image: './resources/images/Produkty/produkty_product_1_small.png',
+                    name: 'Galaxy A5',
+                    price: '1190'
+                },
+                {
+                    image: './resources/images/Produkty/produkty_product_1_small.png',
+                    name: 'Galaxy A5',
+                    price: '1190'
+                }
+            ],
+            [////////////SONY////////////
                 {
                     image: './resources/images/Produkty/produkty_product_1_small.png',
                     name: 'Galaxy A5',
