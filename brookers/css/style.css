@@ -194,6 +194,23 @@ section {
     background-image: url("../resources/images/Kontakt/kontakt_map.png");
     background-repeat: no-repeat;
     height: 495px;
+    position: relative;
+}
+#hover-box{
+    background-position: center;
+    position: absolute;
+    top: 210px;
+    left: 24px;
+    width: 336px;
+    height: 283px;
+}
+#hover-box:hover{
+    background-image: url("../resources/images/Kontakt/kontakt_map_big.png");
+    top:72px;
+    left:-88px;
+    width:559px;
+    height:558px;
+    z-index:1;
 }
 
 .rules {
