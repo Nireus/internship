@@ -75,7 +75,6 @@
 
 <section id="section1">
     <div id="section1-top-border">
-        <img src="resources/images/line_home.png">
     </div>
     <div class="container">
         <div class="row">
@@ -116,8 +115,7 @@
                     również pielęgnacja jakiej poddawane są one w domu, przy codziennym myciu.
                     Ładna fryzura to dobre ścięcie, ale i umiejętność łatwego ich ułożenia w domu. Nagrodą za te
                     wszystkie starania dla Was i dla nas są zdrowe lśniące włosy, których wygląd poprawia nasze
-                    samopoczucie
-                    , ale i sprawia że zawsze jesteście dumni ze swojej fryzury. Produkty profesjonalne charakteryzują
+                    samopoczucie, ale i sprawia że zawsze jesteście dumni ze swojej fryzury. Produkty profesjonalne charakteryzują
                     się większą wydajnością i skutecznością niż produkty popularne, kupowane w sklepach, ale też
                     bardziej niż one dopasowywane są do indywidualnych potrzeb Państwa włosów, czy skóry głowy.
                     Wszystkie produkty króych używamy są hypoalergiczne i zawierają substancję pielęgnującą strókturę
@@ -221,7 +219,7 @@
                     pracować w tym zawodzie. Spośród wszystkich usług najbardziej lubię koloryzację, ponieważ cieszy
                     mnie zmiana wizerunku klienta. Podczas wykonywania pasemek, refleksów oraz masażu skóry głowy
                     wyciszam się. Do każdego klienta podchodzę indywidualnie oraz staram się przekazać mu swoją wiedzę
-                    na temat codziennej pielengnacji i stylizacji włosów. Cieszy mnnie kązdy zadowolony klient,
+                    na temat codziennej pielengnacji i stylizacji włosów. Cieszy mnnie każdy zadowolony klient,
                     a najbardziej ten, który wraca.
                 </p>
 
@@ -235,7 +233,7 @@
     </div>
 </section>
 
-<section id="section4">
+<section id="section4" ng-controller="GalleryCtrl">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -255,48 +253,45 @@
                 <div id="gallery-arrows" style="text-align: right">
                 </div>
                 <div class="gallery-slider">
-                    <div style="position: relative"><img src="resources/images/galeria_image.png"/>
+                    <div style="position: relative"><img class= "clickable" ng-click="showImage(1)" src="resources/images/galeria_image_1.png"/>
 
                         <div class="gallery-green"><img class="gallery-icon" src="resources/images/galeria_icon.png"/>
                             <p class="gallery-date">12 maja 2015</p>
                         </div>
                     </div>
-                    <div style="position: relative"><img src="resources/images/galeria_image_2.png"/>
+                    <div style="position: relative"><img class= "clickable" ng-click="showImage(2)" src="resources/images/galeria_image_2.png"/>
 
                         <div class="gallery-green"><img class="gallery-icon" src="resources/images/galeria_icon.png"/>
 
                             <p class="gallery-date">5 lutego 2015</p>
                         </div>
                     </div>
-                    <div style="position: relative"><img src="resources/images/galeria_image_3.png"/>
+                    <div style="position: relative"><img class= "clickable" ng-click="showImage(3)" src="resources/images/galeria_image_3.png"/>
 
                         <div class="gallery-green"><img class="gallery-icon" src="resources/images/galeria_icon.png"/>
 
                             <p class="gallery-date">9 grudnia 2014</p>
                         </div>
                     </div>
-                    <div style="position: relative"><img src="resources/images/galeria_image.png"/>
+                    <div style="position: relative"><img class= "clickable" ng-click="showImage(2)" src="resources/images/galeria_image_2.png"/>
 
                         <div class="gallery-green"><img class="gallery-icon" src="resources/images/galeria_icon.png"/>
 
                             <p class="gallery-date">12 maja 2015</p>
-                        </div>
-                    </div>
-                    <div style="position: relative"><img src="resources/images/galeria_image_2.png"/>
-
-                        <div class="gallery-green"><img class="gallery-icon" src="resources/images/galeria_icon.png"/>
-
-                            <p class="gallery-date">5 lutego 2015</p>
-                        </div>
-                    </div>
-                    <div style="position: relative"><img src="resources/images/galeria_image_3.png"/>
-
-                        <div class="gallery-green"><img class="gallery-icon" src="resources/images/galeria_icon.png"/>
-
-                            <p class="gallery-date">9 grudnia 2014</p>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="pop-up-gallery" ng-show="imageShown">
+        <div class="container">
+            <div class="clickable glyphicon glyphicon-remove" style="float:right;top:50px;right:10px;color:black; z-index:2;"
+                 ng-click="closeGallery()">
+            </div>
+            <div style="padding-top:80px;position: relative;">
+                <img class="clickable" ng-src="{{imageSource}}" ng-click="closeGallery()"/>
             </div>
         </div>
     </div>
@@ -336,7 +331,7 @@
     <br/>
 </section>
 
-<section id="contact" ng-controller="GalleryControl">
+<section id="contact" ng-controller="MapCtrl">
 
     <div id="green_section">
         <div style="margin-top: 13px; margin-left: 20%; width: 45px; float: left">

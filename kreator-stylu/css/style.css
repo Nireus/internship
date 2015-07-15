@@ -97,11 +97,15 @@ nav li a:hover:after {
     background-color: #F7F8FA;
     border-top:5px solid #DADADA;
     border-bottom:2px solid #E6E6E6;
-height: 550px;
+    height: 550px;
 }
 #section1-top-border{
-    width:1600px;
-    margin:-9px auto 0 auto;
+    width:100px;
+    height:12px;
+    margin:-4px auto 0 auto;
+    background-image: url("../resources/images/line_home.png");
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 #section2
@@ -121,14 +125,18 @@ height: 550px;
 }
 #section4
 {
+    position: relative;
+    z-index:1;
 	background-color: #FAFAFA;
     border-bottom:2px solid #E6E6E6;
 	height: 450px;
 	text-align: center;
-	padding:30px;
+	padding-top:30px;
 }
 #section5
 {
+    position: relative;
+    z-index: 0;
     background-color: #F7F8FA;
     border-bottom:2px solid #E6E6E6;
 	height: 350px;
@@ -266,4 +274,16 @@ footer{
     position: fixed;
     height: 70vh;
     top: 20vh;
+}
+.clickable{
+    cursor: pointer;
+}
+.pop-up-gallery{
+     background-color: rgba(0,0,0,0.3);
+     top:0; left:0;
+     height:100vh;
+     width:100vw;
+     max-width:100%;
+     padding: 0;
+     position: absolute;"
 }
