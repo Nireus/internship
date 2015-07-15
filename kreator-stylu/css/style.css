@@ -6,11 +6,12 @@ section{
     position:absolute;
     height:30px;
     width:100%;
-    background-color: #3dc821;
+    background-color: #54AE32;
     color:white;
     text-align:center;
     top:0;
 }
+
 .paddinggreenbar
 {
     padding-top:5px;
@@ -19,12 +20,12 @@ section{
 }
 .bannerbar
 {
-    height:225px;
+    height:205px;
 }
 #logo
 {
     position:absolute;
-    padding-top: 40px;
+    padding-top: 33px;
     z-index: 3;
 }
 .border
@@ -43,11 +44,11 @@ section{
     width:100px;
 }
 .navstyle{
-    height:85px;
+    height:70px;
 }
 #navbar{
     width:100%;
-    height:85px;
+    height:70px;
     position: absolute;
     background-color: rgb(255,255,255);
     z-index: 2;
@@ -55,25 +56,26 @@ section{
     border-bottom: 2px solid #cccccc;
 }
 #navbar-content{
-    float:right;
-    margin-left:290px;
-    padding-right:13vw;
+    float:left;
+    margin-left:15vw;
+    padding-left:300px;
 }
 .nav>li>a {
     color:black;
-    top:16px;
     position: relative;
     display: initial;
-    padding: 26px 16px;
+    top: 23px;
+    padding: 23px 10px 23px 10px;
     border-top: 2px solid #cccccc;
     border-bottom: 2px solid #cccccc;
-    font-size: 26px;
+    font-family: 'PT Sans';
+    font-size: 16px;
 }
 .nav>li>a:hover{
     border-top: 2px solid #696969;
     border-bottom: 2px solid #696969;
     background-color: rgba(209, 209, 209, 0.22);
-    color:lightgreen;
+    color:#8FC12C;
 
 
 }
@@ -92,54 +94,69 @@ nav li a:hover:after {
 
 #section1
 {
-    background-color: #f0f0f0;
-    border-top:2px solid #cccccc;
-    border-bottom:2px solid #cccccc;
+    background-color: #F7F8FA;
+    border-top:5px solid #DADADA;
+    border-bottom:2px solid #E6E6E6;
 height: 550px;
 }
+#section1-top-border{
+    width:1600px;
+    margin:-9px auto 0 auto;
+}
+
 #section2
 {
-    background-color: #f0f0f0;
-    border-bottom:2px solid #cccccc;
+    background-color: #FAFAFA;
+    border-bottom:2px solid #E6E6E6;
 	height: 600px;
 	text-align: center;
 	padding: 30px;
 }
 #section3
 {
-	background-color: #f0f0f0;
-    border-bottom:2px solid #cccccc;
+	background-color: #F7F8FA;
+    border-bottom:2px solid #E6E6E6;
 	height: 550px;
 	padding:30px;
 }
 #section4
 {
-	background-color: #f0f0f0;
-    border-bottom:2px solid #cccccc;
+	background-color: #FAFAFA;
+    border-bottom:2px solid #E6E6E6;
 	height: 450px;
 	text-align: center;
 	padding:30px;
 }
 #section5
 {
-    background-color: #f0f0f0;
-    border-bottom:2px solid #cccccc;
+    background-color: #F7F8FA;
+    border-bottom:2px solid #E6E6E6;
 	height: 350px;
 	text-align: center;
 	padding: 30px;
 }
 #sabina{
-padding-top:100px;
+    padding-top:100px;
 }
-#opisy{
-padding-left:10px;
+.description,
+.description-name{
+    padding-left:10px;
+    font-family: 'PT sans';
+    font-size: 14px;
 }
+.description{
+    font-color:#767676;
+}
+.description-name{
+    font-color:#2A2B2D;
+}
+
 #team_icon_2{
-padding-top:70px;
+    padding-top:70px;
 }
 #team_icon_3{
-padding-left:5px;
-padding-top:100px;
+    padding-left:5px;
+    padding-top:100px;
 }
 
 .arrow-prev{
@@ -157,28 +174,30 @@ padding-top:100px;
     margin: 5px 3px;
 }
 .gallery-slider{
-padding-top: 30px;
-position: relative;
+    padding-top: 30px;
+    position: relative;
 }
 .gallery-green{
-position:absolute;
-top:30px;
-left: 40px;
-width: 100px;
-height: 25px;
-background-color:rgba(0,150,0,0.7);
+    position:absolute;
+    top:30px;
+    left: 40px;
+    width: 100px;
+    height: 25px;
+    background-color:rgba(0,150,0,0.7);
 }
 .gallery-icon{
-position: absolute;
-top:6px;
-left:10px;
+    position: absolute;
+    top:6px;
+    left:10px;
 }
 .gallery-date{
-position: absolute;
-top:5px;
-left:25px;
-font-size:10px;
-color: white;
+    position: absolute;
+    top:5px;
+    left:25px;
+    font-size:10px;
+    color: white;
+    font-family: 'Museo Sans';
+    font-size: 12px;
 }
 
 .offerWidget{
@@ -196,7 +215,8 @@ color: white;
 }
 
 .offerText{
-    size: 14px;
+    font-family: 'PT sans';
+    font-size: 14px;
     white-space: pre-line;
 }
 #contact{
@@ -208,13 +228,23 @@ color: white;
     background-color: #4eb423;
     margin: 0px;
 }
-#head{
-
+.fb-link:link{
+    color:white;
+    text-decoration: none;
 }
+.fb-link:hover{
+    color:white;
+    text-decoration: none;
+}
+.fb-link:visited{
+    color:white;
+    text-decoration: none;
+}
+
 #contact_section{
     height: 340px;
-
-
+    font-family: 'Museo Sans';
+    font-size: 14px;
 }
 footer{
     height: 50px;
