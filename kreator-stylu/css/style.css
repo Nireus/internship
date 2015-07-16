@@ -285,6 +285,7 @@ nav li a:hover:after {
      outline-width: 2px;
      outline-color: rgba(78,180,36,0.5);
      outline-style: solid;
+}
 footer{
     height: 50px;
     background-color: #2a2b2c;
@@ -294,10 +295,6 @@ footer{
 }
 .margin-bottom{
     margin-bottom: auto;
-}
-.clickable
-{
-    cursor: pointer;
 }
 #popup_galery{
     margin-top: -40px;
