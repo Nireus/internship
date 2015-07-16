@@ -302,6 +302,7 @@ footer{
     position: fixed;
     height: 70vh;
     top: 20vh;
+    padding: 0;
 }
 .clickable{
     cursor: pointer;

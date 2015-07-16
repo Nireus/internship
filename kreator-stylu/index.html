@@ -400,11 +400,9 @@
         </div>
 
     </div>
-    <div id="popup_galery" style="background-color: rgba(0,0,0,0.5);" ng-show="imageShown">
+    <div id="popup_galery" style="background-color: rgba(0,0,0,0.5);" ng-show="imageShown" ng-click="closeGallery()">
         <div class="container">
-            <div class="clickable glyphicon glyphicon-remove" style="top:80px;left:645px;color:black;"
-                 ng-click="closeGallery()"></div>
-            <div style="padding-top:80px;position: relative;">
+            <div style="padding-top:80px;position: relative; text-align: center;">
                 <img ng-src="{{imageSource}}"/>
             </div>
         </div>
