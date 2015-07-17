@@ -168,7 +168,7 @@
     <br/>
 </section>
 
-<section id="section3">
+<section id="section3" ng-controller="IndividualPopupCtrl" ng-style="zIndexStyle" >
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -185,8 +185,8 @@
         </div>
         <div class="row">
             <div class="col-lg-1" style="float:left">
-                <p><img src="resources/images/zespol_icon_1.png"/></p></br>
-                <p id="team_icon_2"><img src="resources/images/zespol_icon_2.png"/></p>
+                <p><img src="resources/images/zespol_icon_1.png" ng-click="showImage(1)" class="clickable"/></p></br>
+                <p id="team_icon_2"><img src="resources/images/zespol_icon_2.png" ng-click="showImage(2)" class="clickable"/></p>
             </div>
             <div class="col-lg-5">
 
@@ -225,11 +225,19 @@
 
             </div>
             <div id="team_icon_3" class="col-lg-1" style="float:right">
-                <p><img src="resources/images/zespol_icon_3.png"/></p>
+                <p><img src="resources/images/zespol_icon_3.png"  ng-click="showImage(3)" class="clickable"/></p>
             </div>
 
         </div>
 
+    </div>
+
+    <div class="pop-up-gallery" ng-show="imageShown" ng-click="closeGallery()">
+        <div class="center-image-container">
+            <div class="center-image">
+                <img class="clickable" ng-src="{{imageSource}}"/>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -328,7 +336,7 @@
     <br/>
 </section>
 
-<section id="section-contact" ng-controller="MapCtrl" ng-style="zIndexStyle">
+<section id="section-contact" ng-controller="IndividualPopupCtrl" ng-style="zIndexStyle">
 
     <div id="green_section">
         <div class="col-md-3 col-lg-offset-1" style="margin-top: 13px;width: 45px; float: left">
@@ -363,7 +371,7 @@
             <h3 style="margin-bottom: auto; font-size:24px;" class="PT_SANS">Mapa dojazdu</h3>
             <br/>
 
-            <p><img src="resources/images/kontakt_map.png" class="clickable" alt="" ng-click="showImage()"
+            <p><img src="resources/images/kontakt_map.png" class="clickable" alt="" ng-click="showImage(0)"
                     style="max-width:100%"/></p>
 
         </div>

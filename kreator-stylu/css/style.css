@@ -114,6 +114,7 @@ nav li a:hover:after {
 	padding: 30px;
 }
 #section3{
+    position: relative;
 	background-color: #F7F8FA;
     border-bottom:2px solid #E6E6E6;
 	height: 550px;

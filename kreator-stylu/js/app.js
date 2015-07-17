@@ -35,21 +35,24 @@ angular.module('kreatorStylu',[])
     $scope.showImage = function (imageID){
         $scope.imageSource = $scope.path + imageID + ".png";
         $scope.imageShown = true;
-        $scope.zIndexStyle = {"z-index" : "1"}
+        $scope.zIndexStyle = {"z-index" : "2"}
     }
     $scope.closeGallery = function(){
         $scope.imageShown = false;
         $scope.zIndexStyle = {"z-index" : "0"}
     }
-}).controller('MapCtrl', function($scope){
-    $scope.path = './resources/images/kontakt_map_big.png';
+}).controller('IndividualPopupCtrl', function($scope){
     $scope.imageSource = '';
     $scope.imageShown = false;
     $scope.zIndexStyle = {"z-index" : "0"}
-    $scope.showImage = function(){
-        $scope.imageSource = $scope.path;
+    $scope.showImage = function(imageID){
+        if(imageID === 0){
+            $scope.imageSource = './resources/images/kontakt_map_big.png';
+        }else{
+            $scope.imageSource = './resources/images/zespol_icon_' + imageID + '_big.png';
+        }
         $scope.imageShown = true;
-        $scope.zIndexStyle = {"z-index" : "1"}
+        $scope.zIndexStyle = {"z-index" : "2"}
     };
     $scope.closeGallery = function(){
         $scope.imageShown = false;
