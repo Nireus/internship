@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Museo Sans';
+    src: url("../fonts/MuseoSans/MuseoSans.otf");
+}
+
 section{
     height: 1180px;
 }
