@@ -233,7 +233,7 @@
     </div>
 </section>
 
-<section id="section4" ng-controller="GalleryCtrl">
+<section id="section4" ng-controller="GalleryCtrl" ng-style="zIndexStyle">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -285,13 +285,10 @@
         </div>
     </div>
 
-    <div class="pop-up-gallery" ng-show="imageShown">
-        <div class="container">
-            <div class="clickable glyphicon glyphicon-remove" style="float:right;top:50px;right:10px;color:black; z-index:2;"
-                 ng-click="closeGallery()">
-            </div>
-            <div style="padding-top:80px;position: relative;">
-                <img class="clickable" ng-src="{{imageSource}}" ng-click="closeGallery()"/>
+    <div class="pop-up-gallery" ng-show="imageShown" ng-click="closeGallery()">
+        <div class="center-image-container">
+            <div class="center-image">
+                <img class="clickable" ng-src="{{imageSource}}"/>
             </div>
         </div>
     </div>
@@ -331,7 +328,7 @@
     <br/>
 </section>
 
-<section id="contact" ng-controller="MapCtrl">
+<section id="section-contact" ng-controller="MapCtrl" ng-style="zIndexStyle">
 
     <div id="green_section">
         <div class="col-md-3 col-lg-offset-1" style="margin-top: 13px;width: 45px; float: left">
@@ -366,7 +363,8 @@
             <h3 style="margin-bottom: auto; font-size:24px;" class="PT_SANS">Mapa dojazdu</h3>
             <br/>
 
-            <p><img src="resources/images/kontakt_map.png" class="clickable" alt="" ng-click="showImage()" style="max-width:100%"/></p>
+            <p><img src="resources/images/kontakt_map.png" class="clickable" alt="" ng-click="showImage()"
+                    style="max-width:100%"/></p>
 
         </div>
         <div class="col-md-2">
@@ -400,10 +398,11 @@
         </div>
 
     </div>
-    <div id="popup_galery" style="background-color: rgba(0,0,0,0.5);" ng-show="imageShown" ng-click="closeGallery()">
-        <div class="container">
-            <div style="padding-top:80px;position: relative; text-align: center;">
-                <img ng-src="{{imageSource}}"/>
+
+    <div class="pop-up-gallery" ng-show="imageShown" ng-click="closeGallery()">
+        <div class="center-image-container">
+            <div class="center-image">
+                <img class="clickable" ng-src="{{imageSource}}"/>
             </div>
         </div>
     </div>
