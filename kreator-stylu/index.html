@@ -302,7 +302,7 @@
     </div>
 </section>
 
-<section id="section5">
+<section id="section5" ng-controller="PartnershipCtrl as partnership">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -312,20 +312,14 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="collaboration-logos-slider">
-                    <div class="offerWidget"><img src="resources/images/wspolpraca_logo_1.png"/></div>
-                    <div class="offerWidget"><img src="resources/images/wspolpraca_logo_2.png"/></div>
-                    <div class="offerWidget"><img src="resources/images/wspolpraca_logo_3.png"/></div>
-                    <div class="offerWidget"><img src="resources/images/wspolpraca_logo_1.png"/></div>
-                    <div class="offerWidget"><img src="resources/images/wspolpraca_logo_2.png"/></div>
-                    <div class="offerWidget"><img src="resources/images/wspolpraca_logo_3.png"/></div>
+                    <div ng-repeat="logo in partnership.partnershipLogos">
+                        <div class="offerWidget"><img ng-src="{{logo}}"/></div>
+                    </div>
                 </div>
                 <div class="collaboration-lines-slider" dir="rtl">
-                    <div class="offerWidget"><img src="resources/images/wspolpraca_linia.png"/></div>
-                    <div class="offerWidget"><img src="resources/images/wspolpraca_linia.png"/></div>
-                    <div class="offerWidget"><img src="resources/images/wspolpraca_linia.png"/></div>
-                    <div class="offerWidget"><img src="resources/images/wspolpraca_linia.png"/></div>
-                    <div class="offerWidget"><img src="resources/images/wspolpraca_linia.png"/></div>
-                    <div class="offerWidget"><img src="resources/images/wspolpraca_linia.png"/></div>
+                    <div ng-repeat="line in partnership.linesArray() track by $index">
+                        <div class="offerWidget"><img src="resources/images/wspolpraca_linia.png"/></div>
+                    </div>
                 </div>
                 <br>
 

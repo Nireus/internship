@@ -26,8 +26,24 @@ angular.module('kreatorStylu',[])
             title: 'Stylizacja',
             description: 'Cennik standardowy:\nupięcie ślubne od 90 PLN\nupięcie okolicznościowe od 80 PLN'
         }
-    ]
-}).controller('GalleryCtrl', function($scope){
+    ];
+})
+.controller('PartnershipCtrl', function(){
+    this.partnershipLogos = [
+        './resources/images/wspolpraca_logo_1.png',
+        './resources/images/wspolpraca_logo_2.png',
+        './resources/images/wspolpraca_logo_3.png',
+        './resources/images/wspolpraca_logo_4.png',
+        './resources/images/wspolpraca_logo_5.png',
+        './resources/images/wspolpraca_logo_6.png',
+        './resources/images/wspolpraca_logo_7.png',
+        './resources/images/wspolpraca_logo_8.png'
+    ];
+    this.linesArray = function(){
+        return new Array(this.partnershipLogos.length);
+    };
+})
+.controller('GalleryCtrl', function($scope){
     $scope.path = 'resources/images/galeria_image_';
     $scope.imageSource = '';
     $scope.imageShown = false;
@@ -41,7 +57,8 @@ angular.module('kreatorStylu',[])
         $scope.imageShown = false;
         $scope.zIndexStyle = {"z-index" : "0"}
     }
-}).controller('IndividualPopupCtrl', function($scope){
+})
+.controller('IndividualPopupCtrl', function($scope){
     $scope.imageSource = '';
     $scope.imageShown = false;
     $scope.zIndexStyle = {"z-index" : "0"}
