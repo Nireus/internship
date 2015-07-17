@@ -185,8 +185,8 @@ nav li a:hover:after {
 .gallery-green{
     position:absolute;
     top:30px;
-    left: 40px;
-    width: 100px;
+    left: 35px;
+    width: 125px;
     height: 25px;
     background-color:rgba(0,150,0,0.7);
 }

@@ -42,7 +42,7 @@ angular.module('kreatorStylu',[])
         $scope.zIndexStyle = {"z-index" : "0"}
     }
 }).controller('MapCtrl', function($scope){
-    $scope.path = './resources/images/kontakt_map.png';
+    $scope.path = './resources/images/kontakt_map_big.png';
     $scope.imageSource = '';
     $scope.imageShown = false;
     $scope.zIndexStyle = {"z-index" : "0"}
