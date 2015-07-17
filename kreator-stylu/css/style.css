@@ -12,24 +12,20 @@ section{
     top:0;
 }
 
-.paddinggreenbar
-{
+.paddinggreenbar{
     padding-top:5px;
     margin-left:30px;
     right:200px;
 }
-.bannerbar
-{
+.bannerbar{
     height:205px;
 }
-#logo
-{
+#logo{
     position:absolute;
     padding-top: 33px;
     z-index: 3;
 }
-.border
-{
+.border{
     border-top: 3px solid #cccccc;
     border-bottom: 3px solid #cccccc;
 }
@@ -91,9 +87,7 @@ nav li a:hover:after {
     position: absolute;
     width: 0;
 }
-
-#section1
-{
+#section1{
     background-color: #F7F8FA;
     border-top:5px solid #DADADA;
     border-bottom:2px solid #E6E6E6;
@@ -107,41 +101,39 @@ nav li a:hover:after {
     background-repeat: no-repeat;
     background-position: center center;
 }
-
-#section2
-{
+#section2{
     background-color: #FAFAFA;
     border-bottom:2px solid #E6E6E6;
 	height: 600px;
 	text-align: center;
 	padding: 30px;
 }
-#section3
-{
+#section3{
 	background-color: #F7F8FA;
     border-bottom:2px solid #E6E6E6;
 	height: 550px;
 	padding:30px;
 }
-#section4
-{
+#section4{
     position: relative;
-    z-index:1;
 	background-color: #FAFAFA;
     border-bottom:2px solid #E6E6E6;
 	height: 450px;
 	text-align: center;
 	padding-top:30px;
 }
-#section5
-{
+#section5{
     position: relative;
-    z-index: 0;
     background-color: #F7F8FA;
     border-bottom:2px solid #E6E6E6;
 	height: 350px;
 	text-align: center;
 	padding: 30px;
+}
+#section-contact{
+    position: relative;
+    height: 400px;
+    background-color: #f0f0f0;
 }
 #sabina{
     padding-top:100px;
@@ -227,10 +219,6 @@ nav li a:hover:after {
     font-size: 14px;
     white-space: pre-line;
 }
-#contact{
-    height: 400px;
-    background-color: #f0f0f0;
-}
 #green_section{
     height: 66px;
     background-color: #4eb423;
@@ -312,7 +300,16 @@ footer{
      top:0; left:0;
      height:100vh;
      width:100vw;
-     max-width:100%;
      padding: 0;
-     position: absolute;"
+     position: fixed;
+     text-align:center;
+}
+.center-image-container{
+    display:table;
+    width:100%;
+    height:100%;
+}
+.center-image{
+    display:table-cell;
+    vertical-align:middle;
 }

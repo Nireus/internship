@@ -28,25 +28,31 @@ angular.module('kreatorStylu',[])
         }
     ]
 }).controller('GalleryCtrl', function($scope){
-    path = 'resources/images/galeria_image_';
+    $scope.path = 'resources/images/galeria_image_';
     $scope.imageSource = '';
     $scope.imageShown = false;
+    $scope.zIndexStyle = {"z-index" : "0"}
     $scope.showImage = function (imageID){
-        $scope.imageSource = path + imageID + ".png";
+        $scope.imageSource = $scope.path + imageID + ".png";
         $scope.imageShown = true;
+        $scope.zIndexStyle = {"z-index" : "1"}
     }
     $scope.closeGallery = function(){
         $scope.imageShown = false;
+        $scope.zIndexStyle = {"z-index" : "0"}
     }
 }).controller('MapCtrl', function($scope){
-    path1 = './resources/images/kontakt_map.png';
+    $scope.path = './resources/images/kontakt_map.png';
     $scope.imageSource = '';
     $scope.imageShown = false;
+    $scope.zIndexStyle = {"z-index" : "0"}
     $scope.showImage = function(){
-        $scope.imageSource = path1;
+        $scope.imageSource = $scope.path;
         $scope.imageShown = true;
+        $scope.zIndexStyle = {"z-index" : "1"}
     };
     $scope.closeGallery = function(){
         $scope.imageShown = false;
+        $scope.zIndexStyle = {"z-index" : "0"}
     }
 });
