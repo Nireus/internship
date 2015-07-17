@@ -151,10 +151,11 @@ nav li a:hover:after {
     font-size: 14px;
 }
 .description{
-    font-color:#767676;
+    color:#767676;
+    line-height:22px;
 }
 .description-name{
-    font-color:#2A2B2D;
+    color:#2A2B2D;
 }
 
 #team_icon_2{
@@ -318,4 +319,9 @@ footer{
 .center-image{
     display:table-cell;
     vertical-align:middle;
+}
+#kreator-stylu-description p{
+    line-height:25px;
+    color:#5C5E5D;
+    font-size:14px;
 }
