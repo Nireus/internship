@@ -247,7 +247,7 @@
     </div>
 </section>
 
-<section id="section4" ng-controller="GalleryCtrl" ng-style="zIndexStyle">
+<section id="section4" ng-controller="GalleryCtrl as gallery" ng-style="zIndexStyle">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -267,31 +267,15 @@
                 <div id="gallery-arrows" style="text-align: right">
                 </div>
                 <div class="gallery-slider">
-                    <div style="position: relative"><img class= "clickable" ng-click="showImage(1)" src="resources/images/galeria_image_1.png"/>
+                    <div ng-repeat="photo in gallery.photos track by $index">
+                        <div style="position: relative" class="photo">
+                            <img class="clickable" data-id="{{$index}}" ng-src="{{photo.image}}" src=""/>
 
-                        <div class="gallery-green"><img class="gallery-icon" src="resources/images/galeria_icon.png"/>
-                            <p class="gallery-date">12 grudzień 2015</p>
-                        </div>
-                    </div>
-                    <div style="position: relative"><img class= "clickable" ng-click="showImage(2)" src="resources/images/galeria_image_2.png"/>
+                            <div class="gallery-green">
 
-                        <div class="gallery-green"><img class="gallery-icon" src="resources/images/galeria_icon.png"/>
-
-                            <p class="gallery-date">5 styczeń 2015</p>
-                        </div>
-                    </div>
-                    <div style="position: relative"><img class= "clickable" ng-click="showImage(3)" src="resources/images/galeria_image_3.png"/>
-
-                        <div class="gallery-green"><img class="gallery-icon" src="resources/images/galeria_icon.png"/>
-
-                            <p class="gallery-date">9 grudnia 2014</p>
-                        </div>
-                    </div>
-                    <div style="position: relative"><img class= "clickable" ng-click="showImage(2)" src="resources/images/galeria_image_2.png"/>
-
-                        <div class="gallery-green"><img class="gallery-icon" src="resources/images/galeria_icon.png"/>
-
-                            <p class="gallery-date">12 maja 2015</p>
+                                <img class="gallery-icon" src="resources/images/galeria_icon.png"/>
+                                <p class="gallery-date">{{photo.date}};</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -442,8 +426,6 @@
             }
         });
     });
-
-
 </script>
 <!--Skrypt SLICK slider-->
 <script type="text/javascript">
@@ -525,7 +507,7 @@
         });
         $('.gallery-slider').slick({
             infinite: true,
-            autoplay: true,
+            autoplay: false,
             autoplaySpeed: 4000,
             speed: 700,
             slidesToShow: 3,
@@ -558,6 +540,19 @@
         });
     });
 </script>
+<!--Gallery popup fix-->
+<script>
+    $(function() {
+        var ctrlElement = document.getElementById('section4');
+        var $scope = angular.element(ctrlElement).scope();
+        $('.photo img[data-id]').on('click', function() {
+            var dataID = $(this).data('id');
+            $scope.$apply(function(){
+                $scope.showImage(dataID + 1);
+            });
+        });
+    });
+</script>
 <!--Skrypt NAVBAR ON TOP-->
 <script>
     $(function () {
@@ -578,6 +573,7 @@
         });
 
     });
+
 </script>
 </body>
 </html>

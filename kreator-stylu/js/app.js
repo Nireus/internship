@@ -57,6 +57,24 @@ angular.module('kreatorStylu',[])
         $scope.imageShown = false;
         $scope.zIndexStyle = {"z-index" : "0"}
     }
+    this.photos = [
+        {
+            image: './resources/images/galeria_image_1.png',
+            date: '12 maja 2015'
+        },
+        {
+            image: './resources/images/galeria_image_2.png',
+            date: '5 lutego 2015'
+        },
+        {
+            image: './resources/images/galeria_image_3.png',
+            date: '9 grudnia 2015'
+        },
+        {
+            image: './resources/images/galeria_image_2.png',
+            date: '5 lutego 2015'
+        },
+    ];
 })
 .controller('IndividualPopupCtrl', function($scope){
     $scope.imageSource = '';
