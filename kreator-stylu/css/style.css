@@ -277,9 +277,12 @@ nav li a:hover:after {
     color: #FFFFFF;
 }
 #newsletter-form #newsletter-submit:focus{
-     outline-width: 2px;
-     outline-color: rgba(78,180,36,0.5);
-     outline-style: solid;
+    outline-width: 2px;
+    outline-color: rgba(78,180,36,0.5);
+    outline-style: solid;
+}
+#newsletter-form input:disabled{
+    opacity: 0.7;
 }
 footer{
     height: 50px;
