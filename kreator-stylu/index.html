@@ -393,9 +393,7 @@
                     <br/><br/>
                     <input id="newsletter-submit" name="submit" type="submit" value="Subskrybuj">
                     <br/><br/><br/>
-                    <div id="newsletter-info" style="font-size:16px; text-align:center; display:none">
-                        Dziękujemy za zapisanie się na newsletter Kreator Stylu
-                    </div>
+                    <div id="newsletter-info" style="font-size:16px; text-align:center; display:none"></div>
                 </form>
             </div>
         </div>
@@ -593,17 +591,31 @@
 <script>
     $('#newsletter-submit').click(function(){
         var emailAddress = document.getElementById("email-input").value;
+        function emailValidation(){
+            var reg = /^([A-Za-z0-9_\-\.]){1,}\@([A-Za-z0-9_\-\.]){1,}\.([A-Za-z]{2,4})$/;
+            if (reg.test(emailAddress) == false){
+                document.getElementById("newsletter-info").innerHTML = "Wprowadzony adres email jest nieprawidłlowy";
+                document.getElementById("newsletter-info").style.display = "block";
+                return false;
+            }
+            else
+                return true;
+        }
         function newsletterSubmitSuccess(){
             document.getElementById("email-input").disabled = true;
             document.getElementById("newsletter-submit").disabled = true;
+            document.getElementById("newsletter-info").innerHTML = "Dziękujemy za zapisanie się na newsletter Kreator Stylu";
             document.getElementById("newsletter-info").style.display = "block";
         };
-        $.ajax({
-            url: 'php/mail.php',
-            type:'POST',
-            data: { email: emailAddress},
-            success: newsletterSubmitSuccess()
-        });
+
+        if (emailValidation()){
+            $.ajax({
+                url: 'php/mail.php',
+                type:'POST',
+                data: { email: emailAddress},
+                success: newsletterSubmitSuccess()
+            });
+        }
     });
 
 </script>
