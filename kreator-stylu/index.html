@@ -39,27 +39,50 @@
 </header>
 
 <div class="greenbar">
-    <div class="glyphicon glyphicon-phone paddinggreenbar"> 796-836-306</div>
-    <div class="glyphicon glyphicon-envelope paddinggreenbar"> kontakt@kreatorstylu.pl</div>
-    <div class="glyphicon glyphicon-time paddinggreenbar"> Poniedziałek-Piątek 9.00-20.00 Sobota 8.00-15.00</div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12" style="padding-bottom:2px;">
+                <div class="glyphicon glyphicon-phone paddinggreenbar"> 796-836-306</div>
+                <div class="glyphicon glyphicon-envelope paddinggreenbar"> kontakt@kreatorstylu.pl</div>
+                <div class="glyphicon glyphicon-time paddinggreenbar">
+                    <span class="avoidwrap"> Poniedziałek-Piątek 9.00-20.00 </span>
+                    <span class="avoidwrap"> Sobota 8.00-15.00</span>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </div>
 
 <div class="bannerbar">
-    <div id="logo" style="padding-left: 10vw;"><img src="resources/images/up_logo.png"/></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-1">
+                <img id="logo" src="resources/images/up_logo.png"/></div>
+        </div>
+    </div>
 </div>
 
 <nav class="navstyle">
-    <div id="navbar">
-        <div id="navbar-content">
-            <ul class="nav navbar-nav">
-                <li><a href="#section1">Home <img src="resources/images/up_menu_arrow.png"/></a></li>
-                <li><a href="#section2">Oferta <img src="resources/images/up_menu_arrow.png"/></a></li>
-                <li><a href="#section3">Zespół <img src="resources/images/up_menu_arrow.png"/></a></li>
-                <li><a href="#section4">Galeria <img src="resources/images/up_menu_arrow.png"/></a></li>
-                <li><a href="#section5">Współpraca <img src="resources/images/up_menu_arrow.png"/></a></li>
-                <li><a href="#section-contact">Kontakt <img src="resources/images/up_menu_arrow.png"/></a></li>
-            </ul>
+    <div class="navbar">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" id="collapsingNavbarButton">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="collapsingNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#section1">Home <img src="resources/images/up_menu_arrow.png"/></a></li>
+                    <li><a href="#section2">Oferta <img src="resources/images/up_menu_arrow.png"/></a></li>
+                    <li><a href="#section3">Zespół <img src="resources/images/up_menu_arrow.png"/></a></li>
+                    <li><a href="#section4">Galeria <img src="resources/images/up_menu_arrow.png"/></a></li>
+                    <li><a href="#section5">Współpraca <img src="resources/images/up_menu_arrow.png"/></a></li>
+                    <li><a href="#section-contact">Kontakt <img src="resources/images/up_menu_arrow.png"/></a></li>
+                </ul>
+            </div>
         </div>
     </div>
 </nav>
@@ -78,18 +101,20 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-lg-12" style="text-align: center;">
+            <div class="col-xs-12" style="text-align: center;">
                 <h2 style="font-family:'PT sans'; font-size:24px;">
                     Najwyższa jakość usług fryzjerskich a także najnowesze i skuteczne zabiegi upiększające na włosy
                     <br/>
                     Stylizacja w makijażu ślubnym lub okazjonalnym
                     <br/>
                 </h2>
-                <img src="resources/images/linie_header.png"/> <img src="resources/images/linie_header.png"/>
+
+                <hr style="border-top: 1px dashed #d9d9d9"/>
+
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4" style="float:left">
+            <div class="col-xs-6 col-md-4 col-xs-offset-3 col-md-offset-0" style="float:left; max-width:100%">
                 <div class="auto-slider">
                     <div style="width:100%"><img src="resources/images/icon_home.png" style="width:100%;"/></div>
                     <div style="width:100%"><img src="resources/images/icon_home_2.png" style="width:100%;"/></div>
@@ -97,17 +122,13 @@
                     <div style="width:100%"><img src="resources/images/icon_home_4.png" style="width:100%;"/></div>
                 </div>
             </div>
-            <div class="col-md-8" style="font-family:'Museo Sans';">
-                <p style="font-size:24px">KREATOR STYLU
-
-                <p>
+            <div class="col-xs-12 col-md-8" style="font-family:'Museo Sans';">
+                <p style="font-size:24px">KREATOR STYLU</p>
 
                 <div id="kreator-stylu-description">
                     <p>powstał z myślą o pełnej i profesjonalnej obsłudze coraz bardziej wymagających klientów, dla
-                        których
-                        ważna jest <br/>
-                        wysoka jakość usług, doświadczony personel, najwyższej jakościu produkty, komfort i przystępna
-                        cena.<br/>
+                        których ważna jest wysoka jakość usług, doświadczony personel, najwyższej jakościu produkty,
+                        komfort i przystępna cena.<br/>
                     </p>
 
                     <p>Pracownicy naszego salonu to wpełni profesjonalny personel, z największą starannością dbający o
@@ -129,6 +150,7 @@
                         strókturę
                         włosów.
                     </p>
+                    </br>
                 </div>
             </div>
         </div>
@@ -140,7 +162,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <p style="font-family: 'PT sans'; font-size:30px;">OFERTA</p>
-                <img src="resources/images/linie_header.png"/><img src="resources/images/linie_header.png"/>
+                <hr style="border-top: 1px dashed #d9d9d9"/>
             </div>
         </div>
         <div class="row">
@@ -153,11 +175,11 @@
         </div>
         <div class="row">
             <div class="col-lg-12">
-                <div id="arrows" style="text-align: right"></div>
+                <div id="arrows" style="text-align: right; padding-right:15px"></div>
                 <div class="multiple-items">
                     <div ng-repeat="offer in offerPanel.offers">
                         <div class="offerWidget">
-                            <img ng-src="{{offer.image}}"/>
+                            <img ng-src="{{offer.image}}" style="max-width:100%;"/>
 
                             <div class="offerTextBox">
                                 <p style="font-family: 'Museo Sans'; font-size: 15px; font-weight: 500;">
@@ -193,51 +215,60 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-1" style="float:left">
-                <p><img src="resources/images/zespol_icon_1.png" ng-click="showImage(1)" class="clickable"/></p></br>
-                <p id="team_icon_2"><img src="resources/images/zespol_icon_2.png" ng-click="showImage(2)"
-                                         class="clickable"/></p>
+            <div class="col-xs-12 col-md-6">
+                <div class="col-xs-12 col-md-3">
+                    <div style="width:100px; margin:0 auto;"><img src="resources/images/zespol_icon_1.png"
+                                                                  ng-click="showImage(1)" class="clickable"/></div>
+                </div>
+                <div class="col-xs-12 col-md-9">
+                    <p class="description-name"><b>Paweł Żelazo</b></p>
+
+                    <p class="description">Początkowo fryzjerstwo było moim zawodem, obecnie jest moją pasją
+                        i stylem bycia.
+                        Poprzez to co robię, chce dawać radość innym. Każda nowa stylizacja, każdy nowy
+                        kolor, które wywołują na twarzy klientki uśmiech, dają mi poczucie zadowolenia
+                        i spełnienia. W swojej pracy jestem szalonym i kreatywnym perfekcjonistą.</br></br>
+                        <img src="resources/images/oferta_line.png"/></br>
+                    </p>
+                </div>
+                <div class="col-xs-12 col-md-3">
+                    <div style="width:100px; margin:0 auto;"><img src="resources/images/zespol_icon_2.png"
+                                                                  ng-click="showImage(2)" class="clickable"/></div>
+                </div>
+                <div class="col-xs-12 col-md-9">
+                    <p class="description-name"><b>Patryk Majder</b></p>
+
+                    <p class="description">Moją życiową pasją jest fryzjerstwo. Czynności takie jak
+                        stylizacja sprawiają mi radość w życiu zawodowym. Każda możliwość wykorzystania metod
+                        i technik nowoczesnego i modnego fryzjerstwa - zarówno upięć jak i strzyżenia, daje mi
+                        wielką satysfakcję.Utwierdza mnie to w przekonaniu, że wybrałem właściwy zawód,
+                        który powoli staje się częścią mojego 'ja'.
+                    </p>
+                </div>
             </div>
-            <div class="col-lg-5">
+            <div class="col-xs-12 col-md-6">
+                <div class="col-xs-12" id="sabina-margin-top">
+                    <p></br>
+                        <img src="resources/images/oferta_line.png"/>
+                        </br></p>
 
-                <p class="description-name"><b>Paweł Żelazo</b></p>
+                </div>
+                <div class="col-xs-12 col-md-3">
+                    <div style="width:100px; margin:0 auto;"><img src="resources/images/zespol_icon_3.png"
+                                                                  ng-click="showImage(3)" class="clickable"/></div>
+                </div>
+                <div class="col-xs-12 col-md-9">
+                    <p class="description-name"><b>Sabina Bryła</b></p>
 
-                <p class="description">Początkowo fryzjerstwo było moim zawodem, obecnie jest moją pasją
-                    i stylem bycia.
-                    Poprzez to co robię, chce dawać radość innym. Każda nowa stylizacja, każdy nowy
-                    kolor, które wywołują na twarzy klientki uśmiech, dają mi poczucie zadowolenia
-                    i spełnienia. W swojej pracy jestem szalonym i kreatywnym perfekcjonistą.</br></br>
-                    <img src="resources/images/oferta_line.png"/></br></br></br>
-                </p>
-
-                <p class="description-name"><b>Patryk Majder</b></p>
-
-                <p class="description">Moją życiową pasją jest fryzjerstwo. Czynności takie jak
-                    stylizacja sprawiają mi radość
-                    w życiu zawodowym. Każda możliwość wykorzystania metod i technik nowoczesnego
-                    i modnego fryzjerstwa - zarówno upięć jak i strzyżenia, daje mi wielką satysfakcję.
-                    Utwierdza mnie to w przekonaniu, że wybrałem właściwy zawód, który powoli
-                    staje się częścią mojego 'ja'.
-                </p>
-
+                    <p class="description">Fryzjerstwo jest dla mnie spełnieniem marzeń, gdyż od dziecka chciałam
+                        pracować w tym zawodzie. Spośród wszystkich usług najbardziej lubię koloryzację, ponieważ
+                        cieszy mnie zmiana wizerunku klienta. Podczas wykonywania pasemek, refleksów oraz masażu
+                        skóry głowy wyciszam się. Do każdego klienta podchodzę indywidualnie oraz staram się
+                        przekazać mu swoją wiedzę na temat codziennej pielengnacji i stylizacji włosów. Cieszy mnnie
+                        każdy zadowolony klient, a najbardziej ten, który wraca.
+                    </p>
+                </div>
             </div>
-            <div id="sabina" class="col-lg-5" style="float:right">
-
-                <p class="description-name"><b>Sabina Bryła</b></p>
-
-                <p class="description">Fryzjerstwo jest dla mnie spełnieniem marzeń, gdyż od dziecka chciałam
-                    pracować w tym zawodzie. Spośród wszystkich usług najbardziej lubię koloryzację, ponieważ cieszy
-                    mnie zmiana wizerunku klienta. Podczas wykonywania pasemek, refleksów oraz masażu skóry głowy
-                    wyciszam się. Do każdego klienta podchodzę indywidualnie oraz staram się przekazać mu swoją wiedzę
-                    na temat codziennej pielengnacji i stylizacji włosów. Cieszy mnnie każdy zadowolony klient,
-                    a najbardziej ten, który wraca.
-                </p>
-
-            </div>
-            <div id="team_icon_3" class="col-lg-1" style="float:right">
-                <p><img src="resources/images/zespol_icon_3.png" ng-click="showImage(3)" class="clickable"/></p>
-            </div>
-
         </div>
 
     </div>
@@ -245,7 +276,7 @@
     <div class="pop-up-gallery" ng-show="imageShown" ng-click="closeGallery()">
         <div class="center-image-container">
             <div class="center-image">
-                <img class="clickable" ng-src="{{imageSource}}"/>
+                <img class="clickable" style="max-width:100%;"ng-src="{{imageSource}}"/>
             </div>
         </div>
     </div>
@@ -256,7 +287,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <p style="font-family: 'PT sans'; font-size:30px;">GALERIA</p>
-                <img src="resources/images/galeria_line.png"/>
+                <img src="resources/images/galeria_line.png" style="max-width:100%"/>
             </div>
         </div>
         <div class="row">
@@ -268,18 +299,25 @@
         </div>
         <div class="row">
             <div class="col-lg-12">
-                <div id="gallery-arrows" style="text-align: right">
-                </div>
+                <div id="gallery-arrows" style="text-align: right"></div>
                 <div class="gallery-slider">
                     <div ng-repeat="photo in gallery.photos track by $index">
                         <div style="position: relative" class="photo">
-                            <img class="clickable" data-id="{{$index}}" ng-src="{{photo.image}}" src=""/>
+                            <div style="margin:0 auto;">
+                                <div class="image">
+                                    <img class="clickable" style="max-width:100%;" data-id="{{$index}}"
+                                         ng-src="{{photo.image}}" src=""/>
 
-                            <div class="gallery-green">
+                                    <div class="gallery-green-container">
+                                        <div class="gallery-green">
 
-                                <img class="gallery-icon" src="resources/images/galeria_icon.png"/>
+                                            <img class="gallery-icon" src="resources/images/galeria_icon.png"/>
 
-                                <p class="gallery-date">{{photo.date}};</p>
+                                            <p class="gallery-date">{{photo.date}};</p>
+                                        </div>
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -326,85 +364,90 @@
 </section>
 
 <section id="section-contact" ng-controller="IndividualPopupCtrl" ng-style="zIndexStyle">
-
     <div id="green_section">
-        <div class="col-md-3 col-lg-offset-1" style="margin-top: 13px;width: 45px; float: left">
-            <a href="https://www.facebook.com/Salon.Fryzjerstwa.Kreator.Stylu">
-                <img src="resources/images/kontakt_facebook_icon.png">
-            </a>
-        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-1" style="margin-top: 13px;">
+                    <a href="https://www.facebook.com/Salon.Fryzjerstwa.Kreator.Stylu">
+                        <div style="margin-left:-5px">
+                            <img src="resources/images/kontakt_facebook_icon.png"
+                                 style="display: block; margin:0 auto;">
+                        </div>
+                    </a>
+                </div>
 
-        <div class="col-md-3" style="float: left; width: 30%; margin-top:23px; color: #f0f0f0; line-height:17px">
-            <a href="https://www.facebook.com/Salon.Fryzjerstwa.Kreator.Stylu" class="fb-link">
-                <span class="PT_SANS" style="font-size: 28px; padding-bottom:2px;">Znajdź nas na Facebooku<br></span>
-            </a>
-        </div>
-
-    </div>
-    <p style="border-top:3px solid #cccccc;"></p>
-
-    <div id="contact-section" class="row" style=" margin-right: auto; margin-left: auto; margin-top:20px">
-        <div class="col-md-3 col-lg-3 col-lg-offset-1">
-            <p><img src="resources/images/kreator_stylu_male_logo.png" style="margin-top: 10px"></p>
-            <br/>
-
-            <p class="margin-bottom">Znajdziecie tu Państwo wszystkie niezbędne</p>
-
-            <p class="margin-bottom">informacje kontaktowe za pomocą których</p>
-
-            <p class="margin-bottom">w niezwykle łatwy sposob uda nam się</p>
-
-            <p class="margin-bottom">nawiązać współpracę</p>
-        </div>
-        <div class="col-md-2">
-            <h3 style="margin-bottom: auto; font-size:24px;" class="PT_SANS">Mapa dojazdu</h3>
-            <br/>
-
-            <p><img src="resources/images/kontakt_map.png" class="clickable" alt="" ng-click="showImage(0)"
-                    style="max-width:100%"/></p>
-
-        </div>
-        <div class="col-md-2">
-            <h3 class="PT_SANS" style="margin-bottom: auto;">Kontakt</h3>
-            <br/>
-
-            <p class="margin-bottom">Studio Kreator Stylu</p>
-
-            <p class="margin-bottom">al. Gen. Wł. Sikorskiego 2/3</p>
-
-            <p class="margin-bottom">35-304 Rzeszów</p>
-            <br/>
-
-            <p class="margin-bottom">Telefon: (+17) 85 00 118</p>
-
-            <p class="margin-bottom">Komórka: (+48) 796 836 306</p>
-            <br/>
-
-            <p>kontakt@kreatorstylu.pl</p>
-
-        </div>
-        <div class="col-md-3">
-            <h3 class="PT_SANS" style="margin-bottom: auto;">Dołącz do Newslettera</h3>
-            <br/>
-
-            <div id="newsletter-form">
-                <form method="post">
-                    <input id="email-input" type="text" name="email" placeholder="wprowadź swój mail">
-                    <br/><br/>
-                    <input id="newsletter-submit" name="submit" type="submit" value="Subskrybuj">
-                    <br/><br/><br/>
-                    <div id="newsletter-info" style="font-size:16px; text-align:center; display:none"></div>
-                </form>
+                <div class="col-xs-10"
+                     style="margin-top:23px; padding-right:0; color: #f0f0f0; line-height:17px">
+                    <a href="https://www.facebook.com/Salon.Fryzjerstwa.Kreator.Stylu" class="fb-link">
+                    <span class="PT_SANS"
+                          style=" padding-bottom:2px;">Znajdź nas na Facebooku<br>
+                    </span>
+                    </a>
+                </div>
             </div>
         </div>
-
     </div>
+    <div id="contact-section">
+        <div class="container">
+            <div class="row" style="margin-top:20px">
+                <div class="col-xs-12 col-md-3 xs-centered sm-centered">
+                    <p><img src="resources/images/kreator_stylu_male_logo.png" style="max-width:100%; padding-top:10px;"/></p>
+                    <br/>
+                    <p>Znajdziecie tu Państwo wszystkie niezbędne informacje kontaktowe za pomocą których w niezwykle
+                    łatwy sposob uda nam się nawiązać współpracę.</p>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-3 xs-centered">
+                    <h3 style="margin-bottom: auto; font-size:24px;" class="PT_SANS">Mapa dojazdu</h3>
+                    <br/>
 
-    <div class="pop-up-gallery" ng-show="imageShown" ng-click="closeGallery()">
-        <div class="center-image-container">
-            <div class="center-image">
-                <img class="clickable" ng-src="{{imageSource}}"/>
+                    <div>
+                        <img src="resources/images/kontakt_map.png" class="clickable" alt=""
+                              ng-click="showImage(0)" style="max-width:100%"/>
+                    </div>
+
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-3 xs-centered">
+                    <h3 class="PT_SANS" style="margin-bottom: auto;">Kontakt</h3>
+                    <br/>
+
+                    <p class="margin-bottom">Studio Kreator Stylu</p>
+
+                    <p class="margin-bottom">al. Gen. Wł. Sikorskiego 2/3</p>
+
+                    <p class="margin-bottom">35-304 Rzeszów</p>
+                    <br/>
+
+                    <p class="margin-bottom">Telefon: (+17) 85 00 118</p>
+
+                    <p class="margin-bottom">Komórka: (+48) 796 836 306</p>
+                    <br/>
+
+                    <p>kontakt@kreatorstylu.pl</p>
+
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-3 xs-centered">
+                    <h3 class="PT_SANS" style="margin-bottom: auto;">Dołącz do Newslettera</h3>
+                    <br/>
+
+                    <div id="newsletter-form">
+                        <form method="post">
+                            <input id="email-input" type="text" name="email" placeholder="wprowadź swój mail">
+                            <br/><br/>
+                            <input id="newsletter-submit" name="submit" type="submit" value="Subskrybuj">
+                            <br/><br/><br/>
+
+                            <div id="newsletter-info" style="font-size:16px; text-align:center; display:none"></div>
+                        </form>
+                    </div>
+                </div>
+
             </div>
+        </div>
+    </div>
+    </div>
+    <div class="pop-up-map center-image-container" ng-show="imageShown" ng-click="closeGallery()">
+        <div class="center-image">
+            <img class=" map clickable" ng-mouseleave="closeGallery()" ng-src="{{imageSource}}"/>
         </div>
     </div>
 </section>
@@ -434,7 +477,6 @@
             }
         });
     });
-
 </script>
 <!--Skrypt SLICK slider-->
 <script type="text/javascript">
@@ -462,6 +504,12 @@
                     settings: {
                         slidesToShow: 2
                     }
+                },
+                {
+                    breakpoint: 700,
+                    settings: {
+                        slidesToShow: 1
+                    }
                 }
             ]
         });
@@ -488,6 +536,12 @@
                     settings: {
                         slidesToShow: 2
                     }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1
+                    }
                 }
             ]
         });
@@ -510,6 +564,12 @@
                     breakpoint: 990,
                     settings: {
                         slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1
                     }
                 }
             ]
@@ -536,6 +596,12 @@
                     settings: {
                         slidesToShow: 2
                     }
+                },
+                {
+                    breakpoint: 660,
+                    settings: {
+                        slidesToShow: 1
+                    }
                 }
             ]
         });
@@ -548,7 +614,6 @@
             fade: true
         });
     });
-
 </script>
 <!--Gallery popup fix-->
 <script>
@@ -562,18 +627,17 @@
             });
         });
     });
-
 </script>
 <!--Skrypt NAVBAR ON TOP-->
 <script>
     $(function () {
-        var stickyNavigationOffsetTop = $('#navbar').offset().top;
+        var stickyNavigationOffsetTop = $('.navbar').offset().top;
         var stickyNavigation = function () {
             var scrollTop = $(window).scrollTop();
             if (scrollTop > stickyNavigationOffsetTop) {
-                $('#navbar').css({'position': 'fixed', 'top': 0});
+                $('.navbar').css({'position': 'fixed', 'top': 0});
             } else {
-                $('#navbar').css({'position': 'relative'});
+                $('.navbar').css({'position': 'relative'});
             }
         };
 
@@ -584,8 +648,6 @@
         });
 
     });
-
-
 </script>
 <!--Skrypt MAIL SUBMIT-->
 <script>
@@ -618,6 +680,25 @@
         }
     });
 
+
+
+
+
+</script>
+<!--Skrypt navbar-collapse fix-->
+<script>
+    $(function(){
+        $(document).on('click',function(){
+            $('.navbar-collapse.in').collapse('hide');
+        });
+        $(".navbar-nav li a").click(function(event) {
+            $(".navbar-collapse").collapse('hide');
+        });
+        $('#collapsingNavbarButton').click(function(){
+            console.log("DUPA");
+            $('.navbar-collapse').collapse('toggle');
+        });
+    });
 </script>
 </body>
 </html>
