@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'ProximaNova'; /*a name to be used later*/
+    src: url('../fonts/ProximaNova-Reg.otf'); /*URL to font*/
+}
+
+#logo-top{
+    height: 40px;
+    margin-top: -7px;
+    padding: 0 2vw;
+}
+#navbar-items{
+    font-family: ProximaNova;
+    font-size: 16px;
+}
+
+#login-btn {
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  background: #000;
+  border-radius: 8px;
+  color: #42b8dd;
+  font-family: ProximaNova;
+  font-size: 16px;
+  margin-top: 4px;
+  margin-right: 3vw;
+  padding: 8px 25px 8px 25px;
+  border: solid #42b8dd 2px;
+}
+
+#login-btn:hover {
+  background: #333;
+}
