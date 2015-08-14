@@ -49,12 +49,22 @@
                 <li><a href="#">Kontakt</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><button type="button" id="login-btn">Zaloguj</button></li>
+                <li>
+                    <button type="button" id="login-btn">Zaloguj</button>
+                </li>
             </ul>
         </div>
     </div>
 </nav>
 
+<section id="jumbotron">
+    <div class="auto-slider">
+        <div><img src="resources/slajder_1.png" class="jumbotron-item"/></div>
+        <div><img src="resources/slajder_2.png" class="jumbotron-item"/></div>
+        <div><img src="resources/slajder_3.png" class="jumbotron-item"/></div>
+        <div><img src="resources/slajder_4.png" class="jumbotron-item"/></div>
+    </div>
+</section>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -74,6 +84,20 @@
                     return false;
                 }
             }
+        });
+    });
+
+</script>
+<!--Skrypt SLICK slider-->
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.auto-slider').slick({
+            infinite: true,
+            autoplay: true,
+            autoplaySpeed: 4000,
+            speed: 700,
+            arrows: false,
+            fade: true
         });
     });
 </script>

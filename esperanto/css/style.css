@@ -12,7 +12,6 @@
     font-family: ProximaNova;
     font-size: 16px;
 }
-
 #login-btn {
   -webkit-border-radius: 8;
   -moz-border-radius: 8;
@@ -26,7 +25,15 @@
   padding: 8px 25px 8px 25px;
   border: solid #42b8dd 2px;
 }
-
 #login-btn:hover {
   background: #333;
+}
+#jumbotron{
+    padding:0px;
+    width:100%;
+    margin-bottom:1px;
+    margin-top:1px;
+}
+.jumbotron-item{
+    width:100%;
 }
