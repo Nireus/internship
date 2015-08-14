@@ -2,6 +2,13 @@
     font-family: 'ProximaNova'; /*a name to be used later*/
     src: url('../fonts/ProximaNova-Reg.otf'); /*URL to font*/
 }
+@font-face {
+    font-family: 'ProximaNovaBold'; /*a name to be used later*/
+    src: url('../fonts/ProximaNova-Bold.otf'); /*URL to font*/
+}@font-face {
+     font-family: 'ProximaNovaThin'; /*a name to be used later*/
+     src: url('../fonts/ProximaNova-Thin.otf'); /*URL to font*/
+ }
 
 #logo-top{
     height: 40px;
@@ -31,9 +38,82 @@
 #jumbotron{
     padding:0px;
     width:100%;
-    margin-bottom:1px;
-    margin-top:1px;
 }
 .jumbotron-item{
     width:100%;
+}
+#about-us{
+    background: #42b8dd;
+    padding: 35px 0;
+    color: #fff;
+}
+#who-we-are-title{
+    font-family: ProximaNovaBold;
+    font-size: 72px;
+    line-height: 60px;
+}
+.about-us-icon{
+    padding-left:10px;
+}
+.about-us-text-container{
+    min-height: 120px;
+    padding-left: 25px;
+}
+.about-us-header{
+    font-family: ProximaNovaBold;
+    font-size: 16px;
+    min-width: 250px;
+}
+.about-us-content{
+    font-family: ProximaNovaThin;
+    font-size: 14px;
+}
+@media (max-width: 768px){
+    #about-us{
+        padding-bottom:5px;
+    }
+    #who-we-are-title{
+        padding-bottom: 30px;
+        font-size: 52px;
+        line-height: 46px;
+    }
+    .about-us-icon{
+        padding-left:0;
+    }
+    .about-us-text-container{
+        min-height: 120px;
+        padding-left: 25px;
+        padding-bottom: 20px;
+    }
+    .about-us-header{
+        min-width: 0;
+    }
+}
+@media (min-width: 768px) and (max-width: 992px){
+    #who-we-are-title{
+        padding-bottom: 30px;
+        font-size: 52px;
+        line-height: 46px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1200px){
+    #about-us{
+        padding-bottom:5px;
+    }
+    #who-we-are-title{
+        padding-bottom: 30px;
+        font-size: 52px;
+        line-height: 46px;
+    }
+    .about-us-icon{
+        padding-left:0;
+    }
+    .about-us-text-container{
+        min-height:185px;
+        padding-left: 25px;
+        padding-bottom: 20px;
+    }
+    .about-us-header{
+        min-width: 0;
+    }
 }

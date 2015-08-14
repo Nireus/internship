@@ -41,8 +41,8 @@
             <a class="navbar-brand" href="#"><img src="resources/logo_top.png" id="logo-top"/></a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav" id="navbar-items">
-                <li><a href="#">O nas</a></li>
+            <ul class="nav navbar-nav navbar-left" id="navbar-items">
+                <li><a href="#about-us">O nas</a></li>
                 <li><a href="#">Oferta</a></li>
                 <li><a href="#">Zespół</a></li>
                 <li><a href="#">Galeria</a></li>
@@ -63,6 +63,83 @@
         <div><img src="resources/slajder_2.png" class="jumbotron-item"/></div>
         <div><img src="resources/slajder_3.png" class="jumbotron-item"/></div>
         <div><img src="resources/slajder_4.png" class="jumbotron-item"/></div>
+    </div>
+</section>
+
+<section id="about-us">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-4" id="who-we-are-title">
+                KIM
+                <br/>
+                <span style="text-decoration: underline">JESTEŚMY?</span>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <img src="resources/icon_1_o_nas.png" class="about-us-icon"/>
+                    </div>
+                    <div class="col-xs-9">
+                        <div class="about-us-text-container">
+                            <p class="about-us-header">SZYBKOŚĆ</p>
+
+                            <p class="about-us-content">
+                                W trosce o czas każdego z naszych klientów dokładamy wszelkich starań
+                                aby realizowane przez nas trasy przebywane były jak najszybciej.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-3">
+                        <img src="resources/icon_3_o_nas.png" class="about-us-icon"/>
+                    </div>
+                    <div class="col-xs-9">
+                        <div class="about-us-text-container">
+                            <p class="about-us-header">GWARANCJA BEZPIECZEŃSTWA</p>
+
+                            <p class="about-us-content">
+                                Dzięki naszym usługom gwarantujemy, że dotrą Państwo do wyznaczonego celu
+                                w zaplanowanym czasie z dozą 100% bezpieczeństwa.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <img src="resources/icon_2_o_nas.png" class="about-us-icon"/>
+                    </div>
+                    <div class="col-xs-9">
+                        <div class="about-us-text-container">
+                            <p class="about-us-header">ROZWÓJ</p>
+
+                            <p class="about-us-content">
+                                Cały czas rozwijamy zakres naszej oferty, dostosowujemy ją do Państwa potrzeb i wymagań.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-3">
+                        <img src="resources/icon_3_o_nas.png" class="about-us-icon"/>
+                    </div>
+                    <div class="col-xs-9">
+                        <div class="about-us-text-container">
+                            <p class="about-us-header">PROFESJONALIZM</p>
+
+                            <p class="about-us-content">
+                                Świadczymy usługi licencjonowangeo przewozu osób na terenie Polski, Niemiec i Holandii.
+                                O naszym profesjonalizmie świadczą tysiące zadowolonych Klientów. Wielu z nich
+                                regularnie korzysta z naszej oferty.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -87,6 +164,8 @@
         });
     });
 
+
+
 </script>
 <!--Skrypt SLICK slider-->
 <script type="text/javascript">
@@ -100,6 +179,8 @@
             fade: true
         });
     });
+
+
 </script>
 <!--Skrypt navbar-collapse fix-->
 <script>
@@ -115,6 +196,8 @@
             $('.navbar-collapse').collapse('toggle');
         });
     });
+
+
 </script>
 </body>
 </html>
