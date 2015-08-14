@@ -54,6 +54,8 @@
 }
 .about-us-icon{
     padding-left:10px;
+    display: block;
+    width: 100px;
 }
 .about-us-text-container{
     min-height: 120px;
@@ -79,6 +81,7 @@
     }
     .about-us-icon{
         padding-left:0;
+        margin: auto;
     }
     .about-us-text-container{
         min-height: 120px;
@@ -115,5 +118,61 @@
     }
     .about-us-header{
         min-width: 0;
+    }
+}
+#about-us-bottom{
+    color: #42b8dd;
+    font-family: ProximaNovaBold;
+}
+#about-us-bottom-icon{
+    display: block;
+    margin-left:-30px;
+}
+#about-us-bottom-text{
+    margin-left: -70px;
+    min-width: 1030px;
+    font-size: 55px;
+    padding:37px 0;
+}
+@media (max-width: 768px){
+    #about-us-bottom-icon{
+        display: none;
+    }
+    #about-us-bottom-text{
+        text-align: center;
+        margin-left: 0;
+        line-height: 20px;
+        min-width: 0;
+        font-size: 20px;
+        padding: 10px 0;
+    }
+}
+@media (min-width: 768px) and (max-width:992px){
+    #about-us-bottom-icon{
+        display: block;
+        width: 75px;
+        margin: auto;
+    }
+    #about-us-bottom-text{
+        text-align: left;
+        margin-left: -40px;
+        min-width: 0;
+        font-size: 34px;
+        padding: 13px 0;
+    }
+}
+@media (min-width: 992px) and (max-width:1200px){
+    #about-us-bottom-icon{
+        display: block;
+        width: 100px;
+        margin: auto;
+    }
+    #about-us-bottom-text{
+        text-align: left;
+        margin-left: -45px;
+        min-width: 0;
+        line-height: 40px;
+        font-size: 44px;
+        padding: 30px 0;
     }
 }
