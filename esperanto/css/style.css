@@ -402,3 +402,29 @@
         padding-left:50px;
     }
 }
+#info{
+    background: #666666;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    color: #fff;
+    text-align: center;
+}
+.info-big{
+    font-family: ProximaNovaThin;
+    font-size: 72px;
+    line-height: 70px;
+}
+.info-small{
+    font-family: ProximaNovaBold;
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+@media (max-width: 400px){
+    .info-big{
+        font-size: 58px;
+        line-height: 60px;
+    }
+    .info-small{
+        font-size: 15px;
+    }
+}
