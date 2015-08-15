@@ -30,6 +30,7 @@
 
 <body>
 
+<!--TODO fix first click collapse error-->
 <div style="display:box; height: 50px" id="navbar-spacer"></div>
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
@@ -278,6 +279,34 @@
     </div>
 </section>
 
+<section id="references">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-offset-0 col-sm-offset-1 col-xs-12 col-sm-10">
+                <!--TODO Dopisac referencje-->
+                <div class="references-slider">
+                    <div class="reference-widget">
+                        <div class="reference-widget-content">
+                            Same plusy. Poważny, odpowiedzialny i konkretny partner w interesach warty zaufania.
+                            Uczciwy, rzetelny i znakomity. Droga przebyta bez zastrzeżeń. Polecam!
+                        </div>
+                    </div>
+                    <div class="reference-widget">
+                        <div class="reference-widget-content">
+                            Uczciwy, rzetelny i znakomity.
+                        </div>
+                    </div>
+                    <div class="reference-widget">
+                        <div class="reference-widget-content">
+                            Same plusy. Polecam!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
@@ -313,6 +342,14 @@
             speed: 700,
             arrows: false,
             fade: true
+        });
+        $('.references-slider').slick({
+            infinite: true,
+            autoplay: true,
+            autoplaySpeed: 4000,
+            speed: 700,
+            arrows: false,
+            dots: true
         });
     });
 

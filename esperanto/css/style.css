@@ -322,3 +322,46 @@
         height: 5px;
     }
 }
+#references{
+    background: #666666;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: ProximaNovaThin;
+    font-size: 32px;
+    color: #fff;
+    text-align: center;
+}
+.reference-widget{
+    display: table !important;
+    min-height: 200px;
+}
+.reference-widget-content {
+    vertical-align: middle;
+    text-align: center;
+    display: table-cell;
+}
+.slick-dots{
+    padding: 0 !important;
+}
+.slick-dots li{
+    display: inline;
+}
+.slick-dots li button{
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    padding: 0;
+    margin: 0 2px;
+    font-size: 0;
+    line-height: 0;
+}
+.slick-dots .slick-active button{
+    background: #fff;
+}
+@media (max-width: 767px){
+    #references{
+        font-size: 20px;
+    }
+}
