@@ -1,14 +1,13 @@
 @font-face {
     font-family: 'ProximaNova'; /*a name to be used later*/
     src: url('../fonts/ProximaNova-Reg.otf'); /*URL to font*/
-}
-@font-face {
+}@font-face {
     font-family: 'ProximaNovaBold'; /*a name to be used later*/
     src: url('../fonts/ProximaNova-Bold.otf'); /*URL to font*/
 }@font-face {
      font-family: 'ProximaNovaThin'; /*a name to be used later*/
      src: url('../fonts/ProximaNova-Thin.otf'); /*URL to font*/
- }
+}
 
 #logo-top{
     height: 40px;
@@ -22,7 +21,7 @@
 #login-btn {
   -webkit-border-radius: 8;
   -moz-border-radius: 8;
-  background: #000;
+  background: transparent;
   border-radius: 8px;
   color: #42b8dd;
   font-family: ProximaNova;
@@ -64,13 +63,13 @@
 .about-us-header{
     font-family: ProximaNovaBold;
     font-size: 16px;
-    min-width: 250px;
+    min-width: 240px;
 }
 .about-us-content{
     font-family: ProximaNovaThin;
     font-size: 14px;
 }
-@media (max-width: 768px){
+@media (max-width: 767px){
     #about-us{
         padding-bottom:5px;
     }
@@ -174,5 +173,152 @@
         line-height: 40px;
         font-size: 44px;
         padding: 30px 0;
+    }
+}
+#offer{
+    background: #ebebeb;
+    padding-top:35px;
+    padding-bottom:25px;
+}
+#what-we-offer-title{
+    font-family: ProximaNovaBold;
+    color: #363636;
+    font-size: 72px;
+    line-height: 60px;
+}
+.offer-label{
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    display: inline-block;
+    background: transparent;
+    border-radius: 8px;
+    color: #42b8dd;
+    font-family: ProximaNova;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    width: 90px;
+    height: 35px;
+    border: solid #42b8dd 2px;
+}
+.small-offer-widget{
+    display:block;
+    background: #fff;
+    width: 370px;
+    height: 370px;
+    margin: 30px auto;
+}
+.offer-picture{
+    width: 100%;
+}
+#big-offer-widget{
+    display: block;
+    background: #fff;
+    width: 370px;
+    height: 770px;
+    margin: 30px auto;
+}
+#big-offer-widget-gray-box{
+    display: block;
+    background: #ccc;
+    height: 675px;
+}
+.offer-header{
+    font-family: ProximaNovaBold;
+    font-size: 18px;
+    text-align: center;
+    color: #42b8dd;
+    margin-top: 10px;
+}
+.offer-content{
+    font-family: ProximaNovaThin;
+    font-size: 14px;
+    text-align: center;
+    color: #898989;
+    padding: 0 20px;
+}
+.big-offer-header{
+    font-family: ProximaNova;
+    font-size: 21px;
+    color: #000;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding: 0 20px;
+}
+.big-offer-content{
+    font-family: ProximaNovaThin;
+    font-size: 14px;
+    color: #000;
+    padding: 0 20px;
+}
+.big-offer-spacer{
+    display: block;
+    height: 10px;
+}
+#offer-plus-icon{
+    width: 370px;
+    margin-right: auto;
+}
+@media (max-width: 490px){
+    #what-we-offer-title{
+        padding-bottom: 30px;
+        font-size: 42px;
+        line-height: 46px;
+    }
+    .small-offer-widget,
+    #big-offer-widget{
+        max-width: 100%;
+        margin: 30px auto;
+    }
+    #big-offer-widget-gray-box{
+        height: 696px;
+    }
+    .big-offer-header{
+        margin-top: 0;
+    }
+    .big-offer-content{
+        margin-bottom: 5px;
+    }
+    .big-offer-spacer{
+        height: 5px;
+    }
+}
+@media (max-width: 767px){
+    .small-offer-widget{
+        margin-bottom: 0;
+    }
+    #offer-plus-icon{
+        display: none;
+    }
+}
+@media (min-width: 768px) and (max-width: 1200px){
+    .small-offer-widget{
+        max-width: 100%;
+    }
+    #big-offer-widget{
+        margin-top: 0;
+    }
+}
+@media (max-width: 992px){
+    #offer-plus-icon{
+        margin-left: auto;
+    }
+}
+@media (min-width: 992px) and (max-width: 1200px){
+    #big-offer-widget{
+        max-width: 100%;
+        margin: 30px auto;
+    }
+    #big-offer-widget-gray-box{
+        height: 696px;
+    }
+    .big-offer-header{
+        margin-top: 0;
+    }
+    .big-offer-content{
+        margin-bottom: 5px;
+    }
+    .big-offer-spacer{
+        height: 5px;
     }
 }
