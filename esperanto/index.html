@@ -28,7 +28,7 @@
 
 </head>
 
-<body>
+<body ng-app="esperanto">
 
 <!--TODO fix first click collapse error-->
 <div style="display:box; height: 50px" id="navbar-spacer"></div>
@@ -320,6 +320,7 @@
             <div class="col-xs-12 col-sm-4">
                 <div class="row">
                     <img src="resources/avatar_1_zespol.png" class="team-icon"/><br/>
+
                     <div class="spacer"></div>
                 </div>
                 <div class="row team-description">
@@ -329,12 +330,14 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus posuere porta vulputate.
                         In quis fringilla sem. Nulla aliquam mattis justo in molestie.<br/><br/>
                     </span>
+
                     <div class="spacer"></div>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-4">
                 <div class="row">
                     <img src="resources/avatar_2_zespol.png" class="team-icon"/><br/>
+
                     <div class="spacer"></div>
                 </div>
                 <div class="row team-description">
@@ -344,12 +347,14 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus posuere porta vulputate.
                         In quis fringilla sem. Nulla aliquam mattis justo in molestie.<br/><br/>
                     </span>
+
                     <div class="spacer"></div>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-4">
                 <div class="row">
                     <img src="resources/avatar_2_zespol.png" class="team-icon"/><br/>
+
                     <div class="spacer"></div>
                 </div>
                 <div class="row team-description">
@@ -359,6 +364,7 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus posuere porta vulputate.
                         In quis fringilla sem. Nulla aliquam mattis justo in molestie.<br/><br/>
                     </span>
+
                     <div class="spacer"></div>
                 </div>
             </div>
@@ -371,23 +377,88 @@
         <div class="row">
             <div class="col-xs-6 col-sm-3">
                 <img src="resources/icon_1_oferta.png"/><br/><br/>
+
                 <div class="info-big">2014</div>
                 <div class="info-small">ROK ZAŁOŻENIA</div>
             </div>
             <div class="col-xs-6 col-sm-3">
                 <img src="resources/icon_2_oferta.png"/><br/><br/>
+
                 <div class="info-big">95%</div>
                 <div class="info-small">POZYTYWNYCH KOMENTARZY</div>
             </div>
             <div class="col-xs-6 col-sm-3">
+                <!--TODO grafika inna niz w projekcie-->
                 <img src="resources/icon_3_oferta.png"/><br/><br/>
+
                 <div class="info-big">2</div>
                 <div class="info-small">DARMOWE NAPOJE</div>
             </div>
             <div class="col-xs-6 col-sm-3">
                 <img src="resources/icon_4_oferta.png"/><br/><br/>
+
                 <div class="info-big">9</div>
                 <div class="info-small">PASAŻERÓW</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="gallery" ng-controller="GalleryCtrl as gallery">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12" id="our-gallery-title">
+                NASZA<br/>
+                <span style="text-decoration: underline;">GALERIA.</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-3 col-md-push-9">
+                <div class="gallery-description">
+                    <div id="gallery-label">
+                        <div id="gallery-label-icon">
+                            <img src="resources/icon_1_galeria.png"/>
+                        </div>
+                        <div id="gallery-label-text">
+                            Zapraszamy do obejrzenia naszej galerii
+                        </div>
+                    </div>
+                    <div id="gallery-description-content">
+                        <br/>Znajduje się tu graficzny opis floty oraz zdjęcia ze zrealizowanych dotąd tras.
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-9 col-md-pull-3">
+                <div class="gallery-slider">
+                    <div ng-repeat="photo in photos track by $index">
+                    <div class="gallery-thumbnail-container">
+                        <div class="gallery-thumbnail gallery-picture-hover">
+                            <img src="" ng-src="{{photo}}"/>
+                            <div class="mask" data-id="{{$index}}">
+                                <div class="info" title="Powiększ"></div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-9">
+                <div id="gallery-prev-arrow">
+                    <img src="resources/icon_left_galeria.png"/>
+                </div>
+                <div id="gallery-next-arrow">
+                    <img src="resources/icon_right_galeria.png"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="pop-up-gallery" ng-style="{ 'display': imageShown }" ng-click="closeGallery()">
+        <div class="center-image-container">
+            <div class="center-image">
+                <img src="" class="clickable" ng-src="{{imageSource}}"/>
             </div>
         </div>
     </div>
@@ -416,6 +487,7 @@
 </script>
 <!--Skrypt SLICK slider-->
 <script type="text/javascript">
+
     $(document).ready(function () {
         $('.auto-slider').slick({
             infinite: true,
@@ -433,8 +505,33 @@
             arrows: false,
             dots: true
         });
+        $('.gallery-slider').slick({
+            infinite: true,
+            autoplay: true,
+            autoplaySpeed: 4000,
+            rows: 3,
+            slidesPerRow: 3,
+            speed: 700,
+            prevArrow: $('#gallery-prev-arrow'),
+            nextArrow: $('#gallery-next-arrow'),
+            responsive: [
+                {
+                    breakpoint: 510,
+                    settings: {
+                        rows: 2,
+                        slidesPerRow: 1
+                    }
+                },
+                {
+                    breakpoint: 760,
+                    settings: {
+                        rows: 2,
+                        slidesPerRow: 2
+                    }
+                }
+            ]
+        });
     });
-
 </script>
 <!--Skrypt navbar-collapse fix-->
 <script>
@@ -446,13 +543,19 @@
             $(".navbar-collapse").collapse('hide');
         });
         $('#collapsingNavbarButton').click(function(){
-            console.log("DUPA");
             $('.navbar-collapse').collapse('toggle');
         });
     });
-
-
-
+</script>
+<!--Gallery popup-->
+<script>
+    $('.gallery-slider').on('click', '.mask', function() {
+        var $scope = angular.element($('#gallery')).scope();
+        var dataID = $(this).data('id');
+        $scope.$apply(function(){
+            $scope.showImage(dataID);
+        });
+    });
 </script>
 </body>
 </html>
