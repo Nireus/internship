@@ -563,3 +563,89 @@
     float: right;
     cursor: pointer;
 }
+#blue-bar{
+    width: 100%;
+    padding: 5px 0;
+    background: #42b8dd;
+    font-family: ProximaNovaBold;
+    font-size: 57px;
+    color: #fff;
+    text-align: center;
+}
+#grey-bar{
+    width: 100%;
+    padding: 10px 0;
+    background: #7f7f7f;
+    font-family: ProximaNovaBold;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+}
+.grey-bar-text{
+    padding-top: 35px;
+    padding-left: 15px;
+}
+@media (max-width: 554px){
+    #blue-bar{
+        font-size: 17px;
+    }
+    #blue-bar img{
+        display: none;
+    }
+    #grey-bar{
+        font-size: 16px;
+    }
+    #grey-bar img{
+        width: 20px;
+        height: auto;
+    }
+    .grey-bar-text{
+        padding-top: 5px;
+        padding-left: 0px;
+    }
+    #grey-bar .col-xs-1,
+    #grey-bar .col-xs-3{
+        padding-left: 5px;
+    }
+    .grey-bar-xs-fix{
+        margin-left: -10px;
+    }
+}
+@media (min-width: 550px) and (max-width: 767px){
+    #blue-bar{
+        font-size: 26px;
+    }
+    #blue-bar img{
+        width: 65px;
+        height: auto;
+    }
+    #grey-bar{
+        font-size: 20px;
+    }
+    #grey-bar img{
+        width: 40px;
+        height: auto;
+    }
+    .grey-bar-text{
+        padding-top: 16px;
+        padding-left: 10px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){
+    #blue-bar{
+        font-size: 35px;
+    }
+    #grey-bar{
+        font-size: 28px;
+    }
+    .grey-bar-text{
+        padding-left: 20px;
+    }
+}@media (min-width: 992px) and (max-width: 1199px){
+     #blue-bar{
+         font-size: 47px;
+     }
+     #grey-bar{
+         font-size: 30px;
+     }
+ }
