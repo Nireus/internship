@@ -722,3 +722,25 @@
     }
 
 }
+footer{
+    font-family: ProximaNovaThin;
+
+    color: #666;
+    background-color: #2a2b2c;
+    height: 17vh;
+    text-align: center;
+
+}
+#footer-text{
+    padding-top: 5%;
+    font-size: 14px;
+
+}
+@media (max-width: 500px) {
+    footer{
+        height: 10vh;
+    }
+    #footer-text {
+        font-size: 10px;
+    }
+}
