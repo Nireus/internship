@@ -697,9 +697,16 @@
     margin-top: 25%;
 
 }
+#contact-submit-button:focus{
+    outline: 0;
+}
+.contact-input:focus {
+    border-color: #42b8dd;
+}
 #contact-submit-button:hover {
     background-color: #888888;
 }
+
 @media (max-width: 700px) {
     .contact-input {
         font-size: 12px;
@@ -711,5 +718,7 @@
 @media (max-width: 500px) {
     .contact-input {
         font-size: 9px;
+        border-width: 1px;
     }
+
 }
