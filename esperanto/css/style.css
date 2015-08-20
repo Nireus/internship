@@ -671,8 +671,19 @@
     font-family: ProximaNova;
     color: #888888;
     font-size: 16px;
-
 }
+#contact-info a:link {
+    text-decoration: none;
+    color: #888888;
+}
+#contact-info a:hover {
+    text-decoration: none;
+    color: #888888;
+}
+#contact-info a:visited {
+     color: #888888;
+ }
+
 .contact-input {
     font-family: ProximaNovaBold;
     font-size: 16px;
