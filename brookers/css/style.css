@@ -95,6 +95,7 @@ body {
 
 #photos-description{
     margin-top:-2vw;
+    margin-bottom: 2vw;
 }
 
 #photos-description #boxes .col-xs-6{
@@ -115,7 +116,7 @@ body {
 	margin-top:5px;
 }
 .description-top-menu{
-    margin: 5px 20px 0 20px;
+    margin: 5px 20px 15px 20px;
 }
 .description-title-big{
     color:#505050;
@@ -138,6 +139,23 @@ body {
     .description-title-small{
         font-size:15px;
     	margin-left: -37px;
+    }
+}
+@media (min-width: 450px) and (max-width: 767px){
+    .description-title-big,
+    .description-title-small{
+    	margin-left: -15vw;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){
+    .description-title-big,
+    .description-title-small{
+    	margin-left: -10vw;
+    }
+}
+@media (min-width: 992px){
+    .description-top-menu{
+        margin-bottom: 0;
     }
 }
 .row-same-height {
@@ -296,24 +314,30 @@ body {
     padding-top: 0;
     position: relative;
 }
-
+#reference-slider{
+    height:92px;
+    margin-bottom:45px;
+}
+.div-slide {
+    position: relative;
+    text-align: center;
+    display:table !important;
+    height: 90px;
+}
 .reference-text{
     display:table-cell;
     vertical-align: middle;
     font-family: MyriadPro;
     color: #505050;
+    width: 94%;
 }
-
-.div-slide {
-    position: relative;
-    text-align: center;
-    display:table !important;
-    height: 82px;
-}
-
-#reference-slider{
-    height:82px;
-    margin-bottom:45px;
+@media (min-width: 768px){
+    #reference-slider{
+        height:82px;
+    }
+    .div-slide {
+        height: 80px;
+    }
 }
 
 .gradient-line {
@@ -326,8 +350,8 @@ body {
 }
 #slider {
     background: linear-gradient(to right, rgba(231,232,234,1) 0%,rgba(236,237,239,1) 50%,rgba(231,232,234,1) 100%);
-    width: 45vw;
-    height: 80px;
+    height: 90px;
+    width: 100%;
     margin: 0 auto;
     line-height: 17px;
 }
