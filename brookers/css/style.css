@@ -10,6 +10,16 @@
     src: url('../fonts/MyriadPro/MYRIADPRO-REGULAR.woff');
 }
 
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    text-align:left;
+    margin-right:-4px;
+}
+
 body {
     background-image: url("../resources/images/Home/background.png");
     background-size: 100% 1960px;
@@ -84,18 +94,51 @@ body {
 }
 
 #photos-description{
-    margin-top:-40px;
+    margin-top:-2vw;
+}
+
+#photos-description #boxes .col-xs-6{
+    padding: 0;
+}
+
+.photo-box{
+    display: block;
+    margin:0 auto;
+    max-width: 100%;
 }
 
 #description{
 	margin-top: 32px;
 }
-.icon_top_menu{
-	margin-left:50px;
+.icon-top-menu{
+	margin-left:5px;
 	margin-top:5px;
 }
-.description-title{
+.description-top-menu{
+    margin: 5px 20px 0 20px;
+}
+.description-title-big{
+    color:#505050;
+    font-size:23px;
+	margin-left: -33px;
 	margin-bottom: 0px;
+}
+.description-title-small{
+    color:#60738F;
+    font-size:14px;
+	margin-left: -33px;
+	margin-bottom: 0px;
+}
+
+@media (min-width: 350px){
+    .description-title-big{
+        font-size:25px;
+    	margin-left: -37px;
+    }
+    .description-title-small{
+        font-size:15px;
+    	margin-left: -37px;
+    }
 }
 .row-same-height {
     display: table;
