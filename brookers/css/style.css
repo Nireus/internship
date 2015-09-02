@@ -337,6 +337,8 @@ body {
     width: 40px;
     height: 30px;
     z-index:1;
+    display: none !important;
+    height: 82px;
 }
 
 .arrow-next {
@@ -345,6 +347,8 @@ body {
     width: 40px;
     height: 30px;
     z-index:1;
+    display: none !important;
+    height: 82px;
 }
 
 .gallery-slider {
@@ -374,6 +378,10 @@ body {
     }
     .div-slide {
         height: 80px;
+    }
+    .arrow-prev,
+    .arrow-next{
+        display: inline-block !important;
     }
 }
 
