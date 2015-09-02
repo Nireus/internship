@@ -219,14 +219,16 @@ body {
 }
 
 #contact {
-    background-image: radial-gradient(center top, ellipse cover, #5d5d74, #353546);
-    background-image: -o-radial-gradient(center top, ellipse cover, #5d5d74, #353546);
-    background-image: -ms-radial-gradient(center top, ellipse cover, #5d5d74, #353546);
-    background-image: -moz-radial-gradient(center top, ellipse cover, #5d5d74, #353546);
-    background-image: -webkit-radial-gradient(center top, ellipse cover, #5d5d74, #353546);
+    background-image: radial-gradient(center top, ellipse farthest-corner, #5d5d74, #353546);
+    background-image: -o-radial-gradient(center top, ellipse farthest-corner, #5d5d74, #353546);
+    background-image: -ms-radial-gradient(center top, ellipse farthest-corner, #5d5d74, #353546);
+    background-image: -moz-radial-gradient(center top, ellipse farthest-corner, #5d5d74, #353546);
+    background-image: -webkit-radial-gradient(center top, ellipse farthest-corner, #5d5d74, #353546);
 
     margin-left: auto;
     margin-right: auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 #contact-form {
@@ -240,9 +242,12 @@ body {
     border-radius: 6px;
     border: 0px;
     margin-bottom: 15px;
-    width: 200px;
+    width: 100%;
     color: #ABABB1;
     background-color: #242438;
+}
+#newsletter-form input{
+    width: 230px;
 }
 
 #contact-form textarea {
@@ -251,13 +256,26 @@ body {
     border-radius: 6px;
     border: 0px;
     margin-bottom: 15px;
-    width: 270px;
+    width: 100%;
     height: 100px;
     color: #ABABB1;
     background-color: #242438;
     resize: none;
 }
-
+@media (min-width: 600px){
+    #contact-form input{
+        width: 33%;
+    }
+}
+@media (min-width: 767px){
+    #contact-form input {
+        min-width: 180px;
+        width: 100%;
+    }
+    #contact-form textarea {
+        width: 100%;
+    }
+}
 #newsletter-form #newsletter-submit,
 #contact-form-submit #contact-submit {
     padding: 2px;
@@ -548,4 +566,8 @@ body {
     display: block;
     position:absolute;
     left:5px;
+}
+footer{
+    background: #353546;
+    margin-top: -2px;
 }
