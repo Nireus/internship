@@ -376,6 +376,8 @@ body {
 #reference-slider{
     height:92px;
     margin-bottom:35px;
+    margin-left: 2px;
+    margin-right: 2px;
 }
 .div-slide {
     position: relative;
