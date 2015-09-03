@@ -112,7 +112,6 @@
     </div>
 </section>
 
-
 <section ng-controller="ProductsPanelCtrl as offersCtrl" style="margin-top: 40px">
     <div class="container">
         <div class="row row-same-height">
@@ -163,15 +162,14 @@
     </div>
 </section>
 
-
 <section id="contact">
     <div class="container">
         <div class="row">
-            <div class="col-lg-1">
+            <div class="hidden-xs col-sm-1">
                 <img src="resources/images/Home/footer_mail_icon.png"/>
             </div>
-            <div class="col-lg-11">
-                <div style="padding-left:30px">
+            <div class="col-xs-12 col-sm-11">
+                <div >
                     <p style="font-size: 13px; color:#ABABB1"><b>Masz pytanie? Napisz do nas.</b></p>
 
                     <p style="font-size: 13px; color:#ABABB1">Zadaj pytanie, zgłoś sugestię, prześlij komentarz
@@ -184,38 +182,36 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-6" style="padding-left:45px">
+            <div class="col-xs-12 col-sm-6">
                 <p style="font-size: 25px; color:#FFFFFF">Newsletter</p>
 
                 <p style="font-size: 14px; color:#ABABB1">Aby dowiedzieć się o wszystkich naszych promocjach już dziś
-                    zapisz<br>
-                    się na newsletter, a na pocztę otrzymasz pełen zestaw informacji</p>
+                    zapisz się na newsletter,&nbsp;a&nbsp;na&nbsp;pocztę otrzymasz pełen zestaw informacji</p>
 
                 <form id="newsletter-form">
                     <div class="row">
-                        <div class="col-lg-5">
-                            <div style="width:400px">
-                                <input name="topic" placeholder="wprowadź swój mail" style="width:230px;">
+                        <div class="col-xs-12">
+                            <div style="max-width:400px">
+                                <input name="topic" placeholder="wprowadź swój mail" style="margin-right: 20px;"/>
 
-                                <input id="newsletter-submit" name="submit" type="submit" value="Subskrybuj"
-                                       style="margin-left:20px;">
+                                <input id="newsletter-submit" name="submit" type="submit" value="Subskrybuj"/>
                             </div>
                         </div>
                     </div>
                 </form>
 
             </div>
-            <div class="col-lg-6" style="padding-left:45px">
+            <div class="col-xs-12 col-sm-6">
                 <p style="font-size: 25px; color:#FFFFFF">Formularz kontaktowy</p>
 
                 <form id="contact-form">
                     <div class="row">
-                        <div class="col-lg-5">
+                        <div class="col-xs-12 col-sm-6">
                             <input name="topic" placeholder="wprowadź temat zapytania">
                             <input name="name" placeholder="wprowadź swoje imię">
                             <input name="surname" placeholder="wprowadź swoje nazwisko">
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-xs-12 col-sm-6">
                             <textarea name="message" placeholder="wprowadź tekst zapytania"></textarea>
                         </div>
                     </div>
@@ -225,22 +221,26 @@
                 </form>
             </div>
         </div>
-        <div class="row" style="margin-top: -40px;">
-            <div class="col-lg-2">
+        <div class="row">
+            <div class="col-xs-12">
                 <a href="http://allegro.pl/my_page.php?uid=39944475" target="_blank">
-                    <img src="resources/images/Home/footer_allegro_icon.png"/>
+                    <img src="resources/images/Home/footer_allegro_icon.png" style="margin-right: 10px;"/>
                 </a>
                 <a href="http://www.facebook.com/brokerscommunication" target="_blank">
                     <img src="resources/images/Home/footer_facebook_icon.png"/>
                 </a>
             </div>
-            <div class="col-lg-8">
-                <p style="font-size: 14px; color:#ABABB1; text-align: center; padding-top:13px">Design by Paweł Gorzelec
-                    &copy 2015 gzknbd@gmail.com (+48)739 299 923 </p>
-            </div>
         </div>
     </div>
 </section>
+
+<footer>
+    <div class="container">
+        <div id="footer-text">
+            Design by Paweł&nbsp;Gorzelec&nbsp;&copy&nbsp;2015 gzknbd@gmail.com (+48)739&nbsp;299&nbsp;923
+        </div>
+    </div>
+</footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
