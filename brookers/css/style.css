@@ -570,4 +570,12 @@ body {
 footer{
     background: #353546;
     margin-top: -2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#footer-text{
+    font-size: 14px;
+    color:#ABABB1;
+    width: 100%;
+    text-align: center;
 }
