@@ -286,12 +286,10 @@ body {
     background-color: #E7E8EA;
 }
 
-#contact-box {
+.contact-box {
     background-image: url("../resources/images/Produkty/produkty_box_top.png");
-    width: 998px;
-    margin: 0 auto;
-    height: 101px;
-
+    background-size: 100% 100%;
+    padding: 20px 0;
 }
 
 .padding-form {
