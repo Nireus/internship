@@ -86,13 +86,13 @@
     </div>
     <div class="container">
         <div class="row row-same-height" style="margin:auto;">
-            <div class="col-lg-1 col-full-height">
+            <div class="col-sm-1 hidden-xs col-full-height">
                 <div id="prev" class="top-menu-arrow-prev"></div>
             </div>
-            <div class="col-lg-12 col-full-height">
+            <div class="col-xs-12 col-sm-10 col-full-height">
                 <div id="products-slider">
                     <div class="product-widget-big" ng-repeat="product in productSlider.products">
-                        <img src="" ng-src="{{product.image}}" style="margin:0 auto;">
+                        <img src="" ng-src="{{product.image}}" style="margin:0 auto; max-width: 100%;">
 
                         <p>{{product.name}}</p>
 
@@ -105,7 +105,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-1 col-full-height">
+            <div class="col-sm-1 hidden-xs col-full-height">
                 <div id="next" class="top-menu-arrow-next"></div>
             </div>
         </div>
@@ -115,11 +115,11 @@
 <section ng-controller="ProductsPanelCtrl as offersCtrl" style="margin-top: 40px">
     <div class="container">
         <div class="row row-same-height">
-            <div class="col-lg-1 col-full-height">
-                <div class="arrow-prev" id="category-slider-arrow-prev" style="float:right;"></div>
+            <div class="col-xs-1 col-full-height">
+                <div id="category-slider-arrow-prev"></div>
             </div>
-            <div class="col-lg-10 col-full-height">
-                <div style="height: 39px; text-align:center; margin" id="category-slider">
+            <div class="col-xs-10 col-full-height">
+                <div style="text-align:center;" id="category-slider">
                     <div class="category-class clickable tab-samsung" ng-click="offersCtrl.setTab(0)"></div>
                     <div class="category-class clickable tab-xperia" ng-click="offersCtrl.setTab(1)"></div>
                     <div class="category-class clickable tab-htc" ng-click="offersCtrl.setTab(2)"></div>
@@ -135,8 +135,8 @@
                     <div class="category-class clickable tab-sony" ng-click="offersCtrl.setTab(12)"></div>
                 </div>
             </div>
-            <div class="col-lg-1 col-full-height">
-                <div class="arrow-next" id="category-slider-arrow-next" style="float:left;"></div>
+            <div class="col-xs-1 col-full-height">
+                <div id="category-slider-arrow-next"></div>
             </div>
         </div>
         <div class="row row-same-height">
@@ -263,7 +263,6 @@
         });
     });
 </script>
-
 <!--Skrypt SLICK SLIDER-->
 <script>
     $(document).ready(function () {
@@ -325,6 +324,42 @@
             slidesToScroll: 4,
             prevArrow: $('#category-slider-arrow-prev'),
             nextArrow: $('#category-slider-arrow-next'),
+            responsive:[
+                {
+                    breakpoint: 1200,
+                    settings:{
+                        slidesToShow: 7
+                    }
+                },
+                {
+                    breakpoint: 992,
+                    settings:{
+                        slidesToShow: 5,
+                        slidesToScroll: 3
+                    }
+                },
+                {
+                    breakpoint: 700,
+                    settings:{
+                        slidesToShow: 4,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings:{
+                        slidesToShow: 3,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 450,
+                    settings:{
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+            ]
         });
     });
 

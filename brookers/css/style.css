@@ -163,6 +163,7 @@ body {
     display: table;
     width: 100%;
     table-layout: fixed;
+    margin-left: 0;
 }
 
 .col-full-height {
@@ -367,6 +368,23 @@ body {
     height: 82px;
 }
 
+#category-slider-arrow-prev,
+#category-slider-arrow-next{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -20px;
+    width: 40px;
+    height: 39px;
+    z-index:1;
+}
+#category-slider-arrow-prev{
+    background: url('../resources/images/Home/arrow_left_home.png') no-repeat center;
+}
+#category-slider-arrow-next{
+    background: url('../resources/images/Home/arrow_right_home.png') no-repeat center;
+}
+
 .gallery-slider {
     padding-top: 0;
     position: relative;
@@ -420,8 +438,6 @@ body {
 }
 
 .product-widget-big {
-    width: 330px;
-    height: 460px;
     text-align: center;
     font-size: 27px;
     color: #505050;
