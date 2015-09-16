@@ -551,7 +551,8 @@ body {
     background: url("../resources/images/Produkty/produkty_box_price_small.png");
     width: 96px;
     height: 62px;
-    display: block; position:absolute;
+    display: block;
+    position:absolute;
     right:38px;
     bottom: 15px;
 }
