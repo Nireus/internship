@@ -348,6 +348,9 @@ body {
     margin-top:10px;
     margin-left: 10px;
 }
+.rules-list li a{
+    color: #204d74;
+}
 #rules-list-border{
     border-bottom: 1px solid #b0b0b0;
     margin-bottom: 20px;
