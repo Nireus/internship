@@ -78,7 +78,22 @@ angular.module('pabian', ['ui.bootstrap'])
 
                 {title: 'INSTRUKTOR KULTURYSTYKI (15.10-25.11.2014r. Rzeszów, "Europejskie Centrum Sportu")',
                     text: 'Kurs, który dał mi pierwsze uprawnienia do trenowania i pokazywania tajników techniki w wykonywaniu ćwiczeń. Świetni ludzie, z którymi na pewno jeszcze nie raz będzie dane mi się uczyć. Wszystko pod okiem wielkiej sławy polskiej kulturystyki Prezesa ECS Piotra Głuchowskiego. NIEZAPOMNIANE PRZEŻYCIA i wiedza godna intensywnej nauki!',
-                    image: './resources/images/certificates/Legitymacja_instruktora_kulturystyki.jpg'}
+                    image: './resources/images/certificates/Legitymacja_instruktora_kulturystyki.jpg'},
+                {
+                    title:'INSTRUKTOR FITNESS (04.2015r. Kraków, "Open Mind")'  ,
+                    text:'Kurs instruktorski na najwyższym możliwym poziomie! Katarzyna Twardzik, instruktorka, artystka w swoim fachu w sposób profesjonalny i wyczerpujący przygotowała mnie do prowadzenia zajęć Fitness. Początkowo sceptycznie nastawiony do tego rodzaju aktywności fizycznej, po szkoleniu zrozumiałem, że Fitness to nie tylko uprawianie sportu, ale także społeczność, dobra zabawa i technika!',
+                    image:'./resources/images/certificates/dyplom instruktor fitness.jpg'
+                },
+                {
+                    title:'INSTRUKTOR FITNESS (04.2015r. Kraków, "Open Mind")'  ,
+                    text:'Kurs instruktorski na najwyższym możliwym poziomie! Katarzyna Twardzik, instruktorka, artystka w swoim fachu w sposób profesjonalny i wyczerpujący przygotowała mnie do prowadzenia zajęć Fitness. Początkowo sceptycznie nastawiony do tego rodzaju aktywności fizycznej, po szkoleniu zrozumiałem, że Fitness to nie tylko uprawianie sportu, ale także społeczność, dobra zabawa i technika!',
+                    image:'./resources/images/certificates/legitymacja instruktora fitness.jpg'
+                },
+                {
+                    title:'DIETETYKA I SUPLEMENTACJA POZIOM I (19-20.09.2015r. Kraków, "MAURICZ.COM"',
+                    text:'Szkolenie, wynoszące dietetykę na nowy, wyższy i bardziej profesjonalny poziom. Najbardziej cenne z odbytych, bo wiedza tam przekazana pokryła i utwierdziła moją dotychczasową naukę, co pozwoliło mi być jeszcze bardziej pewnym siebie w prowadzeniu moich klientów i wprowadzaniu nawyków żywieniowych, które obejmują dietoterapię, opiekę sportową oraz holistyczne podejście do tematu żywienia. Prowadzący - Kuba Mauricz to odpowiedni człowiek na odpowiednim miejscu!',
+                    image:'./resources/images/certificates/szkolenie dietetyka i suplementacja poziom 1 - Kraków 001.jpg'
+                }
             ],
             [
                 {title: 'WARSZTATY TRX (10.01.2015r. Katowice, "Rockfit")',
